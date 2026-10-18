@@ -47,6 +47,37 @@ header{padding:21px clamp(18px,3vw,54px);background:rgba(10,18,30,.96);border-bo
 .calendar-lower{grid-template-columns:minmax(0,1fr)}
 .calendar-event{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 @media(max-width:540px){.top-navigation .market-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.top-navigation .market-tab{padding:9px 5px;font-size:10px;line-height:1.35}}
+</style><style>
+/* v28 — consistent typography, card rhythm and responsive sizing */
+:root{--ui-gap:14px;--ui-pad:clamp(13px,1.3vw,19px)}
+html{font-size:14px}body{font-size:13px;line-height:1.6}
+.container{max-width:1600px;margin-inline:auto;padding-inline:clamp(12px,2vw,30px)}
+.panel{padding:var(--ui-pad);border-radius:12px;min-width:0;overflow:hidden}
+.panel .panel{padding:14px;box-shadow:none}
+.section-h{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.section-h h2,.panel h2{font-size:clamp(15px,1.1vw,18px);line-height:1.35;margin:0}
+.panel h3{font-size:14px;line-height:1.45}
+.hint,.status,.nav-search-hint{font-size:12px;line-height:1.65}
+.badge{font-size:11px;line-height:1.45;white-space:normal;text-align:center}
+.btn,.market-tab,.subtab,.period-btn{font-size:12px;line-height:1.35;min-height:36px}
+input,select,button,textarea{font-family:inherit}
+input,select{font-size:13px;min-height:36px}
+.dashboard,.stack,.buy-layout,.buy-lists,.tool-grid,.tool-metrics,.metrics,.agent-evidence{gap:var(--ui-gap)}
+.metrics,.tool-metrics{align-items:stretch}
+.metric,.tool-metric,.agent-item{min-width:0;min-height:78px;padding:12px}
+.metric strong,.tool-metric strong{font-size:clamp(15px,1.3vw,20px);line-height:1.3}
+.metric span,.tool-metric span{font-size:11px;line-height:1.5}
+.table-wrap{max-width:100%;overflow-x:auto}
+table{width:100%;border-collapse:collapse}th,td{font-size:12px;line-height:1.5;padding:9px 8px;vertical-align:middle}
+.top-navigation{gap:12px}.top-navigation .market-tabs{gap:7px}.top-navigation .nav-search{padding:9px 11px}
+.calendar-bar{gap:9px}.calendar-bar strong{font-size:17px}
+.calendar-grid{gap:5px}.calendar-day{min-height:105px;padding:7px;min-width:0}
+.calendar-event{font-size:10px;line-height:1.5}.calendar-day .day-num{font-size:12px}
+.calendar-events>div{padding:10px 4px;font-size:12px;line-height:1.6}
+.calendar-legend{gap:14px}
+@media(max-width:1100px){.dashboard{grid-template-columns:minmax(0,1fr) minmax(0,1.65fr)}.dashboard>.stack:last-child{grid-column:1/-1}.calendar-day{min-height:87px}}
+@media(max-width:760px){.dashboard,.buy-layout,.tool-grid,.agent-evidence{grid-template-columns:1fr}.dashboard>.stack:last-child{grid-column:auto}.container{padding:12px 10px 28px}.panel{padding:13px}.calendar-grid{gap:3px}.calendar-day{min-height:68px;padding:4px}.calendar-event{font-size:9px}.calendar-bar{justify-content:space-between}.calendar-bar .btn{padding:8px}.calendar-weekday{font-size:11px}.tool-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:420px){.calendar-day{min-height:57px}.calendar-event{display:none}.calendar-day.has-events::after{content:attr(data-count) '건';display:block;font-size:9px;color:#7ccdf5;margin-top:3px}.calendar-bar strong{font-size:15px;min-width:0}.section-h h2{font-size:15px}}
 </style></head><body>
 <header><div class="header-brand"><div class="brand"><b>▰</b> JH_KIM <span>Market Trade</span></div><div class="sub">MARKET INTELLIGENCE <span class="header-divider">/</span> PERSONAL RESEARCH TERMINAL</div></div><div class="header-right"><span class="header-status-dot" aria-hidden="true"></span><span class="sub" id="clock">최근 갱신: 확인 중</span></div></header>
 <main class="container">
@@ -77,7 +108,7 @@ header{padding:21px clamp(18px,3vw,54px);background:rgba(10,18,30,.96);border-bo
     <section class="panel tool-wide"><div class="section-h"><h2>매수 전 점검표</h2><span class="badge">PROCESS CHECKLIST</span></div><div class="check-grid"><label><input type="checkbox" class="trade-check">시장 전체 방향과 주요 지수 확인</label><label><input type="checkbox" class="trade-check">상대강도·섹터 흐름 확인</label><label><input type="checkbox" class="trade-check">거래량 증가 및 가격 패턴 확인</label><label><input type="checkbox" class="trade-check">진입·손절·목표가 확정</label><label><input type="checkbox" class="trade-check">허용 손실액과 수량 계산</label><label><input type="checkbox" class="trade-check">실적·주요 이벤트 일정 확인</label></div><div id="checkProgress" class="check-progress">0 / 6개 확인</div><p class="hint">체크리스트는 판단을 돕는 도구일 뿐 매수를 권장하거나 수익을 보장하지 않습니다.</p></section>
   </div>
 </section>
-<section id="page-calendar" class="page"><section class="panel"><div class="section-h"><h2>주요 경제지표 · 기업 실적 달력</h2><span class="badge" id="calendarUpdated">조회 전</span></div><div class="calendar-bar"><button class="btn" id="calPrev">‹ 이전 달</button><strong id="calMonth"></strong><button class="btn" id="calNext">다음 달 ›</button><button class="btn" id="calRefresh">일정 새로고침</button></div><div class="calendar-legend"><span>● 중요 경제지표</span><span>● 기업 실적</span></div><div id="calendarStatus" class="hint">경제·실적 발표 일정을 조회합니다.</div><div id="calendarGrid" class="calendar-grid"></div><div class="calendar-lower"><div class="panel"><h3 id="calendarDayTitle">선택한 날짜</h3><div id="calendarDayEvents" class="calendar-events">날짜를 선택하세요.</div></div></div><p class="hint">미국 실적: Nasdaq 공개 일자별 캘린더에서 월간 전체 발표 기업 수집을 시도합니다. 누락·차단·변경 가능하며 수집 성공 일수를 함께 표시합니다. 한국 전체 기업 실적은 아직 자동 지원하지 않습니다. 미국 발표일은 현지 거래소 날짜 기준이며 KST 날짜로 변환된 것은 아닙니다.</p></section></section>
+<section id="page-calendar" class="page"><section class="panel"><div class="section-h"><h2>주요 경제지표 · 기업 실적 달력</h2><span class="badge" id="calendarUpdated">조회 전</span></div><div class="calendar-bar"><button class="btn" id="calPrev">‹ 이전 달</button><strong id="calMonth"></strong><button class="btn" id="calNext">다음 달 ›</button><button class="btn" id="calRefresh">일정 새로고침</button></div><div class="calendar-legend"><span>● 중요 경제지표</span><span>● 기업 실적</span></div><div id="calendarStatus" class="hint">경제·실적 발표 일정을 조회합니다.</div><div id="calendarGrid" class="calendar-grid"></div><div class="calendar-lower"><div class="panel"><h3 id="calendarDayTitle">선택한 날짜</h3><div id="calendarDayEvents" class="calendar-events">날짜를 선택하세요.</div></div></div><p class="hint">미국 실적: Nasdaq 공개 일자별 캘린더를 주간 단위로 분할 조회합니다. 누락·차단·변경 가능하며 수집 성공 일수를 함께 표시합니다. 한국 전체 기업 실적은 아직 자동 지원하지 않습니다. 미국 발표일은 현지 거래소 날짜 기준이며 KST 날짜로 변환된 것은 아닙니다.</p></section></section>
 </main>
 <script>
 'use strict';
@@ -309,8 +340,28 @@ function koEventTitle(e){
 function koEventTime(t){return String(t||'').replace(/before market open|pre.market/ig,'장 시작 전').replace(/after market close|post.market/ig,'장 마감 후').replace(/time not supplied|not confirmed/ig,'시간 미정')}
 
 function calIso(y,m,d){return `${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`}
-function calRender(){const y=calCursor.getFullYear(),m=calCursor.getMonth();$('calMonth').textContent=`${y}년 ${m+1}월`;$('calendarGrid').replaceChildren();for(const w of ['일','월','화','수','목','금','토']){const e=document.createElement('div');e.className='calendar-weekday';e.textContent=w;$('calendarGrid').appendChild(e)}const offset=new Date(y,m,1).getDay(),days=new Date(y,m+1,0).getDate();for(let n=0;n<Math.ceil((offset+days)/7)*7;n++){const d=n-offset+1,date=calIso(y,m,d),btn=document.createElement('button');btn.type='button';btn.className='calendar-day'+(d<1||d>days?' outside':'')+(date===calSelected?' selected':'');const num=document.createElement('span');num.className='day-num';num.textContent=d>0&&d<=days?d:'';btn.appendChild(num);if(d>0&&d<=days){const events=calEvents.filter(e=>e.date===date);events.slice(0,3).forEach(e=>{const el=document.createElement('span');el.className='calendar-event '+(e.type||'macro');el.textContent='● '+koEventTitle(e);btn.appendChild(el)});if(events.length>3){const more=document.createElement('span');more.className='calendar-event';more.textContent='+'+(events.length-3)+'개';btn.appendChild(more)}btn.onclick=()=>{calSelected=date;calRender()}}else btn.disabled=true;$('calendarGrid').appendChild(btn)}$('calendarDayTitle').textContent=calSelected+' 일정';const root=$('calendarDayEvents');root.replaceChildren();const day=calEvents.filter(e=>e.date===calSelected);if(!day.length)root.textContent='조회된 일정이 없습니다.';day.forEach(e=>{const div=document.createElement('div');div.textContent=(e.type==='macro'?'[경제] ':'[실적] ')+koEventTitle(e)+(e.time?' · '+koEventTime(e.time):'')+(e.ticker?' ('+e.ticker+')':'');root.appendChild(div)})}
-async function calLoad(){const y=calCursor.getFullYear(),m=calCursor.getMonth(),from=calIso(y,m,1),to=calIso(y,m,new Date(y,m+1,0).getDate());$('calendarStatus').textContent='경제지표·실적 일정을 조회 중...';try{const d=await fetchJSON('/api/calendar?from='+from+'&to='+to+'&ticker='+encodeURIComponent(selected)+'&market='+market,16000);if(d.status!=='ok')throw Error(d.error||'조회 실패');calEvents=d.events||[];$('calendarUpdated').textContent='조회 '+calEvents.length+'건';$('calendarStatus').textContent=((d.coverage&&d.coverage.market==='US')?'미국 실적 수집 '+d.coverage.earnings_days_success+'/'+d.coverage.earnings_days_requested+'거래일 · ':'')+((d.warnings||[]).join(' / ')||'자동 일정은 참고용입니다. 공식 IR에서 확인하세요.')}catch(e){calEvents=[];$('calendarUpdated').textContent='자동 일정 조회 실패';$('calendarStatus').textContent='일정 API 오류: '+e.message+' · 잠시 후 새로고침해 주세요.'}calRender()}
+function calRender(){const y=calCursor.getFullYear(),m=calCursor.getMonth();$('calMonth').textContent=`${y}년 ${m+1}월`;$('calendarGrid').replaceChildren();for(const w of ['일','월','화','수','목','금','토']){const e=document.createElement('div');e.className='calendar-weekday';e.textContent=w;$('calendarGrid').appendChild(e)}const offset=new Date(y,m,1).getDay(),days=new Date(y,m+1,0).getDate();for(let n=0;n<Math.ceil((offset+days)/7)*7;n++){const d=n-offset+1,date=calIso(y,m,d),btn=document.createElement('button');btn.type='button';btn.className='calendar-day'+(d<1||d>days?' outside':'')+(date===calSelected?' selected':'');const num=document.createElement('span');num.className='day-num';num.textContent=d>0&&d<=days?d:'';btn.appendChild(num);if(d>0&&d<=days){const events=calEvents.filter(e=>e.date===date);if(events.length){btn.classList.add('has-events');btn.dataset.count=String(events.length)}events.slice(0,3).forEach(e=>{const el=document.createElement('span');el.className='calendar-event '+(e.type||'macro');el.textContent='● '+koEventTitle(e);btn.appendChild(el)});if(events.length>3){const more=document.createElement('span');more.className='calendar-event';more.textContent='+'+(events.length-3)+'개';btn.appendChild(more)}btn.onclick=()=>{calSelected=date;calRender()}}else btn.disabled=true;$('calendarGrid').appendChild(btn)}$('calendarDayTitle').textContent=calSelected+' 일정';const root=$('calendarDayEvents');root.replaceChildren();const day=calEvents.filter(e=>e.date===calSelected);if(!day.length)root.textContent='조회된 일정이 없습니다.';day.forEach(e=>{const div=document.createElement('div');div.textContent=(e.type==='macro'?'[경제] ':'[실적] ')+koEventTitle(e)+(e.time?' · '+koEventTime(e.time):'')+(e.ticker?' ('+e.ticker+')':'');root.appendChild(div)})}
+let calRequestId=0;
+async function calLoad(){
+ const req=++calRequestId,y=calCursor.getFullYear(),m=calCursor.getMonth(),from=calIso(y,m,1),last=new Date(y,m+1,0).getDate(),to=calIso(y,m,last);
+ calEvents=[];calRender();$('calendarUpdated').textContent='조회 중';$('calendarStatus').textContent='경제지표 및 미국 실적을 주별로 불러오는 중...';
+ const all=[];const failures=[];let successful=0,requested=0;
+ const merge=()=>{if(req!==calRequestId)return;const uniq=new Map();for(const e of all)uniq.set([e.date,e.type,e.ticker||e.title].join('|'),e);calEvents=[...uniq.values()].sort((a,b)=>a.date.localeCompare(b.date)||a.type.localeCompare(b.type));$('calendarUpdated').textContent='조회 '+calEvents.length+'건';calRender()};
+ // Economic events only: avoids expensive month-wide Nasdaq scraping in a single serverless request.
+ try{const d=await fetchJSON('/api/calendar?from='+from+'&to='+to+'&earnings=0',12000);if(req!==calRequestId)return;if(d.status==='ok')all.push(...(d.events||[]));else failures.push('경제지표')}catch(e){failures.push('경제지표')}merge();
+ const dates=[];for(let day=1;day<=last;day++){const dt=new Date(y,m,day);if(dt.getDay()!==0&&dt.getDay()!==6)dates.push(calIso(y,m,day))}
+ const weeks=[];for(let i=0;i<dates.length;i+=5)weeks.push([dates[i],dates[Math.min(i+4,dates.length-1)],Math.min(5,dates.length-i)]);
+ requested=dates.length;
+ // Weekly batches run in parallel; partial data is shown immediately. Each failed week remains marked as incomplete.
+ await Promise.all(weeks.map(async ([a,b,n])=>{
+  try{const d=await fetchJSON('/api/calendar?from='+a+'&to='+b+'&earnings=1&macro=0',18000);if(req!==calRequestId)return;if(d.status!=='ok')throw Error(d.error||'조회 실패');all.push(...(d.events||[]));successful+=Number(d.coverage?.earnings_days_success||0);if((d.coverage?.earnings_days_success||0)<n)failures.push(a+'~'+b);merge()}
+  catch(e){if(req!==calRequestId)return;failures.push(a+'~'+b)}
+  if(req===calRequestId)$('calendarStatus').textContent=`미국 실적 조회 ${successful}/${requested}거래일 · ${calEvents.length}건 표시 · 조회 중`;
+ }));
+ if(req!==calRequestId)return;
+ $('calendarStatus').textContent=`미국 실적 ${successful}/${requested}거래일 조회 성공 · 총 ${calEvents.length}건`+(failures.length?' · 누락 가능: '+failures.slice(0,3).join(', '):' · 제공처에 등록되지 않은 기업은 누락 가능');
+ $('calendarCoverageNote').textContent=successful<requested?'⚠ 실적 조회가 일부 실패했습니다. 비어 있는 날짜도 실제 발표가 있을 수 있습니다. 공식 기업 IR을 확인하세요.':'조회 성공 날짜의 Nasdaq 등록 기업을 표시합니다. 미등록·변경된 실적 일정은 여전히 누락될 수 있습니다.';
+}
 $('calPrev').onclick=()=>{calCursor=new Date(calCursor.getFullYear(),calCursor.getMonth()-1,1);calSelected=calIso(calCursor.getFullYear(),calCursor.getMonth(),1);calLoad()};$('calNext').onclick=()=>{calCursor=new Date(calCursor.getFullYear(),calCursor.getMonth()+1,1);calSelected=calIso(calCursor.getFullYear(),calCursor.getMonth(),1);calLoad()};$('calRefresh').onclick=calLoad;
 const previousSetPage23=setPage;setPage=function(next){previousSetPage23(next);if(next==='calendar')calLoad();if(next==='tools'&&caches[market].get(selected))runAgent()};
 const previousShowReport23=showReport;showReport=function(d){previousShowReport23(d);if(page==='tools')runAgent()};
