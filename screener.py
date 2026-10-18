@@ -92,6 +92,13 @@ def main():
         common={'status':'ok','updated_at_utc':NOW,'universe':'S&P 500','universe_count':len(symbols),'scanned_count':len(scanned),'source':'Yahoo Finance via unofficial yfinance; data may be delayed or unavailable','price_basis':'adjusted daily close'}
         breaches.sort(key=lambda x:x['breach_pct'])
         bounces.sort(key=lambda x:(-x['day_change_pct'],abs(x['distance_pct'])))
+        # 한 종목이 20/50/200일선 조건을 동시에 만족해도 한 자리만 사용
+        merged={}
+        for item in bounces:
+            t=item['ticker']
+            if t not in merged: merged[t]={**item,'ma_periods':[]}
+            if item['ma'] not in merged[t]['ma_periods']:merged[t]['ma_periods'].append(item['ma'])
+        bounces=list(merged.values())
         save('bollinger_top5.json',{**common,'threshold_pct':-3,'window':20,'std_multiplier':2,'total_matches':len(breaches),'results':breaches[:5]})
         volumes.sort(key=lambda x:-x['volume'])
         save('volume_top50.json',{**common,'as_of_date':volumes[0]['date'] if volumes else None,'ranking':'daily share volume, not realtime','results':sorted({v['ticker']:v for period in ('volume','volume_1w','volume_1m') for v in sorted(volumes,key=lambda x:-x[period])[:50]}.values(),key=lambda x:-x['volume'])})
