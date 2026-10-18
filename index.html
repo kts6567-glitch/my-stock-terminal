@@ -32,7 +32,7 @@
   </section>
  </div>
 </section>
-<section id="page-sector" class="page" hidden><div class="panel"><div class="section-title"><h2>섹터별 종목 정량 분석</h2><span class="muted" id="sectorUpdated">최근 일봉 · 종목당 1행</span></div><div class="sector-controls"><label for="sectorFilter">섹터 선택</label><select id="sectorFilter" aria-label="섹터 선택"></select><label for="sectorSort">정렬</label><select id="sectorSort" aria-label="정렬 기준"><option value="score">반등 점수 높은 순</option><option value="change">등락률 높은 순</option><option value="rsi">RSI 낮은 순</option><option value="bb">볼린저 %B 낮은 순</option><option value="symbol">종목명 순</option></select><button class="action" id="sectorRefresh" type="button">데이터 다시 조회</button></div><p class="subline" id="sectorStatus" role="status">섹터별 데이터를 준비하고 있습니다.</p><div class="table-wrap"><table class="sector-table"><thead><tr><th>종목</th><th>종가</th><th>일간 등락률</th><th>RSI(14)</th><th>볼린저 %B</th><th>200일선 이격</th><th>거래량/평균</th><th>반등 점수</th><th>종합 의견</th><th>상세</th></tr></thead><tbody id="sectorRows"></tbody></table></div><p class="subline">S&P 500 종목은 마지막 자동 분석 결과를 우선 표시합니다. 그 밖의 성장주는 무료 API로 조회하며 일부 종목은 지연·실패할 수 있습니다. 점수는 자체 규칙 기반 참고치이며 투자 수익률을 보장하지 않습니다.</p></div></section>
+<section id="page-sector" class="page" hidden><div class="panel"><div class="section-title"><h2>섹터별 종목 기술적 분석 비교</h2><span class="muted" id="sectorUpdated">최근 일봉 · 종목당 1행</span></div><div class="sector-controls"><label for="sectorFilter">섹터 선택</label><select id="sectorFilter" aria-label="섹터 선택"></select><label for="sectorSort">정렬</label><select id="sectorSort" aria-label="정렬 기준"><option value="score">반등 점수 높은 순</option><option value="change">등락률 높은 순</option><option value="rsi">RSI 낮은 순</option><option value="bb">볼린저 %B 낮은 순</option><option value="symbol">종목명 순</option></select><button class="action" id="sectorRefresh" type="button">데이터 다시 조회</button></div><p class="subline" id="sectorStatus" role="status">섹터별 데이터를 준비하고 있습니다.</p><div class="table-wrap"><table class="sector-table"><thead><tr><th>종목</th><th>종가</th><th>일간 등락률</th><th>RSI(14)</th><th>볼린저 %B</th><th>20일선 이격</th><th>50일선 이격</th><th>200일선 이격</th><th>거래량/평균</th><th>반등 점수</th><th>종합 의견</th><th>차트</th></tr></thead><tbody id="sectorRows"></tbody></table></div><p class="subline">S&P 500 종목은 마지막 자동 분석 결과를 우선 표시합니다. 그 밖의 성장주는 무료 API로 조회하며 일부 종목은 지연·실패할 수 있습니다. 점수는 자체 규칙 기반 참고치이며 투자 수익률을 보장하지 않습니다.</p></div></section>
 
 </main>
 <footer class="footer">MY STOCK TERMINAL · 개인 연구용 무료 대시보드. 거래량 순위는 실시간이 아닌 최근 일봉 기준입니다. TradingView 위젯 및 Yahoo Finance 비공식 데이터를 이용하며 지연·누락·중단될 수 있습니다. 스크리너 결과는 GitHub Actions가 마지막으로 성공한 실행 시점 기준입니다. 금융 투자 권유가 아닙니다.</footer></main>
@@ -74,16 +74,16 @@ chartParent.insertBefore(header,toolbar);
 // TradingView 장중 분봉 차트: 기존 일봉 퀀트 차트와 독립적으로 유지
 const intradayBox=document.createElement('section');
 intradayBox.className='intraday-box';
-intradayBox.innerHTML='<div class="intraday-heading"><strong id="intradayTitle">장중 분봉 차트</strong><span class="muted">TradingView 무료 위젯 · 실시간/지연 여부는 거래소에 따라 다름</span></div><div id="intradayPeriods" class="chart-toolbar"></div><div id="intradayChart" class="intraday-chart"></div><p class="chart-note">장중 시세는 무료 위젯 제공 범위에 따릅니다. 아래 일봉 퀀트 분석은 종가 기반이므로 분봉과 계산 시점이 다릅니다.</p>';
+intradayBox.innerHTML='<div class="intraday-heading"><strong id="intradayTitle">실시간·일자별 주가 차트</strong><span class="muted">TradingView 무료 위젯 · 실시간/지연 여부는 거래소에 따라 다름</span></div><div id="intradayPeriods" class="chart-toolbar"></div><div id="intradayChart" class="intraday-chart"></div><p class="chart-note">상단에서 1분~주봉을 선택하세요. 아래 정량 분석 차트는 일봉 종가 기반으로 계산하며 장중 차트와 값이 다를 수 있습니다.</p>';
 chartParent.insertBefore(intradayBox,header);
 let intradayInterval='5';
 function renderIntraday(t){
- document.getElementById('intradayTitle').textContent=t+' · 장중 분봉 차트';
+ document.getElementById('intradayTitle').textContent=t+' · 분봉 / 일봉 / 주봉 차트';
  widget('intradayChart','embed-widget-advanced-chart.js',{
   autosize:true,symbol:tvSymbol(t),interval:intradayInterval,timezone:'Asia/Seoul',theme:'dark',style:'1',locale:'kr',backgroundColor:'#111923',gridColor:'rgba(255,255,255,0.04)',allow_symbol_change:false,hide_top_toolbar:false,save_image:false,calendar:false,support_host:'https://www.tradingview.com'
  },'100%');
 }
-[['1분','1'],['5분','5'],['15분','15'],['1시간','60'],['일봉','D']].forEach(([label,interval])=>{
+[['1분','1'],['3분','3'],['5분','5'],['15분','15'],['30분','30'],['1시간','60'],['4시간','240'],['일봉','D'],['주봉','W']].forEach(([label,interval])=>{
  const b=document.createElement('button');b.type='button';b.className='period-btn'+(interval===intradayInterval?' active':'');b.textContent=label;
  b.addEventListener('click',()=>{intradayInterval=interval;document.querySelectorAll('#intradayPeriods button').forEach(x=>x.classList.toggle('active',x===b));renderIntraday(selected||'ASTS')});
  document.getElementById('intradayPeriods').appendChild(b);
@@ -172,6 +172,8 @@ function showBollingerChart(ticker){
    const ch=d?.daily_change_pct;cell(tr,ch==null?'—':(ch>0?'+':'')+number(ch,2)+'%',ch==null?'num-muted':ch>=0?'num-up':'num-down');
    const rsi=d?.rsi;cell(tr,rsi==null?'—':number(rsi,1),rsi!=null&&rsi<30?'num-up':rsi!=null&&rsi>70?'num-down':'');
    const bb=d?.bb_percent_b;cell(tr,bb==null?'—':number(bb,1)+'%',bb!=null&&bb<0?'num-up':bb!=null&&bb>100?'num-down':'');
+   const maGap=(ma)=>d&&Number.isFinite(Number(d.close))&&Number.isFinite(Number(d[ma]))&&Number(d[ma])>0?(Number(d.close)/Number(d[ma])-1)*100:null;
+   for(const ma of ['ma20','ma50']){const m=maGap(ma);cell(tr,m==null?'—':(m>0?'+':'')+number(m,1)+'%',m==null?'num-muted':m>=0?'num-up':'num-down')}
    const gap=d?.distance_200_pct;cell(tr,gap==null?'—':(gap>0?'+':'')+number(gap,1)+'%',gap==null?'num-muted':gap>=0?'num-up':'num-down');
    cell(tr,d?.volume_ratio==null?'—':number(d.volume_ratio,2)+'배');
    cell(tr,d?.score==null?'—':number(d.score,0)+'점 · '+(d.grade||'—'),d?.score>=75?'score-high':'score-low');
@@ -190,4 +192,12 @@ function showBollingerChart(ticker){
  document.querySelector('[data-tab="sector"]').addEventListener('click',activate);
  render();
 })();
-</script></body></html>
+</script>
+<style>
+/* v12: 화면 밀도/가독성 및 반응형 개선 */
+:root{--accent:#eab05a;--line:#29394e;--text:#eaf1fb;--muted:#93a5bf}
+body{background:radial-gradient(ellipse at 65% -25%,#1c2b3c 0%,#0a0f17 55%);color:var(--text)}
+.container{max-width:1920px}.panel{background:#111a26;border-color:#2c394c;border-radius:12px;box-shadow:0 4px 22px #00000018}.section-title h2{font-size:14px;letter-spacing:0}.tabs{backdrop-filter:blur(14px);background:#0b111beb}.tab{border-radius:8px;transition:background .15s}.tab.active{box-shadow:0 0 0 1px #ffce83 inset}.chart-toolbar{gap:7px}.period-btn{border-radius:6px;padding:8px 12px;min-height:34px}.period-btn:hover{border-color:#eab05a;color:#fff}.intraday-box{margin-bottom:16px;padding:14px;background:#101a27;border:1px solid #304055;border-radius:10px}.intraday-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.intraday-heading strong{font-size:15px}.intraday-chart{height:560px;border-radius:8px}.sector-table{min-width:1280px}.sector-table th{position:sticky;top:0;z-index:1;background:#192638;padding:13px 11px;white-space:nowrap}.sector-table td{padding:13px 11px}.sector-table tbody tr:nth-child(even){background:#141f2b}.sector-table tbody tr:hover{background:#24374c}.sector-table td:first-child{position:sticky;left:0;z-index:1;background:#162334;border-right:1px solid #304052}.sector-table thead th:first-child{position:sticky;left:0;z-index:3;background:#223247}.table-wrap{max-height:670px;overflow:auto;border:1px solid #2d3e53;border-radius:9px;scrollbar-color:#5a6d86 #121c29}.sector-table td,.sector-table th{font-variant-numeric:tabular-nums}.sector-table .opinion{font-weight:700;color:#e4eaf4}.sector-table .row-open{background:#2b4158;border-color:#587390}.sector-controls{padding:9px 0 13px;gap:11px}.sector-controls select{min-height:39px}.volume-item:hover,.watch-item:hover{background:#1d3042}.volume-rank{font-variant-numeric:tabular-nums}.grid{grid-template-columns:230px minmax(450px,1fr) 320px}.analysis-top{padding:12px;background:#142232;border-radius:8px}.analysis-top .metric strong{font-variant-numeric:tabular-nums}.chart-note,.subline{line-height:1.8}
+@media(max-width:1250px){.grid{grid-template-columns:210px minmax(0,1fr)}.right{grid-column:1/-1}}@media(max-width:850px){.grid{grid-template-columns:1fr}.right{grid-column:auto}.intraday-chart{height:440px}.intraday-box{padding:10px}.sector-table{min-width:1230px}.sector-table th,.sector-table td{padding:10px 9px}.tabs{top:0}.panel{padding:12px}}@media(max-width:480px){.intraday-chart{height:365px}.period-btn{padding:7px 10px;font-size:11px}.intraday-heading strong{font-size:13px}.header{padding:12px}.tabs{gap:5px}.tab{font-size:11px;padding:9px 10px}}
+</style>
+</body></html>
