@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-18T12:49:15+00:00",
+  "updated_at_utc": "2026-10-18T13:10:21+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -3240,7 +3240,7 @@
       "bb_percent_b": 99.58,
       "ma20": 279.657,
       "ma50": 285.427,
-      "ma200": 247.359,
+      "ma200": 247.358,
       "distance_200_pct": 21.96,
       "drawdown_52w_pct": -3.79,
       "mdd_52w_pct": -35.99,
