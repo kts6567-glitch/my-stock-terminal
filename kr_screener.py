@@ -57,6 +57,12 @@ def main():
   raise RuntimeError(f'한국 대표종목 데이터 부족: {len(scanned)}/{len(symbols)}. 기존 정상 데이터 유지. '+str(errors[:3]))
  common={'status':'ok','updated_at_utc':datetime.now(timezone.utc).isoformat(timespec='seconds'),'universe':'한국 대표종목 표본 (코스피·코스닥 전수 아님)','universe_count':len(symbols),'scanned_count':len(scanned),'source':'Yahoo Finance 비공식 일봉','price_basis':'수정 종가'}
  bb.sort(key=lambda x:x['breach_pct']);ma.sort(key=lambda x:-x['day_change_pct']);vol.sort(key=lambda x:-x['volume'])
+ merged={}
+ for item in ma:
+  t=item['ticker']
+  if t not in merged: merged[t]={**item,'ma_periods':[]}
+  if item['ma'] not in merged[t]['ma_periods']:merged[t]['ma_periods'].append(item['ma'])
+ ma=list(merged.values())
  save('bollinger_top5.json',{**common,'threshold_pct':-3,'total_matches':len(bb),'results':bb[:5]})
  save('ma_bounce_top5.json',{**common,'results':ma[:5]})
  save('volume_top50.json',{**common,'as_of_date':vol[0]['date'] if vol else None,'results':sorted({v['ticker']:v for period in ('volume','volume_1w','volume_1m') for v in sorted(vol,key=lambda x:-x.get(period,0))[:50]}.values(),key=lambda x:-x['volume'])})
