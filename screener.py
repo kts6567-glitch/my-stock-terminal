@@ -35,7 +35,7 @@ def calc(frame,ticker):
         if prev<=old_ma*1.015 and prev>=old_ma*.97 and price>ma and price>prev:
             bounces.append({**entry,'ma':period,'ma_value':round(ma,3),'day_change_pct':round((price/prev-1)*100,2),'distance_pct':round((price/ma-1)*100,2)})
     latest_volume=int(volume.iloc[-1]) if len(volume) and volume.index[-1]==close.index[-1] else 0
-    vol={**entry,'volume':latest_volume} if latest_volume>0 else None
+    vol={**entry,'volume':latest_volume,'volume_1w':int(volume.iloc[-5:].sum()) if len(volume)>=5 else None,'volume_1m':int(volume.iloc[-21:].sum()) if len(volume)>=21 else None} if latest_volume>0 else None
     upper=ma20+2*sigma
     bb_pct=(price-lower)/(upper-lower)*100 if upper>lower else None
     high_52=float(close.iloc[-252:].max())
@@ -94,7 +94,7 @@ def main():
         bounces.sort(key=lambda x:(-x['day_change_pct'],abs(x['distance_pct'])))
         save('bollinger_top5.json',{**common,'threshold_pct':-3,'window':20,'std_multiplier':2,'total_matches':len(breaches),'results':breaches[:5]})
         volumes.sort(key=lambda x:-x['volume'])
-        save('volume_top50.json',{**common,'as_of_date':volumes[0]['date'] if volumes else None,'ranking':'daily share volume, not realtime','results':volumes[:50]})
+        save('volume_top50.json',{**common,'as_of_date':volumes[0]['date'] if volumes else None,'ranking':'daily share volume, not realtime','results':sorted({v['ticker']:v for period in ('volume','volume_1w','volume_1m') for v in sorted(volumes,key=lambda x:-x[period])[:50]}.values(),key=lambda x:-x['volume'])})
         save('ma_bounce_top5.json',{**common,'rule':'previous close within -3% to +1.5% of previous MA, latest close above latest MA and up on day','periods':[20,50,200],'total_matches':len(bounces),'results':bounces[:5]})
         save('quant_reports.json',{**common,'method':'Rule-based quantitative narrative, not generative AI','results':reports})
         print('Scanned:',len(scanned),'BB matches:',len(breaches),'MA matches:',len(bounces))
