@@ -169,6 +169,8 @@ table{width:100%;border-collapse:collapse}th,td{font-size:12px;line-height:1.5;p
 <section id="page-bollinger" class="page"><div class="buy-layout"><div class="buy-lists">
 <section class="panel"><div class="section-h"><h2>볼린저밴드 하단 이탈</h2><span class="badge">20일 · 2σ · -3% 이하</span></div><p class="hint" id="bbUniverse">최근 일봉 종가 기준 · 조건 충족 종목 최대 5개</p><div class="table-wrap buy-table"><table><thead><tr><th>종목</th><th>종가</th><th>하단선</th><th>이탈률</th></tr></thead><tbody id="bbRows"><tr><td colspan="4">데이터 조회 중</td></tr></tbody></table></div><div class="status" id="bbStatus"></div></section>
 <section class="panel"><div class="section-h"><h2>볼린저밴드 상단 돌파 · 매도 경계</h2><span class="badge">20일 · 2σ · 종가 돌파</span></div><p class="hint">상단 돌파는 강한 상승 추세일 수도 있으므로 단독 매도 신호가 아닙니다.</p><div class="table-wrap buy-table"><table><thead><tr><th>종목</th><th>종가</th><th>상단선</th><th>돌파율</th></tr></thead><tbody id="bbUpperRows"><tr><td colspan="4">데이터 조회 중</td></tr></tbody></table></div><div class="status" id="bbUpperStatus"></div></section>
+<section class="panel"><div class="section-h"><h2>52주 신고가 돌파 · 추세 강화</h2><span class="badge">최근 252거래일 · 종가 기준</span></div><p class="hint">직전 최대 252거래일의 최고가(고가)를 현재 종가가 돌파한 종목. 돌파 자체가 매수 확정 신호는 아닙니다.</p><div class="table-wrap buy-table"><table><thead><tr><th>종목</th><th>종가</th><th>이전 52주 최고가</th><th>돌파율</th></tr></thead><tbody id="high52Rows"><tr><td colspan="4">데이터 조회 중</td></tr></tbody></table></div><div class="status" id="high52Status"></div></section>
+<section class="panel"><div class="section-h"><h2>52주 신저가 이탈 · 하락 경계</h2><span class="badge">최근 252거래일 · 종가 기준</span></div><p class="hint">직전 최대 252거래일의 최저가(저가)를 현재 종가가 하회한 종목. 하락 추세 위험을 확인하세요.</p><div class="table-wrap buy-table"><table><thead><tr><th>종목</th><th>종가</th><th>이전 52주 최저가</th><th>이탈률</th></tr></thead><tbody id="low52Rows"><tr><td colspan="4">데이터 조회 중</td></tr></tbody></table></div><div class="status" id="low52Status"></div></section>
 <section class="panel"><div class="section-h"><h2>눌림목 매수 후보</h2><span class="badge">20·50일선 지지 · 상승 추세</span></div><p class="hint">200일선 위 · 20/50일선 근처에서 반등한 종목. 확정 매수 신호 아님.</p><div class="table-wrap buy-table"><table><thead><tr><th>종목</th><th>종가</th><th>지지선</th><th>거래량 배율</th></tr></thead><tbody id="pullbackRows"><tr><td colspan="4">데이터 조회 중</td></tr></tbody></table></div><div class="status" id="pullbackStatus"></div></section>
 <section class="panel"><div class="section-h"><h2>이동평균선 지지 후 반등</h2><span class="badge">중복 종목 통합 · TOP 5</span></div><p class="hint">20·50·200일선이 동시에 해당하면 같은 종목 한 줄에 함께 표시</p><div class="table-wrap buy-table"><table><thead><tr><th>종목</th><th>종가</th><th>지지 이동평균선</th><th>등락률</th></tr></thead><tbody id="bounceRows"><tr><td colspan="4">데이터 조회 중</td></tr></tbody></table></div><div class="status" id="bounceStatus"></div></section></div>
 <section class="panel buy-chart-panel"><div class="section-h"><h2 id="bbTitle">선택 종목 · 일봉 차트</h2><button class="btn" id="bbDetail" disabled>상세 분석</button></div><div class="chart" id="bbChart"><div class="loading">왼쪽 목록에서 종목을 선택하세요.</div></div><p class="hint">차트는 일봉 기준 · 거래량 막대 · 5/20/100/120/200봉 이평선, 일목균형표 선행스팬 구름대(26봉 선행), OHLCV 추정 매물대 표시. 실제 체결가별 매물대와 다르며 데이터가 부족하면 일부 선은 생략됩니다.</p></section></div></section>
@@ -447,7 +449,7 @@ async function loadBollinger(){const m=market;const body=$('bbRows');body.innerH
 // Additional free scans operate on the available cached daily OHLCV universe.
 // They are not an exhaustive scan of all exchange listings.
 function scanTradeIdeas(){
- const m=market,upper=[],pull=[];let valid=0;
+ const m=market,upper=[],pull=[],high52=[],low52=[];let valid=0;
  for(const [ticker,d] of caches[m]){
   const r=(d.series||[]).filter(x=>Number.isFinite(Number(x.close))&&Number(x.close)>0);
   if(r.length<200)continue;
@@ -458,11 +460,26 @@ function scanTradeIdeas(){
   const prevSd=Math.sqrt(r.slice(-21,-1).reduce((s,x)=>s+(Number(x.close)-prev20)**2,0)/20),prevUp=prev20+2*prevSd;
   const volAvg=r.slice(-21,-1).reduce((s,x)=>s+(Number(x.volume)||0),0)/20,rv=volAvg?Number(last.volume)/volAvg:NaN;
   if(c>up&&p<=prevUp&&up>0)upper.push({ticker,c,line:up,score:(c/up-1)*100,rv});
+  // 52-week breakout: use up to 252 PRIOR daily bars; exclude today's high/low.
+  // Require at least 200 prior sessions so short histories do not masquerade as 52-week records.
+  const prior52=r.slice(-253,-1);
+  if(prior52.length>=200){
+   const highs=prior52.map(x=>Number(x.high)).filter(Number.isFinite);
+   const lows=prior52.map(x=>Number(x.low)).filter(x=>Number.isFinite(x)&&x>0);
+   if(highs.length>=200&&lows.length>=200){
+    const priorHigh=Math.max(...highs),priorLow=Math.min(...lows);
+    if(c>priorHigh&&p<=priorHigh)high52.push({ticker,c,line:priorHigh,score:(c/priorHigh-1)*100,rv});
+    if(c<priorLow&&p>=priorLow)low52.push({ticker,c,line:priorLow,score:(c/priorLow-1)*100,rv});
+   }
+  }
   const near20=Number(last.low)<=ma20*1.02&&c>ma20&&p<=c,near50=Number(last.low)<=ma50*1.02&&c>ma50&&p<=c;
   if(c>ma200&&ma20>ma50&&c>p&&(near20||near50)&&c<=ma20*1.08)pull.push({ticker,c,line:[near20?'20일선':null,near50?'50일선':null].filter(Boolean).join(' · '),score:rv,rv});
  }
  const render=(id,status,rows,kind)=>{const body=$(id);body.replaceChildren();const picks=rows.slice(0,5);if(!picks.length){const tr=document.createElement('tr');const td=document.createElement('td');td.colSpan=4;td.textContent='현재 조회 가능한 종목 중 조건 충족 종목 없음';tr.appendChild(td);body.appendChild(tr)}for(const x of picks){const tr=document.createElement('tr');const vals=[labelFor(x.ticker),fmt(x.c),kind==='upper'?fmt(x.line):x.line,kind==='upper'?pct(x.score):Number.isFinite(x.rv)?fmt(x.rv)+'배':'—'];for(const v of vals){const td=document.createElement('td');td.textContent=v;tr.appendChild(td)}tr.onclick=()=>showBB(x.ticker);body.appendChild(tr)}$(status).textContent='일봉 '+valid+'종목 검증 · 조건 충족 '+rows.length+'개 · 캐시 확보 종목 표본 · 실시간 아님';};
  upper.sort((a,b)=>b.score-a.score);pull.sort((a,b)=>b.score-a.score);
+ const render52=(id,status,rows)=>{const body=$(id);body.replaceChildren();if(!rows.length){const tr=document.createElement('tr');const td=document.createElement('td');td.colSpan=4;td.textContent='조회된 종목 중 신규 돌파 없음';tr.appendChild(td);body.appendChild(tr)}for(const x of rows.slice(0,5)){const tr=document.createElement('tr');for(const v of [labelFor(x.ticker),fmt(x.c),fmt(x.line),pct(x.score)]){const td=document.createElement('td');td.textContent=v;tr.appendChild(td)}tr.onclick=()=>showBB(x.ticker);body.appendChild(tr)}$(status).textContent='일봉 '+valid+'종목 표본 분석 · 조건 충족 '+rows.length+'개 · 200~252개 이전 거래일 비교 · 실시간 아님';};
+ high52.sort((a,b)=>b.score-a.score);low52.sort((a,b)=>a.score-b.score);
+ render52('high52Rows','high52Status',high52);render52('low52Rows','low52Status',low52);
  render('bbUpperRows','bbUpperStatus',upper,'upper');render('pullbackRows','pullbackStatus',pull,'pull');
 }
 let tradeScanRequest=0;
@@ -474,7 +491,7 @@ async function loadTradeIdeas(){
  const picks=[];for(const g of groups)for(const [ticker] of g.slice(0,3))if(!picks.includes(ticker))picks.push(ticker);
  const missing=picks.filter(t=>!(caches[m].get(t)?.series?.length>=200)).slice(0,30);
  let idx=0,done=0;
- const worker=async()=>{while(idx<missing.length&&request===tradeScanRequest&&m===market){const t=missing[idx++];try{const d=await fetchJSON('/api/analyze?market='+m+'&ticker='+encodeURIComponent(t),16000);if(d.status==='ok'&&Array.isArray(d.series))caches[m].set(t,d)}catch(_){}done++;if(request===tradeScanRequest&&m===market){scanTradeIdeas();$('bbUpperStatus').textContent+=' · 추가 조회 '+done+'/'+missing.length;$('pullbackStatus').textContent+=' · 추가 조회 '+done+'/'+missing.length}}};
+ const worker=async()=>{while(idx<missing.length&&request===tradeScanRequest&&m===market){const t=missing[idx++];try{const d=await fetchJSON('/api/analyze?market='+m+'&ticker='+encodeURIComponent(t),16000);if(d.status==='ok'&&Array.isArray(d.series))caches[m].set(t,d)}catch(_){}done++;if(request===tradeScanRequest&&m===market){scanTradeIdeas();$('bbUpperStatus').textContent+=' · 추가 조회 '+done+'/'+missing.length;$('pullbackStatus').textContent+=' · 추가 조회 '+done+'/'+missing.length;$('high52Status').textContent+=' · 추가 조회 '+done+'/'+missing.length;$('low52Status').textContent+=' · 추가 조회 '+done+'/'+missing.length}}};
  await Promise.all(Array.from({length:Math.min(3,missing.length)},worker));
 }
 function showBB(t){$('bbTitle').textContent=labelFor(t)+' · 일봉 차트';chart('bbChart',t,'D');$('bbDetail').disabled=false;$('bbDetail').onclick=()=>openBuyDetail(t)}
