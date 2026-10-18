@@ -5,7 +5,7 @@ from http.server import BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs, quote
 from urllib.request import Request, urlopen
 from datetime import datetime, timezone
-import json, math, re, statistics, time
+import json, math, re, statistics, time, csv, io
 
 
 def rolling_mean(v, n):
@@ -30,8 +30,10 @@ def rsi(v,n=14):
     out[n]=100 if al==0 else 100-100/(1+ag/al)
     return out
 
+KR_NAMES = {'005930.KS':'삼성전자','000660.KS':'SK하이닉스','035420.KS':'NAVER','035720.KS':'카카오','005380.KS':'현대차','000270.KS':'기아','051910.KS':'LG화학','006400.KS':'삼성SDI','373220.KS':'LG에너지솔루션','207940.KS':'삼성바이오로직스','068270.KS':'셀트리온','105560.KS':'KB금융','055550.KS':'신한지주','086790.KS':'하나금융지주','012450.KS':'한화에어로스페이스','042700.KS':'한미반도체','247540.KQ':'에코프로비엠','086520.KQ':'에코프로','196170.KQ':'알테오젠','091990.KQ':'셀트리온헬스케어'}
+
 def analyze(ticker):
-    error=None
+    error=None;item={};source='Yahoo Finance 비공식 일봉'
     for domain in ('query1.finance.yahoo.com','query2.finance.yahoo.com'):
         try:
             url=f'https://{domain}/v8/finance/chart/{quote(ticker)}?range=3y&interval=1d&events=history'
@@ -49,6 +51,23 @@ def analyze(ticker):
             break
         except Exception as e:
             error=str(e);rows=[]
+    if not rows and not ticker.endswith(('.KS','.KQ')):
+        # Secondary public delayed daily source for US tickers, not an official exchange feed.
+        try:
+            stooq_symbol=ticker.replace('.','-').lower()+'.us'
+            req=Request('https://stooq.com/q/d/l/?s='+quote(stooq_symbol)+'&i=d',headers={'User-Agent':'Mozilla/5.0'})
+            with urlopen(req,timeout=10) as response: body=response.read(1500000).decode('utf-8-sig')
+            entries=list(csv.DictReader(io.StringIO(body)))
+            rows=[]
+            for x in entries[-850:]:
+                try:
+                    vals=[float(x[k]) for k in ('Open','High','Low','Close')]
+                    if all(math.isfinite(v) and v>0 for v in vals):
+                        rows.append({'date':x['Date'],'open':vals[0],'high':vals[1],'low':vals[2],'close':vals[3],'volume':int(float(x.get('Volume') or 0))})
+                except (KeyError,ValueError,TypeError):continue
+            if len(rows)<205:rows=[]
+            else:source='Stooq 비공식 일봉 (Yahoo 조회 실패 시 대체)'
+        except Exception as e:error=str(error)+' / Stooq: '+str(e)
     if not rows:raise RuntimeError('무료 시세 데이터 조회 실패: '+str(error)[:180])
     c=[x['close'] for x in rows]; n=len(c); ma20=rolling_mean(c,20);ma50=rolling_mean(c,50);ma200=rolling_mean(c,200)
     rsi14=rsi(c); e12=ema(c,12);e26=ema(c,26); macd=[a-b for a,b in zip(e12,e26)]; signal=ema(macd,9);hist=[a-b for a,b in zip(macd,signal)]
@@ -82,20 +101,27 @@ def analyze(ticker):
     if macd[-2]>signal[-2] and macd[-1]<=signal[-1]:signals.append('MACD 하향 교차')
     if bpercent is not None and bpercent<0:signals.append('볼린저밴드 하단 이탈')
     if bpercent is not None and bpercent>100:signals.append('볼린저밴드 상단 돌파')
-    meta=item.get('meta',{}); company=meta.get('longName') or meta.get('shortName') or ticker
+    meta=item.get('meta',{}); company=KR_NAMES.get(ticker) or meta.get('longName') or meta.get('shortName') or ticker
     def rnd(x):return None if x is None else round(x,3)
     series=[]
     for i,x in enumerate(rows):
         series.append({**x,'ma20':rnd(ma20[i]),'ma50':rnd(ma50[i]),'ma200':rnd(ma200[i]),'rsi':rnd(rsi14[i]),'macd':rnd(macd[i]),'macdSignal':rnd(signal[i]),'macdHist':rnd(hist[i])})
-    return {'status':'ok','ticker':ticker,'company':company,'date':rows[-1]['date'],'fetched_at_utc':datetime.now(timezone.utc).isoformat(timespec='seconds'),'data_source':'Yahoo Finance 비공식 일봉 · 지연/차단 가능','price_basis':'일봉 비수정 종가','close':rnd(price),'daily_change_pct':rnd(change),'volume':rows[-1]['volume'],'volume_ratio':rnd(volratio),'rsi':rnd(rsi14[-1]),'macd':rnd(macd[-1]),'macd_signal':rnd(signal[-1]),'ma20':rnd(ma20[-1]),'ma50':rnd(ma50[-1]),'ma200':rnd(ma200[-1]),'bb_lower':rnd(lower),'bb_upper':rnd(upper),'bb_percent_b':rnd(bpercent),'distance_200_pct':rnd(dist),'drawdown_52w_pct':rnd(drawdown),'mdd_52w_pct':rnd(mdd),'score':score,'grade':grade,'opinion':opinion,'signals':signals,'series':series[-760:]}
+    return {'status':'ok','ticker':ticker,'company':company,'date':rows[-1]['date'],'fetched_at_utc':datetime.now(timezone.utc).isoformat(timespec='seconds'),'data_source':source+' · 지연/차단 가능','market':'KR' if ticker.endswith(('.KS','.KQ')) else 'US','currency':'KRW' if ticker.endswith(('.KS','.KQ')) else 'USD','price_basis':'일봉 비수정 종가','close':rnd(price),'daily_change_pct':rnd(change),'volume':rows[-1]['volume'],'volume_ratio':rnd(volratio),'rsi':rnd(rsi14[-1]),'macd':rnd(macd[-1]),'macd_signal':rnd(signal[-1]),'ma20':rnd(ma20[-1]),'ma50':rnd(ma50[-1]),'ma200':rnd(ma200[-1]),'bb_lower':rnd(lower),'bb_upper':rnd(upper),'bb_percent_b':rnd(bpercent),'distance_200_pct':rnd(dist),'drawdown_52w_pct':rnd(drawdown),'mdd_52w_pct':rnd(mdd),'score':score,'grade':grade,'opinion':opinion,'signals':signals,'series':series[-760:]}
 
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         q=parse_qs(urlparse(self.path).query);ticker=q.get('ticker',[''])[0].upper().strip()
-        if not re.fullmatch(r'[A-Z][A-Z0-9.\-]{0,11}',ticker):
-            self.reply(400,{'status':'error','error':'미국주식 종목코드를 입력하세요 (예: ASTS, MU, BRK-B).'});return
+        market=q.get('market',['US'])[0].upper()
+        if market not in ('US','KR'):
+            self.reply(400,{'status':'error','error':'market은 US 또는 KR만 가능합니다.'});return
+        if market=='KR':
+            if re.fullmatch(r'\d{6}',ticker):ticker=ticker+'.KS'
+            if not re.fullmatch(r'\d{6}\.(KS|KQ)',ticker):
+                self.reply(400,{'status':'error','error':'한국 종목은 6자리 코드 또는 005930.KS / 247540.KQ 형식으로 입력하세요.'});return
+        elif not re.fullmatch(r'[A-Z][A-Z0-9.\-]{0,11}',ticker):
+            self.reply(400,{'status':'error','error':'미국 종목코드를 입력하세요 (예: ASTS, MU, BRK-B).'});return
         try:self.reply(200,analyze(ticker))
         except Exception as e:self.reply(503,{'status':'error','error':str(e)[:240]})
     def reply(self,code,obj):
         data=json.dumps(obj,ensure_ascii=False,separators=(',',':')).encode('utf-8')
-        self.send_response(code);self.send_header('Content-Type','application/json; charset=utf-8');self.send_header('Cache-Control','public, max-age=120, s-maxage=600');self.send_header('Access-Control-Allow-Origin','*');self.end_headers();self.wfile.write(data)
+        self.send_response(code);self.send_header('Content-Type','application/json; charset=utf-8');self.send_header('Cache-Control','public, max-age=60, s-maxage=300');self.send_header('Access-Control-Allow-Origin','*');self.end_headers();self.wfile.write(data)
