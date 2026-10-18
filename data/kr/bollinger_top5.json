@@ -1,5 +1,29 @@
 {
-  "status": "pending",
-  "message": "한국 증시 자동 분석 결과가 아직 생성되지 않았습니다. GitHub Actions의 KR market scan 로그를 확인하세요.",
-  "results": []
+  "status": "ok",
+  "updated_at_utc": "2026-10-18T11:38:17+00:00",
+  "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
+  "universe_count": 42,
+  "scanned_count": 42,
+  "source": "Yahoo Finance 비공식 일봉",
+  "price_basis": "수정 종가",
+  "threshold_pct": -3,
+  "total_matches": 2,
+  "results": [
+    {
+      "ticker": "066970.KS",
+      "close": 93700.0,
+      "date": "2026-10-16",
+      "lower": 99434.56,
+      "breach_pct": -5.77,
+      "company": "엘앤에프"
+    },
+    {
+      "ticker": "000660.KS",
+      "close": 1272000.0,
+      "date": "2026-10-16",
+      "lower": 1317771.628,
+      "breach_pct": -3.47,
+      "company": "SK하이닉스"
+    }
+  ]
 }

@@ -1,5 +1,61 @@
 {
-  "status": "pending",
-  "message": "한국 증시 자동 분석 결과가 아직 생성되지 않았습니다. GitHub Actions의 KR market scan 로그를 확인하세요.",
-  "results": []
+  "status": "ok",
+  "updated_at_utc": "2026-10-18T11:38:17+00:00",
+  "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
+  "universe_count": 42,
+  "scanned_count": 42,
+  "source": "Yahoo Finance 비공식 일봉",
+  "price_basis": "수정 종가",
+  "results": [
+    {
+      "ticker": "403870.KQ",
+      "close": 54100.0,
+      "date": "2026-10-16",
+      "ma": 50,
+      "ma_value": 50924.0,
+      "day_change_pct": 8.74,
+      "distance_pct": 6.24,
+      "company": "HPSP"
+    },
+    {
+      "ticker": "068270.KS",
+      "close": 194000.0,
+      "date": "2026-10-16",
+      "ma": 20,
+      "ma_value": 180715.0,
+      "day_change_pct": 6.53,
+      "distance_pct": 7.35,
+      "company": "셀트리온"
+    },
+    {
+      "ticker": "068270.KS",
+      "close": 194000.0,
+      "date": "2026-10-16",
+      "ma": 50,
+      "ma_value": 186942.0,
+      "day_change_pct": 6.53,
+      "distance_pct": 3.78,
+      "company": "셀트리온"
+    },
+    {
+      "ticker": "105560.KS",
+      "close": 160000.0,
+      "date": "2026-10-16",
+      "ma": 200,
+      "ma_value": 155414.078,
+      "day_change_pct": 2.11,
+      "distance_pct": 2.95,
+      "company": "KB금융"
+    },
+    {
+      "ticker": "251270.KS",
+      "close": 34550.0,
+      "date": "2026-10-16",
+      "ma": 20,
+      "ma_value": 34465.0,
+      "day_change_pct": 1.47,
+      "distance_pct": 0.25,
+      "company": "넷마블"
+    }
+  ]
 }
