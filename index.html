@@ -106,7 +106,43 @@ table{width:100%;border-collapse:collapse}th,td{font-size:12px;line-height:1.5;p
 <style>
 .buy-detail-modal[hidden]{display:none!important}.buy-detail-modal{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:18px}.buy-detail-backdrop{position:absolute;inset:0;background:rgba(2,8,18,.83);backdrop-filter:blur(5px)}.buy-detail-window{position:relative;width:min(1180px,100%);max-height:calc(100dvh - 36px);overflow:auto;background:#101e30;border:1px solid #49637e;border-radius:15px;padding:clamp(14px,2vw,24px);box-shadow:0 24px 90px #0009}.buy-detail-header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}.buy-detail-header h2{margin:4px 0 0;font-size:19px}.buy-detail-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:15px}.buy-detail-metric{padding:12px;background:#192b40;border:1px solid #344a63;border-radius:9px;min-width:0}.buy-detail-metric strong{display:block;color:#e4b66e;font-size:12px;margin-bottom:5px}.buy-detail-metric span{font-size:13px;line-height:1.6;overflow-wrap:anywhere}.buy-detail-chart{min-height:450px}.buy-detail-chart .native-chart{width:100%}body.buy-detail-open{overflow:hidden}@media(max-width:800px){.buy-detail-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.buy-detail-chart{min-height:320px}}@media(max-width:500px){.buy-detail-summary{grid-template-columns:1fr}.buy-detail-window{padding:12px}.buy-detail-header h2{font-size:16px}}
 </style>
-</head><body>
+<style>
+/* v37: mobile dashboard accordion and sector compact cards */
+.mobile-fold-button{display:none}
+@media(max-width:760px){
+ #page-dashboard .dashboard .panel.mobile-collapsible, #page-bollinger .panel.mobile-collapsible{overflow:hidden}
+ .mobile-fold-button{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;min-width:32px;height:32px;border:1px solid #45617e;border-radius:7px;background:#21374e;color:#e5effc;font-size:17px;line-height:1;cursor:pointer}
+ .mobile-collapsible>.section-h{cursor:pointer;align-items:center;flex-wrap:nowrap}
+ .mobile-collapsible>.section-h h2{min-width:0;flex:1;overflow-wrap:anywhere}
+ .mobile-collapsible>.section-h .badge{max-width:40%;font-size:10px}
+ .mobile-collapsible.is-collapsed>:not(.section-h){display:none!important}
+ .mobile-collapsible.is-collapsed{padding-bottom:10px}
+ #page-sector .table-wrap{overflow:visible;max-height:none;border:0}
+ #page-sector table{display:block;min-width:0!important;width:100%;font-size:12px}
+ #page-sector thead{display:none}
+ #page-sector tbody{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+ #page-sector tbody tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 10px;padding:10px 12px;border:1px solid #344b64;border-radius:10px;background:#192a3d;min-width:0}
+ #page-sector tbody td{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-width:0;min-height:44px;padding:6px 0!important;position:static!important;white-space:normal!important;overflow-wrap:anywhere;text-align:left!important;border-bottom:1px solid #2b4055;background:transparent!important;font-size:12px}
+ #page-sector tbody td::before{display:block;color:#92abc5;font-size:10px;font-weight:650;line-height:1.5;margin-bottom:2px}
+ #page-sector tbody td:nth-child(1){grid-column:1/-1;font-size:14px;font-weight:800;min-height:38px;color:#f4c27b}
+ #page-sector tbody td:nth-child(1)::before{content:'종목'}
+ #page-sector tbody td:nth-child(2)::before{content:'종가'}
+ #page-sector tbody td:nth-child(3)::before{content:'등락률'}
+ #page-sector tbody td:nth-child(4)::before{content:'RSI'}
+ #page-sector tbody td:nth-child(5)::before{content:'볼린저 %B'}
+ #page-sector tbody td:nth-child(6)::before{content:'20일선 이격'}
+ #page-sector tbody td:nth-child(7)::before{content:'50일선 이격'}
+ #page-sector tbody td:nth-child(8)::before{content:'200일선 이격'}
+ #page-sector tbody td:nth-child(9)::before{content:'거래량 배율'}
+ #page-sector tbody td:nth-child(10)::before{content:'반등 점수'}
+ #page-sector tbody td:nth-child(11){grid-column:1/-1}
+ #page-sector tbody td:nth-child(11)::before{content:'종합 의견'}
+ #page-sector tbody td:nth-child(12){grid-column:1/-1;border-bottom:0;min-height:38px}
+ #page-sector tbody td:nth-child(12)::before{display:none}
+ #page-sector tbody td:nth-child(12) button{width:100%;min-height:36px}
+ #page-sector .sector-control select{min-width:0;max-width:100%;flex:1}
+}
+</style></head><body>
 <header><div class="header-brand"><div class="brand"><b>▰</b> JH_KIM <span>Market Trade</span></div><div class="sub">MARKET INTELLIGENCE <span class="header-divider">/</span> PERSONAL RESEARCH TERMINAL</div></div><div class="header-right"><span class="header-status-dot" aria-hidden="true"></span><span class="sub" id="clock">최근 갱신: 확인 중</span></div></header>
 <main class="container">
 <div class="top-navigation"><div class="market-tabs" role="tablist" aria-label="시장 선택"><button class="market-tab active" data-market="US" type="button">나스닥 · 미국주식</button><button class="market-tab" data-market="KR" type="button">한국 코스피 · 코스닥</button><button class="market-tab calendar-nav-tab" id="calendarNav" type="button">경제·실적 달력</button></div><div class="nav-search" id="navSearch"><form class="search" id="searchForm"><input id="tickerInput" autocomplete="off" spellcheck="false" placeholder="예: 엔비디아, AST 스페이스모바일" aria-label="종목명 검색" list="stockNameSuggestions"><datalist id="stockNameSuggestions"></datalist><button class="btn" type="submit">종목 분석</button></form><span class="nav-search-hint" id="searchHint">회사명 검색 · 종목 선택</span></div></div>
@@ -551,4 +587,38 @@ const range=data.slice(-Math.min(120,data.length)),min=Math.min(...range.map(r=>
 const hi9=Math.max(...data.slice(-9).map(r=>Number(r.high))),lo9=Math.min(...data.slice(-9).map(r=>Number(r.low))),hi26=Math.max(...data.slice(-26).map(r=>Number(r.high))),lo26=Math.min(...data.slice(-26).map(r=>Number(r.low)));const tenkan=data.length>=9?(hi9+lo9)/2:NaN,kijun=data.length>=26?(hi26+lo26)/2:NaN,spanA=(tenkan+kijun)/2;const hi52=data.length>=52?Math.max(...data.slice(-52).map(r=>Number(r.high))):NaN,lo52=data.length>=52?Math.min(...data.slice(-52).map(r=>Number(r.low))):NaN,spanB=(hi52+lo52)/2;
 return {last,c,mas,mean,upper,lower,rsi,atr,rvol,poc,tenkan,kijun,spanA,spanB,count:data.length}}
 async function openBuyDetail(t){const modal=$('buyDetailModal'),root=$('buyDetailSummary'),token=++buyDetailToken,m=market;buyDetailFocus=document.activeElement;modal.hidden=false;document.body.classList.add('buy-detail-open');$('buyDetailClose').focus();$('buyDetailTitle').textContent=labelFor(t)+' · 기술적 상세 분석';root.textContent='최신 일봉 데이터와 기술지표 계산 중...';$('buyDetailChart').textContent='차트 로딩 중...';try{let d=caches[m].get(t);if(!d?.series?.length){d=await fetchJSON('/api/analyze?market='+m+'&ticker='+encodeURIComponent(t),24000);if(d.status!=='ok'||!Array.isArray(d.series))throw Error(d.error||'일봉 데이터 없음');caches[m].set(t,d)}if(token!==buyDetailToken||modal.hidden||m!==market)return;const v=computeDetail(d.series);if(!v)throw Error('계산 가능한 일봉 데이터가 없습니다.');root.replaceChildren();const f=n=>Number.isFinite(n)?fmt(n):'데이터 부족';const rel=(a,b)=>Number.isFinite(a)&&Number.isFinite(b)?(a>=b?'상단 (+':'하단 (−')+Math.abs((a/b-1)*100).toFixed(2)+'%)':'판정 불가';root.append(detailMetric('종가 · 데이터 기준일',f(v.c)+' · '+v.last.date),detailMetric('단기 추세 (5·20일선)',v.mas.slice(0,2).map(x=>x.n+'일 '+f(x.v)+' / '+rel(v.c,x.v)).join(' | ')),detailMetric('중장기 추세 (100·120·200일선)',v.mas.slice(2).map(x=>x.n+'일 '+f(x.v)).join(' | ')),detailMetric('볼린저밴드 (20, 2σ)','하단 '+f(v.lower)+' / 상단 '+f(v.upper)+' · '+(Number.isFinite(v.lower)?v.c<v.lower?'하단 이탈':v.c>v.upper?'상단 돌파':'밴드 내부':'판정 불가')),detailMetric('RSI(14) · ATR(14)',f(v.rsi)+' / '+f(v.atr)+' · '+(v.rsi>=70?'RSI 과열권':v.rsi<=30?'RSI 과매도권':'RSI 중립권')),detailMetric('거래량 배율 (20일)',f(v.rvol)+'배 · '+(v.rvol>=1.5?'거래량 증가':'평균 대비 급증 아님')),detailMetric('일목균형표 (9·26·52)', '전환선 '+f(v.tenkan)+' / 기준선 '+f(v.kijun)+' · 선행구름 '+f(v.spanA)+' ~ '+f(v.spanB)+' (26봉 선행)'),detailMetric('주요 매물 집중 가격 (추정)',f(v.poc)+' · 최근 최대 120봉 OHLCV 분배'),detailMetric('종합 기술적 관찰',v.c>v.mas.find(x=>x.n===200).v&&v.c>v.mean?'장기·중기 이평 위 · 추세 유지 관찰':v.c<v.lower?'볼린저 하단 이탈 · 추가 하락 위험 확인':'추세·지지 저항 추가 확인 필요'));chart('buyDetailChart',t,'D')}catch(e){if(token===buyDetailToken&&!modal.hidden){root.textContent='상세 분석을 불러오지 못했습니다: '+e.message;$('buyDetailChart').textContent='데이터를 확인할 수 없습니다.'}}}
-</script></body></html>
+</script>
+<script>
+/* v37: 모바일 전용 접기/펼치기. 기존 조회·차트 코드는 그대로 유지. */
+(function(){
+ function setupMobileFolds(){
+  const panels=document.querySelectorAll('#page-dashboard .dashboard .panel, #page-bollinger .buy-chart-panel');
+  panels.forEach((panel,index)=>{
+   const head=panel.querySelector(':scope > .section-h');
+   if(!head||panel.classList.contains('mobile-collapsible'))return;
+   panel.classList.add('mobile-collapsible');
+   const heading=head.querySelector('h2');
+   if(!heading)return;
+   const button=document.createElement('button');
+   button.type='button';button.className='mobile-fold-button';
+   button.setAttribute('aria-label',heading.textContent.trim()+' 접기');
+   button.setAttribute('aria-expanded','true');
+   button.textContent='−';
+   head.appendChild(button);
+   const toggle=()=>{
+    if(!window.matchMedia('(max-width:760px)').matches)return;
+    const collapsed=panel.classList.toggle('is-collapsed');
+    button.textContent=collapsed?'+':'−';
+    button.setAttribute('aria-expanded',String(!collapsed));
+    button.setAttribute('aria-label',heading.textContent.trim()+(collapsed?' 펼치기':' 접기'));
+   };
+   button.addEventListener('click',e=>{e.stopPropagation();toggle()});
+   head.addEventListener('click',e=>{if(e.target.closest('button, a, input, select'))return;toggle()});
+   head.addEventListener('keydown',e=>{if(e.target===head&&(e.key==='Enter'||e.key===' ')){e.preventDefault();toggle()}});
+  });
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setupMobileFolds);
+ else setupMobileFolds();
+})();
+</script>
+</body></html>
