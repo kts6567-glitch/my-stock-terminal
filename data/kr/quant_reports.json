@@ -1,0 +1,5 @@
+{
+  "status": "pending",
+  "message": "한국 증시 자동 분석 결과가 아직 생성되지 않았습니다. GitHub Actions의 KR market scan 로그를 확인하세요.",
+  "results": {}
+}
