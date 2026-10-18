@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-18T12:45:39+00:00",
+  "updated_at_utc": "2026-10-18T12:51:22+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -15,7 +15,10 @@
       "ma_value": 50924.0,
       "day_change_pct": 8.74,
       "distance_pct": 6.24,
-      "company": "HPSP"
+      "company": "HPSP",
+      "ma_periods": [
+        50
+      ]
     },
     {
       "ticker": "041510.KQ",
@@ -25,7 +28,10 @@
       "ma_value": 77994.0,
       "day_change_pct": 7.76,
       "distance_pct": 8.6,
-      "company": "에스엠"
+      "company": "에스엠",
+      "ma_periods": [
+        50
+      ]
     },
     {
       "ticker": "068270.KS",
@@ -35,17 +41,11 @@
       "ma_value": 180715.0,
       "day_change_pct": 6.53,
       "distance_pct": 7.35,
-      "company": "셀트리온"
-    },
-    {
-      "ticker": "068270.KS",
-      "close": 194000.0,
-      "date": "2026-10-16",
-      "ma": 50,
-      "ma_value": 186942.0,
-      "day_change_pct": 6.53,
-      "distance_pct": 3.78,
-      "company": "셀트리온"
+      "company": "셀트리온",
+      "ma_periods": [
+        20,
+        50
+      ]
     },
     {
       "ticker": "039030.KQ",
@@ -55,7 +55,23 @@
       "ma_value": 433360.0,
       "day_change_pct": 5.91,
       "distance_pct": 3.38,
-      "company": "이오테크닉스"
+      "company": "이오테크닉스",
+      "ma_periods": [
+        50
+      ]
+    },
+    {
+      "ticker": "000100.KS",
+      "close": 80400.0,
+      "date": "2026-10-16",
+      "ma": 50,
+      "ma_value": 78724.0,
+      "day_change_pct": 5.24,
+      "distance_pct": 2.13,
+      "company": "유한양행",
+      "ma_periods": [
+        50
+      ]
     }
   ]
 }

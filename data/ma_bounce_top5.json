@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-18T12:43:57+00:00",
+  "updated_at_utc": "2026-10-18T12:49:15+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -12,7 +12,7 @@
     50,
     200
   ],
-  "total_matches": 135,
+  "total_matches": 115,
   "results": [
     {
       "ticker": "TRGP",
@@ -21,16 +21,11 @@
       "ma": 50,
       "ma_value": 285.551,
       "day_change_pct": 4.37,
-      "distance_pct": 3.27
-    },
-    {
-      "ticker": "TRGP",
-      "close": 294.9,
-      "date": "2026-10-16",
-      "ma": 20,
-      "ma_value": 284.1,
-      "day_change_pct": 4.37,
-      "distance_pct": 3.8
+      "distance_pct": 3.27,
+      "ma_periods": [
+        50,
+        20
+      ]
     },
     {
       "ticker": "FANG",
@@ -39,7 +34,10 @@
       "ma": 50,
       "ma_value": 196.925,
       "day_change_pct": 4.27,
-      "distance_pct": 3.57
+      "distance_pct": 3.57,
+      "ma_periods": [
+        50
+      ]
     },
     {
       "ticker": "NOC",
@@ -48,7 +46,10 @@
       "ma": 20,
       "ma_value": 495.188,
       "day_change_pct": 4.05,
-      "distance_pct": 4.98
+      "distance_pct": 4.98,
+      "ma_periods": [
+        20
+      ]
     },
     {
       "ticker": "RTX",
@@ -57,7 +58,22 @@
       "ma": 20,
       "ma_value": 187.033,
       "day_change_pct": 3.73,
-      "distance_pct": 3.68
+      "distance_pct": 3.68,
+      "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "LMT",
+      "close": 552.09,
+      "date": "2026-10-16",
+      "ma": 50,
+      "ma_value": 541.94,
+      "day_change_pct": 3.65,
+      "distance_pct": 1.87,
+      "ma_periods": [
+        50
+      ]
     }
   ]
 }
