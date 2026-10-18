@@ -15,19 +15,43 @@ jobs:
         with:
           python-version: '3.11'
           cache: pip
-      - run: pip install -r requirements.txt
-      - run: python screener.py
-      - run: python kr_screener.py
-        if: always()
-      - run: python news.py
-        if: always()
-      - name: Save data
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: US market scan
+        id: us
+        continue-on-error: true
+        run: python -u screener.py
+      - name: KR market scan
+        id: kr
+        continue-on-error: true
+        run: python -u kr_screener.py
+      - name: Update news
+        id: news
+        continue-on-error: true
+        run: python -u news.py
+      - name: Commit generated data
         if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/*.json data/kr/*.json
+          git add -A data/
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh market data'
             git push
+          else
+            echo 'No changed data files to commit.'
+          fi
+      - name: Verify market scans
+        if: always()
+        env:
+          US_RESULT: ${{ steps.us.outcome }}
+          KR_RESULT: ${{ steps.kr.outcome }}
+          NEWS_RESULT: ${{ steps.news.outcome }}
+        run: |
+          echo "US market scan: $US_RESULT"
+          echo "KR market scan: $KR_RESULT"
+          echo "News refresh: $NEWS_RESULT"
+          if [ "$US_RESULT" != 'success' ] || [ "$KR_RESULT" != 'success' ]; then
+            echo 'At least one market scan failed. Check the US/KR scan logs above.'
+            exit 1
           fi
