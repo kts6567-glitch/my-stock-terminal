@@ -1,29 +1,12 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-18T14:24:45+00:00",
+  "updated_at_utc": "2026-10-20T22:58:13+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
   "source": "Yahoo Finance 비공식 일봉",
   "price_basis": "수정 종가",
   "threshold_pct": -3,
-  "total_matches": 2,
-  "results": [
-    {
-      "ticker": "066970.KS",
-      "close": 93700.0,
-      "date": "2026-10-16",
-      "lower": 99434.56,
-      "breach_pct": -5.77,
-      "company": "엘앤에프"
-    },
-    {
-      "ticker": "000660.KS",
-      "close": 1272000.0,
-      "date": "2026-10-16",
-      "lower": 1317771.628,
-      "breach_pct": -3.47,
-      "company": "SK하이닉스"
-    }
-  ]
+  "total_matches": 0,
+  "results": []
 }

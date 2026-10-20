@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-18T14:22:00+00:00",
+  "updated_at_utc": "2026-10-20T22:55:57+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -9,42 +9,6 @@
   "threshold_pct": -3,
   "window": 20,
   "std_multiplier": 2,
-  "total_matches": 18,
-  "results": [
-    {
-      "ticker": "SMCI",
-      "close": 31.63,
-      "date": "2026-10-16",
-      "lower": 34.504,
-      "breach_pct": -8.33
-    },
-    {
-      "ticker": "FLEX",
-      "close": 90.46,
-      "date": "2026-10-16",
-      "lower": 97.308,
-      "breach_pct": -7.04
-    },
-    {
-      "ticker": "DELL",
-      "close": 451.71,
-      "date": "2026-10-16",
-      "lower": 479.162,
-      "breach_pct": -5.73
-    },
-    {
-      "ticker": "BE",
-      "close": 221.31,
-      "date": "2026-10-16",
-      "lower": 232.805,
-      "breach_pct": -4.94
-    },
-    {
-      "ticker": "SKYD",
-      "close": 6.91,
-      "date": "2026-10-16",
-      "lower": 7.263,
-      "breach_pct": -4.87
-    }
-  ]
+  "total_matches": 0,
+  "results": []
 }
