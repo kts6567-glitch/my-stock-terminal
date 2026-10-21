@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-20T22:55:57+00:00",
+  "updated_at_utc": "2026-10-21T22:56:29+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -12,69 +12,66 @@
     50,
     200
   ],
-  "total_matches": 178,
+  "total_matches": 106,
   "results": [
     {
-      "ticker": "MMM",
-      "close": 171.37,
-      "date": "2026-10-20",
-      "ma": 20,
-      "ma_value": 164.924,
-      "day_change_pct": 5.78,
-      "distance_pct": 3.91,
+      "ticker": "SMCI",
+      "close": 35.57,
+      "date": "2026-10-21",
+      "ma": 200,
+      "ma_value": 32.517,
+      "day_change_pct": 9.55,
+      "distance_pct": 9.39,
       "ma_periods": [
-        20,
         200
       ]
     },
     {
-      "ticker": "CRL",
-      "close": 315.45,
-      "date": "2026-10-20",
+      "ticker": "ILMN",
+      "close": 282.86,
+      "date": "2026-10-21",
       "ma": 20,
-      "ma_value": 298.387,
-      "day_change_pct": 5.14,
-      "distance_pct": 5.72,
+      "ma_value": 272.075,
+      "day_change_pct": 5.57,
+      "distance_pct": 3.96,
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "MSCI",
-      "close": 591.69,
-      "date": "2026-10-20",
-      "ma": 200,
-      "ma_value": 569.495,
-      "day_change_pct": 5.0,
-      "distance_pct": 3.9,
-      "ma_periods": [
-        200,
-        50
-      ]
-    },
-    {
-      "ticker": "BMY",
-      "close": 61.68,
-      "date": "2026-10-20",
-      "ma": 20,
-      "ma_value": 60.197,
-      "day_change_pct": 4.84,
-      "distance_pct": 2.46,
-      "ma_periods": [
-        20,
-        200
-      ]
-    },
-    {
-      "ticker": "NOC",
-      "close": 534.0,
-      "date": "2026-10-20",
+      "ticker": "CRWD",
+      "close": 239.34,
+      "date": "2026-10-21",
       "ma": 50,
-      "ma_value": 523.366,
-      "day_change_pct": 4.57,
-      "distance_pct": 2.03,
+      "ma_value": 233.841,
+      "day_change_pct": 5.26,
+      "distance_pct": 2.35,
       "ma_periods": [
         50
+      ]
+    },
+    {
+      "ticker": "PLTR",
+      "close": 201.72,
+      "date": "2026-10-21",
+      "ma": 20,
+      "ma_value": 194.98,
+      "day_change_pct": 4.74,
+      "distance_pct": 3.46,
+      "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "DHR",
+      "close": 233.86,
+      "date": "2026-10-21",
+      "ma": 20,
+      "ma_value": 222.593,
+      "day_change_pct": 4.29,
+      "distance_pct": 5.06,
+      "ma_periods": [
+        20
       ]
     }
   ]
