@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-21T22:59:18+00:00",
+  "updated_at_utc": "2026-10-22T22:58:49+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -8,66 +8,14 @@
   "price_basis": "수정 종가",
   "results": [
     {
-      "ticker": "096770.KS",
-      "close": 154300.0,
-      "date": "2026-10-21",
-      "ma": 20,
-      "ma_value": 151885.0,
-      "day_change_pct": 4.19,
-      "distance_pct": 1.59,
-      "company": "SK이노베이션",
-      "ma_periods": [
-        20
-      ]
-    },
-    {
-      "ticker": "036930.KQ",
-      "close": 205000.0,
-      "date": "2026-10-21",
-      "ma": 50,
-      "ma_value": 198112.0,
-      "day_change_pct": 3.48,
-      "distance_pct": 3.48,
-      "company": "주성엔지니어링",
-      "ma_periods": [
-        50
-      ]
-    },
-    {
-      "ticker": "003670.KS",
-      "close": 180800.0,
-      "date": "2026-10-21",
-      "ma": 50,
-      "ma_value": 178074.0,
-      "day_change_pct": 1.46,
-      "distance_pct": 1.53,
-      "company": "포스코퓨처엠",
-      "ma_periods": [
-        50
-      ]
-    },
-    {
       "ticker": "138040.KS",
-      "close": 130500.0,
-      "date": "2026-10-21",
+      "close": 130600.0,
+      "date": "2026-10-22",
       "ma": 20,
-      "ma_value": 129600.0,
-      "day_change_pct": 0.93,
-      "distance_pct": 0.69,
+      "ma_value": 129785.0,
+      "day_change_pct": 0.08,
+      "distance_pct": 0.63,
       "company": "메리츠금융지주",
-      "ma_periods": [
-        20
-      ]
-    },
-    {
-      "ticker": "145020.KQ",
-      "close": 185800.0,
-      "date": "2026-10-21",
-      "ma": 20,
-      "ma_value": 184105.0,
-      "day_change_pct": 0.87,
-      "distance_pct": 0.92,
-      "company": "휴젤",
       "ma_periods": [
         20
       ]
