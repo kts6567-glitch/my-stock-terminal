@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-22T22:57:06+00:00",
+  "updated_at_utc": "2026-10-23T22:56:08+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -12,64 +12,65 @@
     50,
     200
   ],
-  "total_matches": 164,
+  "total_matches": 36,
   "results": [
     {
-      "ticker": "LEN",
-      "close": 84.45,
-      "date": "2026-10-22",
-      "ma": 20,
-      "ma_value": 78.168,
-      "day_change_pct": 8.69,
-      "distance_pct": 8.04,
+      "ticker": "CCI",
+      "close": 85.97,
+      "date": "2026-10-23",
+      "ma": 200,
+      "ma_value": 80.43,
+      "day_change_pct": 9.06,
+      "distance_pct": 6.89,
       "ma_periods": [
+        200
+      ]
+    },
+    {
+      "ticker": "SLB",
+      "close": 53.06,
+      "date": "2026-10-23",
+      "ma": 200,
+      "ma_value": 50.876,
+      "day_change_pct": 7.08,
+      "distance_pct": 4.29,
+      "ma_periods": [
+        200,
         20
       ]
     },
     {
-      "ticker": "BX",
-      "close": 118.75,
-      "date": "2026-10-22",
-      "ma": 20,
-      "ma_value": 111.97,
-      "day_change_pct": 8.38,
-      "distance_pct": 6.06,
-      "ma_periods": [
-        20
-      ]
-    },
-    {
-      "ticker": "GIS",
-      "close": 35.18,
-      "date": "2026-10-22",
-      "ma": 20,
-      "ma_value": 32.327,
-      "day_change_pct": 8.01,
-      "distance_pct": 8.83,
-      "ma_periods": [
-        20
-      ]
-    },
-    {
-      "ticker": "LULU",
-      "close": 104.06,
-      "date": "2026-10-22",
-      "ma": 20,
-      "ma_value": 96.432,
-      "day_change_pct": 7.8,
-      "distance_pct": 7.91,
-      "ma_periods": [
-        20
-      ]
-    },
-    {
-      "ticker": "HPQ",
-      "close": 33.76,
-      "date": "2026-10-22",
+      "ticker": "HAL",
+      "close": 34.92,
+      "date": "2026-10-23",
       "ma": 50,
-      "ma_value": 31.326,
-      "day_change_pct": 7.79,
-      "distance_pct": 7.77,
+      "ma_value": 34.131,
+      "day_change_pct": 5.21,
+      "distance_pct": 2.31,
+      "ma_periods": [
+        50
+      ]
+    },
+    {
+      "ticker": "DVN",
+      "close": 51.39,
+      "date": "2026-10-23",
+      "ma": 20,
+      "ma_value": 48.802,
+      "day_change_pct": 4.49,
+      "distance_pct": 5.3,
+      "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "TRGP",
+      "close": 302.37,
+      "date": "2026-10-23",
+      "ma": 50,
+      "ma_value": 288.528,
+      "day_change_pct": 4.43,
+      "distance_pct": 4.8,
       "ma_periods": [
         50,
         20

@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-22T22:58:49+00:00",
+  "updated_at_utc": "2026-10-23T22:58:18+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -8,14 +8,27 @@
   "price_basis": "수정 종가",
   "results": [
     {
-      "ticker": "138040.KS",
-      "close": 130600.0,
-      "date": "2026-10-22",
+      "ticker": "326030.KS",
+      "close": 76900.0,
+      "date": "2026-10-23",
       "ma": 20,
-      "ma_value": 129785.0,
-      "day_change_pct": 0.08,
-      "distance_pct": 0.63,
-      "company": "메리츠금융지주",
+      "ma_value": 74415.0,
+      "day_change_pct": 2.67,
+      "distance_pct": 3.34,
+      "company": "SK바이오팜",
+      "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "028300.KQ",
+      "close": 41600.0,
+      "date": "2026-10-23",
+      "ma": 20,
+      "ma_value": 41342.5,
+      "day_change_pct": 0.73,
+      "distance_pct": 0.62,
+      "company": "HLB",
       "ma_periods": [
         20
       ]

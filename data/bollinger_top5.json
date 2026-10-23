@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-22T22:57:06+00:00",
+  "updated_at_utc": "2026-10-23T22:56:08+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -9,42 +9,28 @@
   "threshold_pct": -3,
   "window": 20,
   "std_multiplier": 2,
-  "total_matches": 12,
+  "total_matches": 3,
   "results": [
     {
+      "ticker": "FIX",
+      "close": 1160.86,
+      "date": "2026-10-23",
+      "lower": 1238.755,
+      "breach_pct": -6.29
+    },
+    {
       "ticker": "HWM",
-      "close": 193.29,
-      "date": "2026-10-22",
-      "lower": 203.385,
-      "breach_pct": -4.96
+      "close": 185.91,
+      "date": "2026-10-23",
+      "lower": 195.952,
+      "breach_pct": -5.12
     },
     {
-      "ticker": "GEV",
-      "close": 827.42,
-      "date": "2026-10-22",
-      "lower": 863.281,
-      "breach_pct": -4.15
-    },
-    {
-      "ticker": "APH",
-      "close": 73.07,
-      "date": "2026-10-22",
-      "lower": 76.148,
-      "breach_pct": -4.04
-    },
-    {
-      "ticker": "LRCX",
-      "close": 230.15,
-      "date": "2026-10-22",
-      "lower": 239.655,
-      "breach_pct": -3.97
-    },
-    {
-      "ticker": "META",
-      "close": 648.85,
-      "date": "2026-10-22",
-      "lower": 674.878,
-      "breach_pct": -3.86
+      "ticker": "GL",
+      "close": 154.79,
+      "date": "2026-10-23",
+      "lower": 159.868,
+      "breach_pct": -3.18
     }
   ]
 }
