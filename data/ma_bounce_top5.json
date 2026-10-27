@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-24T22:51:31+00:00",
+  "updated_at_utc": "2026-10-27T23:00:35+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -12,68 +12,68 @@
     50,
     200
   ],
-  "total_matches": 36,
+  "total_matches": 90,
   "results": [
     {
-      "ticker": "CCI",
-      "close": 85.97,
-      "date": "2026-10-23",
-      "ma": 200,
-      "ma_value": 80.43,
-      "day_change_pct": 9.06,
-      "distance_pct": 6.89,
-      "ma_periods": [
-        200
-      ]
-    },
-    {
-      "ticker": "SLB",
-      "close": 53.06,
-      "date": "2026-10-23",
-      "ma": 200,
-      "ma_value": 50.876,
-      "day_change_pct": 7.08,
-      "distance_pct": 4.29,
-      "ma_periods": [
-        200,
-        20
-      ]
-    },
-    {
-      "ticker": "HAL",
-      "close": 34.92,
-      "date": "2026-10-23",
+      "ticker": "PNR",
+      "close": 62.29,
+      "date": "2026-10-27",
       "ma": 50,
-      "ma_value": 34.131,
-      "day_change_pct": 5.21,
-      "distance_pct": 2.31,
+      "ma_value": 56.408,
+      "day_change_pct": 12.8,
+      "distance_pct": 10.43,
       "ma_periods": [
         50
       ]
     },
     {
-      "ticker": "DVN",
-      "close": 51.39,
-      "date": "2026-10-23",
-      "ma": 20,
-      "ma_value": 48.802,
-      "day_change_pct": 4.49,
-      "distance_pct": 5.3,
+      "ticker": "SMCI",
+      "close": 35.09,
+      "date": "2026-10-27",
+      "ma": 200,
+      "ma_value": 32.587,
+      "day_change_pct": 7.34,
+      "distance_pct": 7.68,
       "ma_periods": [
-        20
+        200
       ]
     },
     {
-      "ticker": "TRGP",
-      "close": 302.37,
-      "date": "2026-10-23",
-      "ma": 50,
-      "ma_value": 288.528,
-      "day_change_pct": 4.43,
-      "distance_pct": 4.8,
+      "ticker": "CDNS",
+      "close": 343.08,
+      "date": "2026-10-27",
+      "ma": 200,
+      "ma_value": 327.281,
+      "day_change_pct": 6.49,
+      "distance_pct": 4.83,
       "ma_periods": [
-        50,
-        20
+        200,
+        50
+      ]
+    },
+    {
+      "ticker": "ON",
+      "close": 78.67,
+      "date": "2026-10-27",
+      "ma": 50,
+      "ma_value": 74.915,
+      "day_change_pct": 6.22,
+      "distance_pct": 5.01,
+      "ma_periods": [
+        50
+      ]
+    },
+    {
+      "ticker": "UPS",
+      "close": 106.09,
+      "date": "2026-10-27",
+      "ma": 200,
+      "ma_value": 102.416,
+      "day_change_pct": 5.75,
+      "distance_pct": 3.59,
+      "ma_periods": [
+        200,
+        50
       ]
     }
   ]

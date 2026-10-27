@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-24T22:54:09+00:00",
+  "updated_at_utc": "2026-10-27T23:02:48+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -8,29 +8,42 @@
   "price_basis": "수정 종가",
   "results": [
     {
-      "ticker": "326030.KS",
-      "close": 76900.0,
-      "date": "2026-10-23",
-      "ma": 20,
-      "ma_value": 74415.0,
-      "day_change_pct": 2.67,
-      "distance_pct": 3.34,
-      "company": "SK바이오팜",
+      "ticker": "006400.KS",
+      "close": 508000.0,
+      "date": "2026-10-27",
+      "ma": 200,
+      "ma_value": 479662.5,
+      "day_change_pct": 5.07,
+      "distance_pct": 5.91,
+      "company": "삼성SDI",
       "ma_periods": [
-        20
+        200
       ]
     },
     {
-      "ticker": "028300.KQ",
-      "close": 41600.0,
-      "date": "2026-10-23",
-      "ma": 20,
-      "ma_value": 41342.5,
-      "day_change_pct": 0.73,
-      "distance_pct": 0.62,
-      "company": "HLB",
+      "ticker": "018880.KS",
+      "close": 3685.0,
+      "date": "2026-10-27",
+      "ma": 50,
+      "ma_value": 3597.9,
+      "day_change_pct": 2.22,
+      "distance_pct": 2.42,
+      "company": "한온시스템",
       "ma_periods": [
-        20
+        50
+      ]
+    },
+    {
+      "ticker": "373220.KS",
+      "close": 382500.0,
+      "date": "2026-10-27",
+      "ma": 50,
+      "ma_value": 372150.0,
+      "day_change_pct": 2.0,
+      "distance_pct": 2.78,
+      "company": "LG에너지솔루션",
+      "ma_periods": [
+        50
       ]
     }
   ]
