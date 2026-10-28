@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-27T23:00:35+00:00",
+  "updated_at_utc": "2026-10-28T23:04:31+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -12,68 +12,67 @@
     50,
     200
   ],
-  "total_matches": 90,
+  "total_matches": 72,
   "results": [
     {
-      "ticker": "PNR",
-      "close": 62.29,
-      "date": "2026-10-27",
-      "ma": 50,
-      "ma_value": 56.408,
-      "day_change_pct": 12.8,
-      "distance_pct": 10.43,
-      "ma_periods": [
-        50
-      ]
-    },
-    {
-      "ticker": "SMCI",
-      "close": 35.09,
-      "date": "2026-10-27",
+      "ticker": "STX",
+      "close": 697.97,
+      "date": "2026-10-28",
       "ma": 200,
-      "ma_value": 32.587,
-      "day_change_pct": 7.34,
-      "distance_pct": 7.68,
+      "ma_value": 688.155,
+      "day_change_pct": 4.51,
+      "distance_pct": 1.43,
       "ma_periods": [
         200
       ]
     },
     {
-      "ticker": "CDNS",
-      "close": 343.08,
-      "date": "2026-10-27",
+      "ticker": "BE",
+      "close": 228.08,
+      "date": "2026-10-28",
       "ma": 200,
-      "ma_value": 327.281,
-      "day_change_pct": 6.49,
-      "distance_pct": 4.83,
+      "ma_value": 220.576,
+      "day_change_pct": 4.38,
+      "distance_pct": 3.4,
       "ma_periods": [
-        200,
-        50
+        200
       ]
     },
     {
-      "ticker": "ON",
-      "close": 78.67,
-      "date": "2026-10-27",
+      "ticker": "AON",
+      "close": 315.72,
+      "date": "2026-10-28",
       "ma": 50,
-      "ma_value": 74.915,
-      "day_change_pct": 6.22,
-      "distance_pct": 5.01,
+      "ma_value": 303.24,
+      "day_change_pct": 4.37,
+      "distance_pct": 4.12,
       "ma_periods": [
         50
       ]
     },
     {
-      "ticker": "UPS",
-      "close": 106.09,
-      "date": "2026-10-27",
-      "ma": 200,
-      "ma_value": 102.416,
-      "day_change_pct": 5.75,
-      "distance_pct": 3.59,
+      "ticker": "ECHO",
+      "close": 94.3,
+      "date": "2026-10-28",
+      "ma": 20,
+      "ma_value": 91.37,
+      "day_change_pct": 4.33,
+      "distance_pct": 3.21,
       "ma_periods": [
-        200,
+        20,
         50
+      ]
+    },
+    {
+      "ticker": "WDC",
+      "close": 396.42,
+      "date": "2026-10-28",
+      "ma": 20,
+      "ma_value": 383.654,
+      "day_change_pct": 4.08,
+      "distance_pct": 3.33,
+      "ma_periods": [
+        20
       ]
     }
   ]

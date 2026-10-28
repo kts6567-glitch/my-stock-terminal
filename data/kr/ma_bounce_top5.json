@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-27T23:02:48+00:00",
+  "updated_at_utc": "2026-10-28T23:06:48+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -8,40 +8,66 @@
   "price_basis": "수정 종가",
   "results": [
     {
-      "ticker": "006400.KS",
-      "close": 508000.0,
-      "date": "2026-10-27",
+      "ticker": "032830.KS",
+      "close": 277500.0,
+      "date": "2026-10-28",
+      "ma": 20,
+      "ma_value": 260450.0,
+      "day_change_pct": 8.82,
+      "distance_pct": 6.55,
+      "company": "삼성생명",
+      "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "403870.KQ",
+      "close": 47300.0,
+      "date": "2026-10-28",
       "ma": 200,
-      "ma_value": 479662.5,
-      "day_change_pct": 5.07,
-      "distance_pct": 5.91,
-      "company": "삼성SDI",
+      "ma_value": 47176.25,
+      "day_change_pct": 2.6,
+      "distance_pct": 0.26,
+      "company": "HPSP",
       "ma_periods": [
         200
       ]
     },
     {
-      "ticker": "018880.KS",
-      "close": 3685.0,
-      "date": "2026-10-27",
-      "ma": 50,
-      "ma_value": 3597.9,
-      "day_change_pct": 2.22,
-      "distance_pct": 2.42,
-      "company": "한온시스템",
+      "ticker": "373220.KS",
+      "close": 389500.0,
+      "date": "2026-10-28",
+      "ma": 200,
+      "ma_value": 386440.0,
+      "day_change_pct": 1.83,
+      "distance_pct": 0.79,
+      "company": "LG에너지솔루션",
       "ma_periods": [
-        50
+        200
       ]
     },
     {
-      "ticker": "373220.KS",
-      "close": 382500.0,
-      "date": "2026-10-27",
+      "ticker": "145020.KQ",
+      "close": 181500.0,
+      "date": "2026-10-28",
+      "ma": 20,
+      "ma_value": 179840.0,
+      "day_change_pct": 1.17,
+      "distance_pct": 0.92,
+      "company": "휴젤",
+      "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "041510.KQ",
+      "close": 80300.0,
+      "date": "2026-10-28",
       "ma": 50,
-      "ma_value": 372150.0,
-      "day_change_pct": 2.0,
-      "distance_pct": 2.78,
-      "company": "LG에너지솔루션",
+      "ma_value": 79352.0,
+      "day_change_pct": 1.01,
+      "distance_pct": 1.19,
+      "company": "에스엠",
       "ma_periods": [
         50
       ]
