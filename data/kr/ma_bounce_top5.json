@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-28T23:06:48+00:00",
+  "updated_at_utc": "2026-10-29T23:10:02+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -8,66 +8,67 @@
   "price_basis": "수정 종가",
   "results": [
     {
-      "ticker": "032830.KS",
-      "close": 277500.0,
-      "date": "2026-10-28",
+      "ticker": "138040.KS",
+      "close": 131400.0,
+      "date": "2026-10-29",
+      "ma": 50,
+      "ma_value": 126668.0,
+      "day_change_pct": 6.4,
+      "distance_pct": 3.74,
+      "company": "메리츠금융지주",
+      "ma_periods": [
+        50
+      ]
+    },
+    {
+      "ticker": "326030.KS",
+      "close": 77800.0,
+      "date": "2026-10-29",
       "ma": 20,
-      "ma_value": 260450.0,
-      "day_change_pct": 8.82,
-      "distance_pct": 6.55,
-      "company": "삼성생명",
+      "ma_value": 74405.0,
+      "day_change_pct": 3.46,
+      "distance_pct": 4.56,
+      "company": "SK바이오팜",
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "403870.KQ",
-      "close": 47300.0,
-      "date": "2026-10-28",
-      "ma": 200,
-      "ma_value": 47176.25,
-      "day_change_pct": 2.6,
-      "distance_pct": 0.26,
-      "company": "HPSP",
+      "ticker": "000660.KS",
+      "close": 1526000.0,
+      "date": "2026-10-29",
+      "ma": 20,
+      "ma_value": 1477550.0,
+      "day_change_pct": 2.62,
+      "distance_pct": 3.28,
+      "company": "SK하이닉스",
       "ma_periods": [
-        200
-      ]
-    },
-    {
-      "ticker": "373220.KS",
-      "close": 389500.0,
-      "date": "2026-10-28",
-      "ma": 200,
-      "ma_value": 386440.0,
-      "day_change_pct": 1.83,
-      "distance_pct": 0.79,
-      "company": "LG에너지솔루션",
-      "ma_periods": [
+        20,
         200
       ]
     },
     {
       "ticker": "145020.KQ",
-      "close": 181500.0,
-      "date": "2026-10-28",
+      "close": 183300.0,
+      "date": "2026-10-29",
       "ma": 20,
       "ma_value": 179840.0,
-      "day_change_pct": 1.17,
-      "distance_pct": 0.92,
+      "day_change_pct": 0.99,
+      "distance_pct": 1.92,
       "company": "휴젤",
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "041510.KQ",
-      "close": 80300.0,
-      "date": "2026-10-28",
+      "ticker": "006400.KS",
+      "close": 538000.0,
+      "date": "2026-10-29",
       "ma": 50,
-      "ma_value": 79352.0,
-      "day_change_pct": 1.01,
-      "distance_pct": 1.19,
-      "company": "에스엠",
+      "ma_value": 536550.0,
+      "day_change_pct": 0.75,
+      "distance_pct": 0.27,
+      "company": "삼성SDI",
       "ma_periods": [
         50
       ]

@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-28T23:04:31+00:00",
+  "updated_at_utc": "2026-10-29T23:06:49+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -12,67 +12,67 @@
     50,
     200
   ],
-  "total_matches": 72,
+  "total_matches": 161,
   "results": [
     {
-      "ticker": "STX",
-      "close": 697.97,
-      "date": "2026-10-28",
+      "ticker": "GEN",
+      "close": 28.2,
+      "date": "2026-10-29",
       "ma": 200,
-      "ma_value": 688.155,
-      "day_change_pct": 4.51,
-      "distance_pct": 1.43,
+      "ma_value": 24.171,
+      "day_change_pct": 15.81,
+      "distance_pct": 16.67,
       "ma_periods": [
         200
       ]
     },
     {
-      "ticker": "BE",
-      "close": 228.08,
-      "date": "2026-10-28",
-      "ma": 200,
-      "ma_value": 220.576,
-      "day_change_pct": 4.38,
-      "distance_pct": 3.4,
+      "ticker": "CVNA",
+      "close": 68.31,
+      "date": "2026-10-29",
+      "ma": 20,
+      "ma_value": 60.813,
+      "day_change_pct": 15.68,
+      "distance_pct": 12.33,
       "ma_periods": [
-        200
+        20
       ]
     },
     {
-      "ticker": "AON",
-      "close": 315.72,
-      "date": "2026-10-28",
+      "ticker": "HII",
+      "close": 316.21,
+      "date": "2026-10-29",
       "ma": 50,
-      "ma_value": 303.24,
-      "day_change_pct": 4.37,
-      "distance_pct": 4.12,
+      "ma_value": 277.558,
+      "day_change_pct": 13.23,
+      "distance_pct": 13.93,
       "ma_periods": [
         50
       ]
     },
     {
-      "ticker": "ECHO",
-      "close": 94.3,
-      "date": "2026-10-28",
+      "ticker": "TXT",
+      "close": 87.46,
+      "date": "2026-10-29",
+      "ma": 50,
+      "ma_value": 78.531,
+      "day_change_pct": 11.67,
+      "distance_pct": 11.37,
+      "ma_periods": [
+        50
+      ]
+    },
+    {
+      "ticker": "IR",
+      "close": 80.01,
+      "date": "2026-10-29",
       "ma": 20,
-      "ma_value": 91.37,
-      "day_change_pct": 4.33,
-      "distance_pct": 3.21,
+      "ma_value": 77.397,
+      "day_change_pct": 6.04,
+      "distance_pct": 3.38,
       "ma_periods": [
         20,
         50
-      ]
-    },
-    {
-      "ticker": "WDC",
-      "close": 396.42,
-      "date": "2026-10-28",
-      "ma": 20,
-      "ma_value": 383.654,
-      "day_change_pct": 4.08,
-      "distance_pct": 3.33,
-      "ma_periods": [
-        20
       ]
     }
   ]
