@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-29T23:06:49+00:00",
+  "updated_at_utc": "2026-10-30T23:02:14+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -12,66 +12,66 @@
     50,
     200
   ],
-  "total_matches": 161,
+  "total_matches": 60,
   "results": [
     {
-      "ticker": "GEN",
-      "close": 28.2,
-      "date": "2026-10-29",
-      "ma": 200,
-      "ma_value": 24.171,
-      "day_change_pct": 15.81,
-      "distance_pct": 16.67,
+      "ticker": "GPN",
+      "close": 96.84,
+      "date": "2026-10-30",
+      "ma": 50,
+      "ma_value": 86.222,
+      "day_change_pct": 12.97,
+      "distance_pct": 12.31,
       "ma_periods": [
-        200
+        50
       ]
     },
     {
-      "ticker": "CVNA",
-      "close": 68.31,
-      "date": "2026-10-29",
+      "ticker": "GDDY",
+      "close": 117.24,
+      "date": "2026-10-30",
       "ma": 20,
-      "ma_value": 60.813,
-      "day_change_pct": 15.68,
-      "distance_pct": 12.33,
+      "ma_value": 106.078,
+      "day_change_pct": 10.72,
+      "distance_pct": 10.52,
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "HII",
-      "close": 316.21,
-      "date": "2026-10-29",
-      "ma": 50,
-      "ma_value": 277.558,
-      "day_change_pct": 13.23,
-      "distance_pct": 13.93,
-      "ma_periods": [
-        50
-      ]
-    },
-    {
-      "ticker": "TXT",
-      "close": 87.46,
-      "date": "2026-10-29",
-      "ma": 50,
-      "ma_value": 78.531,
-      "day_change_pct": 11.67,
-      "distance_pct": 11.37,
-      "ma_periods": [
-        50
-      ]
-    },
-    {
-      "ticker": "IR",
-      "close": 80.01,
-      "date": "2026-10-29",
+      "ticker": "CF",
+      "close": 123.3,
+      "date": "2026-10-30",
       "ma": 20,
-      "ma_value": 77.397,
-      "day_change_pct": 6.04,
-      "distance_pct": 3.38,
+      "ma_value": 117.909,
+      "day_change_pct": 4.41,
+      "distance_pct": 4.57,
+      "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "CTSH",
+      "close": 65.11,
+      "date": "2026-10-30",
+      "ma": 20,
+      "ma_value": 64.264,
+      "day_change_pct": 4.14,
+      "distance_pct": 1.32,
       "ma_periods": [
         20,
+        50
+      ]
+    },
+    {
+      "ticker": "VLO",
+      "close": 399.66,
+      "date": "2026-10-30",
+      "ma": 50,
+      "ma_value": 397.608,
+      "day_change_pct": 3.92,
+      "distance_pct": 0.52,
+      "ma_periods": [
         50
       ]
     }

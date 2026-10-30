@@ -1,12 +1,21 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-29T23:10:02+00:00",
+  "updated_at_utc": "2026-10-30T23:03:58+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
   "source": "Yahoo Finance 비공식 일봉",
   "price_basis": "수정 종가",
   "threshold_pct": -3,
-  "total_matches": 0,
-  "results": []
+  "total_matches": 1,
+  "results": [
+    {
+      "ticker": "000270.KS",
+      "close": 95600.0,
+      "date": "2026-10-30",
+      "lower": 100557.482,
+      "breach_pct": -4.93,
+      "company": "기아"
+    }
+  ]
 }

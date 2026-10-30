@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-29T23:06:49+00:00",
+  "updated_at_utc": "2026-10-30T23:02:14+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -9,42 +9,42 @@
   "threshold_pct": -3,
   "window": 20,
   "std_multiplier": 2,
-  "total_matches": 5,
+  "total_matches": 13,
   "results": [
     {
-      "ticker": "FTNT",
-      "close": 139.1,
-      "date": "2026-10-29",
-      "lower": 155.729,
-      "breach_pct": -10.68
+      "ticker": "RDDT",
+      "close": 91.73,
+      "date": "2026-10-30",
+      "lower": 116.302,
+      "breach_pct": -21.13
+    },
+    {
+      "ticker": "INTC",
+      "close": 65.76,
+      "date": "2026-10-30",
+      "lower": 74.084,
+      "breach_pct": -11.24
+    },
+    {
+      "ticker": "TWLO",
+      "close": 205.03,
+      "date": "2026-10-30",
+      "lower": 224.41,
+      "breach_pct": -8.64
     },
     {
       "ticker": "NOW",
-      "close": 109.67,
-      "date": "2026-10-29",
-      "lower": 121.836,
-      "breach_pct": -9.99
+      "close": 105.12,
+      "date": "2026-10-30",
+      "lower": 114.855,
+      "breach_pct": -8.48
     },
     {
       "ticker": "FFIV",
-      "close": 363.46,
-      "date": "2026-10-29",
-      "lower": 390.611,
-      "breach_pct": -6.95
-    },
-    {
-      "ticker": "GOOGL",
-      "close": 283.82,
-      "date": "2026-10-29",
-      "lower": 303.209,
-      "breach_pct": -6.39
-    },
-    {
-      "ticker": "GOOG",
-      "close": 282.32,
-      "date": "2026-10-29",
-      "lower": 300.713,
-      "breach_pct": -6.12
+      "close": 338.34,
+      "date": "2026-10-30",
+      "lower": 367.445,
+      "breach_pct": -7.92
     }
   ]
 }
