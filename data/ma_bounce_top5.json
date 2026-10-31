@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-30T23:02:14+00:00",
+  "updated_at_utc": "2026-10-31T22:58:56+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -12,7 +12,7 @@
     50,
     200
   ],
-  "total_matches": 60,
+  "total_matches": 61,
   "results": [
     {
       "ticker": "GPN",
