@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-31T23:01:31+00:00",
+  "updated_at_utc": "2026-11-03T23:15:04+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -8,44 +8,55 @@
   "price_basis": "수정 종가",
   "results": [
     {
-      "ticker": "068270.KS",
-      "close": 191600.0,
-      "date": "2026-10-30",
-      "ma": 20,
-      "ma_value": 187945.0,
-      "day_change_pct": 1.22,
-      "distance_pct": 1.94,
-      "company": "셀트리온",
+      "ticker": "326030.KS",
+      "close": 79300.0,
+      "date": "2026-11-03",
+      "ma": 50,
+      "ma_value": 79108.0,
+      "day_change_pct": 2.32,
+      "distance_pct": 0.24,
+      "company": "SK바이오팜",
       "ma_periods": [
-        20,
-        200
-      ]
-    },
-    {
-      "ticker": "006400.KS",
-      "close": 543000.0,
-      "date": "2026-10-30",
-      "ma": 20,
-      "ma_value": 542250.0,
-      "day_change_pct": 0.93,
-      "distance_pct": 0.14,
-      "company": "삼성SDI",
-      "ma_periods": [
-        20,
         50
       ]
     },
     {
-      "ticker": "086790.KS",
-      "close": 120500.0,
-      "date": "2026-10-30",
-      "ma": 200,
-      "ma_value": 119338.004,
-      "day_change_pct": 0.67,
-      "distance_pct": 0.97,
-      "company": "하나금융지주",
+      "ticker": "207940.KS",
+      "close": 1452000.0,
+      "date": "2026-11-03",
+      "ma": 50,
+      "ma_value": 1412892.23,
+      "day_change_pct": 2.11,
+      "distance_pct": 2.77,
+      "company": "삼성바이오로직스",
       "ma_periods": [
-        200
+        50
+      ]
+    },
+    {
+      "ticker": "138040.KS",
+      "close": 130400.0,
+      "date": "2026-11-03",
+      "ma": 20,
+      "ma_value": 129345.0,
+      "day_change_pct": 0.69,
+      "distance_pct": 0.82,
+      "company": "메리츠금융지주",
+      "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "012330.KS",
+      "close": 350500.0,
+      "date": "2026-11-03",
+      "ma": 20,
+      "ma_value": 349350.0,
+      "day_change_pct": 0.14,
+      "distance_pct": 0.33,
+      "company": "현대모비스",
+      "ma_periods": [
+        20
       ]
     }
   ]

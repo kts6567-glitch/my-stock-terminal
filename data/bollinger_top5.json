@@ -1,50 +1,36 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-10-31T22:58:56+00:00",
+  "updated_at_utc": "2026-11-03T23:12:47+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
-  "scanned_count": 500,
+  "scanned_count": 499,
   "source": "Yahoo Finance via unofficial yfinance; data may be delayed or unavailable",
   "price_basis": "adjusted daily close",
   "threshold_pct": -3,
   "window": 20,
   "std_multiplier": 2,
-  "total_matches": 13,
+  "total_matches": 3,
   "results": [
     {
-      "ticker": "RDDT",
-      "close": 91.73,
-      "date": "2026-10-30",
-      "lower": 116.302,
-      "breach_pct": -21.13
+      "ticker": "ZBRA",
+      "close": 329.5,
+      "date": "2026-11-03",
+      "lower": 350.324,
+      "breach_pct": -5.94
     },
     {
       "ticker": "INTC",
-      "close": 65.76,
-      "date": "2026-10-30",
-      "lower": 74.084,
-      "breach_pct": -11.24
+      "close": 60.55,
+      "date": "2026-11-03",
+      "lower": 63.189,
+      "breach_pct": -4.18
     },
     {
-      "ticker": "TWLO",
-      "close": 205.03,
-      "date": "2026-10-30",
-      "lower": 224.41,
-      "breach_pct": -8.64
-    },
-    {
-      "ticker": "NOW",
-      "close": 105.12,
-      "date": "2026-10-30",
-      "lower": 114.855,
-      "breach_pct": -8.48
-    },
-    {
-      "ticker": "FFIV",
-      "close": 338.34,
-      "date": "2026-10-30",
-      "lower": 367.445,
-      "breach_pct": -7.92
+      "ticker": "ADM",
+      "close": 70.6,
+      "date": "2026-11-03",
+      "lower": 73.443,
+      "breach_pct": -3.87
     }
   ]
 }
