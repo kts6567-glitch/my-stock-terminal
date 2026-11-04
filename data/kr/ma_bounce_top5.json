@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-03T23:15:04+00:00",
+  "updated_at_utc": "2026-11-04T23:14:30+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -8,55 +8,69 @@
   "price_basis": "수정 종가",
   "results": [
     {
-      "ticker": "326030.KS",
-      "close": 79300.0,
-      "date": "2026-11-03",
-      "ma": 50,
-      "ma_value": 79108.0,
-      "day_change_pct": 2.32,
-      "distance_pct": 0.24,
-      "company": "SK바이오팜",
+      "ticker": "006400.KS",
+      "close": 545000.0,
+      "date": "2026-11-04",
+      "ma": 200,
+      "ma_value": 487467.5,
+      "day_change_pct": 11.57,
+      "distance_pct": 11.8,
+      "company": "삼성SDI",
       "ma_periods": [
-        50
+        200
       ]
     },
     {
-      "ticker": "207940.KS",
-      "close": 1452000.0,
-      "date": "2026-11-03",
-      "ma": 50,
-      "ma_value": 1412892.23,
-      "day_change_pct": 2.11,
-      "distance_pct": 2.77,
-      "company": "삼성바이오로직스",
+      "ticker": "078340.KQ",
+      "close": 33300.0,
+      "date": "2026-11-04",
+      "ma": 200,
+      "ma_value": 31137.171,
+      "day_change_pct": 5.71,
+      "distance_pct": 6.95,
+      "company": "컴투스",
       "ma_periods": [
-        50
+        200
       ]
     },
     {
-      "ticker": "138040.KS",
-      "close": 130400.0,
-      "date": "2026-11-03",
+      "ticker": "068270.KS",
+      "close": 200000.0,
+      "date": "2026-11-04",
       "ma": 20,
-      "ma_value": 129345.0,
-      "day_change_pct": 0.69,
-      "distance_pct": 0.82,
-      "company": "메리츠금융지주",
+      "ma_value": 189610.0,
+      "day_change_pct": 5.32,
+      "distance_pct": 5.48,
+      "company": "셀트리온",
+      "ma_periods": [
+        20,
+        200
+      ]
+    },
+    {
+      "ticker": "015760.KS",
+      "close": 30450.0,
+      "date": "2026-11-04",
+      "ma": 20,
+      "ma_value": 28840.0,
+      "day_change_pct": 4.82,
+      "distance_pct": 5.58,
+      "company": "한국전력",
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "012330.KS",
-      "close": 350500.0,
-      "date": "2026-11-03",
-      "ma": 20,
-      "ma_value": 349350.0,
-      "day_change_pct": 0.14,
-      "distance_pct": 0.33,
-      "company": "현대모비스",
+      "ticker": "096770.KS",
+      "close": 123700.0,
+      "date": "2026-11-04",
+      "ma": 200,
+      "ma_value": 122265.0,
+      "day_change_pct": 3.86,
+      "distance_pct": 1.17,
+      "company": "SK이노베이션",
       "ma_periods": [
-        20
+        200
       ]
     }
   ]

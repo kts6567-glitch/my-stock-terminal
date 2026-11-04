@@ -1,36 +1,50 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-03T23:12:47+00:00",
+  "updated_at_utc": "2026-11-04T23:12:02+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
-  "scanned_count": 499,
+  "scanned_count": 500,
   "source": "Yahoo Finance via unofficial yfinance; data may be delayed or unavailable",
   "price_basis": "adjusted daily close",
   "threshold_pct": -3,
   "window": 20,
   "std_multiplier": 2,
-  "total_matches": 3,
+  "total_matches": 12,
   "results": [
     {
-      "ticker": "ZBRA",
-      "close": 329.5,
-      "date": "2026-11-03",
-      "lower": 350.324,
-      "breach_pct": -5.94
+      "ticker": "DDOG",
+      "close": 188.72,
+      "date": "2026-11-04",
+      "lower": 208.112,
+      "breach_pct": -9.32
     },
     {
-      "ticker": "INTC",
-      "close": 60.55,
-      "date": "2026-11-03",
-      "lower": 63.189,
-      "breach_pct": -4.18
+      "ticker": "FIS",
+      "close": 29.76,
+      "date": "2026-11-04",
+      "lower": 31.896,
+      "breach_pct": -6.7
     },
     {
-      "ticker": "ADM",
-      "close": 70.6,
-      "date": "2026-11-03",
-      "lower": 73.443,
-      "breach_pct": -3.87
+      "ticker": "TPL",
+      "close": 287.65,
+      "date": "2026-11-04",
+      "lower": 305.972,
+      "breach_pct": -5.99
+    },
+    {
+      "ticker": "VST",
+      "close": 120.29,
+      "date": "2026-11-04",
+      "lower": 126.817,
+      "breach_pct": -5.15
+    },
+    {
+      "ticker": "DVN",
+      "close": 44.12,
+      "date": "2026-11-04",
+      "lower": 46.238,
+      "breach_pct": -4.58
     }
   ]
 }
