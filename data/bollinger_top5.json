@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-04T23:12:02+00:00",
+  "updated_at_utc": "2026-11-05T23:11:20+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -9,42 +9,42 @@
   "threshold_pct": -3,
   "window": 20,
   "std_multiplier": 2,
-  "total_matches": 12,
+  "total_matches": 41,
   "results": [
     {
-      "ticker": "DDOG",
-      "close": 188.72,
-      "date": "2026-11-04",
-      "lower": 208.112,
-      "breach_pct": -9.32
+      "ticker": "SNDK",
+      "close": 806.43,
+      "date": "2026-11-05",
+      "lower": 937.112,
+      "breach_pct": -13.95
     },
     {
-      "ticker": "FIS",
-      "close": 29.76,
-      "date": "2026-11-04",
-      "lower": 31.896,
-      "breach_pct": -6.7
+      "ticker": "MU",
+      "close": 656.39,
+      "date": "2026-11-05",
+      "lower": 742.862,
+      "breach_pct": -11.64
     },
     {
-      "ticker": "TPL",
-      "close": 287.65,
-      "date": "2026-11-04",
-      "lower": 305.972,
-      "breach_pct": -5.99
+      "ticker": "WDC",
+      "close": 267.63,
+      "date": "2026-11-05",
+      "lower": 299.819,
+      "breach_pct": -10.74
     },
     {
-      "ticker": "VST",
-      "close": 120.29,
-      "date": "2026-11-04",
-      "lower": 126.817,
-      "breach_pct": -5.15
+      "ticker": "MRVL",
+      "close": 133.55,
+      "date": "2026-11-05",
+      "lower": 149.311,
+      "breach_pct": -10.56
     },
     {
-      "ticker": "DVN",
-      "close": 44.12,
-      "date": "2026-11-04",
-      "lower": 46.238,
-      "breach_pct": -4.58
+      "ticker": "STX",
+      "close": 466.53,
+      "date": "2026-11-05",
+      "lower": 521.0,
+      "breach_pct": -10.45
     }
   ]
 }

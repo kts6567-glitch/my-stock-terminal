@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-04T23:14:30+00:00",
+  "updated_at_utc": "2026-11-05T23:13:16+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -8,69 +8,70 @@
   "price_basis": "수정 종가",
   "results": [
     {
-      "ticker": "006400.KS",
-      "close": 545000.0,
-      "date": "2026-11-04",
-      "ma": 200,
-      "ma_value": 487467.5,
-      "day_change_pct": 11.57,
-      "distance_pct": 11.8,
-      "company": "삼성SDI",
-      "ma_periods": [
-        200
-      ]
-    },
-    {
-      "ticker": "078340.KQ",
-      "close": 33300.0,
-      "date": "2026-11-04",
-      "ma": 200,
-      "ma_value": 31137.171,
-      "day_change_pct": 5.71,
-      "distance_pct": 6.95,
-      "company": "컴투스",
-      "ma_periods": [
-        200
-      ]
-    },
-    {
-      "ticker": "068270.KS",
-      "close": 200000.0,
-      "date": "2026-11-04",
+      "ticker": "251270.KS",
+      "close": 36700.0,
+      "date": "2026-11-05",
       "ma": 20,
-      "ma_value": 189610.0,
-      "day_change_pct": 5.32,
-      "distance_pct": 5.48,
-      "company": "셀트리온",
+      "ma_value": 34137.5,
+      "day_change_pct": 7.31,
+      "distance_pct": 7.51,
+      "company": "넷마블",
       "ma_periods": [
         20,
-        200
+        50
       ]
     },
     {
-      "ticker": "015760.KS",
-      "close": 30450.0,
-      "date": "2026-11-04",
+      "ticker": "302440.KS",
+      "close": 36950.0,
+      "date": "2026-11-05",
       "ma": 20,
-      "ma_value": 28840.0,
-      "day_change_pct": 4.82,
-      "distance_pct": 5.58,
-      "company": "한국전력",
+      "ma_value": 34617.5,
+      "day_change_pct": 7.1,
+      "distance_pct": 6.74,
+      "company": "SK바이오사이언스",
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "096770.KS",
-      "close": 123700.0,
-      "date": "2026-11-04",
-      "ma": 200,
-      "ma_value": 122265.0,
-      "day_change_pct": 3.86,
-      "distance_pct": 1.17,
-      "company": "SK이노베이션",
+      "ticker": "000100.KS",
+      "close": 82600.0,
+      "date": "2026-11-05",
+      "ma": 20,
+      "ma_value": 78955.0,
+      "day_change_pct": 5.63,
+      "distance_pct": 4.62,
+      "company": "유한양행",
       "ma_periods": [
-        200
+        20,
+        50
+      ]
+    },
+    {
+      "ticker": "316140.KS",
+      "close": 31950.0,
+      "date": "2026-11-05",
+      "ma": 20,
+      "ma_value": 30940.0,
+      "day_change_pct": 5.27,
+      "distance_pct": 3.26,
+      "company": "우리금융지주",
+      "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "175330.KS",
+      "close": 27000.0,
+      "date": "2026-11-05",
+      "ma": 20,
+      "ma_value": 26147.5,
+      "day_change_pct": 4.65,
+      "distance_pct": 3.26,
+      "company": "JB금융지주",
+      "ma_periods": [
+        20
       ]
     }
   ]

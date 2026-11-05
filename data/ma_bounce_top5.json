@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-04T23:12:02+00:00",
+  "updated_at_utc": "2026-11-05T23:11:20+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -12,70 +12,66 @@
     50,
     200
   ],
-  "total_matches": 139,
+  "total_matches": 11,
   "results": [
     {
-      "ticker": "MOS",
-      "close": 21.62,
-      "date": "2026-11-04",
-      "ma": 20,
-      "ma_value": 18.619,
-      "day_change_pct": 17.37,
-      "distance_pct": 16.12,
-      "ma_periods": [
-        20
-      ]
-    },
-    {
-      "ticker": "XYZ",
-      "close": 87.63,
-      "date": "2026-11-04",
+      "ticker": "CHTR",
+      "close": 125.86,
+      "date": "2026-11-05",
       "ma": 50,
-      "ma_value": 77.877,
-      "day_change_pct": 15.3,
-      "distance_pct": 12.52,
+      "ma_value": 121.539,
+      "day_change_pct": 4.67,
+      "distance_pct": 3.55,
       "ma_periods": [
-        50,
-        20
-      ]
-    },
-    {
-      "ticker": "CDW",
-      "close": 168.75,
-      "date": "2026-11-04",
-      "ma": 20,
-      "ma_value": 155.187,
-      "day_change_pct": 12.67,
-      "distance_pct": 8.74,
-      "ma_periods": [
-        20,
         50
       ]
     },
     {
-      "ticker": "CNC",
-      "close": 76.01,
-      "date": "2026-11-04",
+      "ticker": "ALB",
+      "close": 98.37,
+      "date": "2026-11-05",
       "ma": 20,
-      "ma_value": 68.879,
-      "day_change_pct": 12.64,
-      "distance_pct": 10.35,
+      "ma_value": 95.392,
+      "day_change_pct": 3.58,
+      "distance_pct": 3.12,
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "UHS",
-      "close": 196.46,
-      "date": "2026-11-04",
-      "ma": 20,
-      "ma_value": 181.858,
-      "day_change_pct": 10.91,
-      "distance_pct": 8.03,
+      "ticker": "MOS",
+      "close": 22.33,
+      "date": "2026-11-05",
+      "ma": 50,
+      "ma_value": 21.714,
+      "day_change_pct": 3.28,
+      "distance_pct": 2.84,
       "ma_periods": [
-        20,
-        50,
+        50
+      ]
+    },
+    {
+      "ticker": "VMRK",
+      "close": 65.25,
+      "date": "2026-11-05",
+      "ma": 200,
+      "ma_value": 62.863,
+      "day_change_pct": 2.4,
+      "distance_pct": 3.8,
+      "ma_periods": [
         200
+      ]
+    },
+    {
+      "ticker": "CASY",
+      "close": 689.53,
+      "date": "2026-11-05",
+      "ma": 20,
+      "ma_value": 677.706,
+      "day_change_pct": 2.18,
+      "distance_pct": 1.74,
+      "ma_periods": [
+        20
       ]
     }
   ]
