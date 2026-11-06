@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-05T23:11:20+00:00",
+  "updated_at_utc": "2026-11-06T23:08:44+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -9,42 +9,42 @@
   "threshold_pct": -3,
   "window": 20,
   "std_multiplier": 2,
-  "total_matches": 41,
+  "total_matches": 11,
   "results": [
     {
-      "ticker": "SNDK",
-      "close": 806.43,
-      "date": "2026-11-05",
-      "lower": 937.112,
-      "breach_pct": -13.95
+      "ticker": "AXON",
+      "close": 313.0,
+      "date": "2026-11-06",
+      "lower": 355.029,
+      "breach_pct": -11.84
     },
     {
-      "ticker": "MU",
-      "close": 656.39,
-      "date": "2026-11-05",
-      "lower": 742.862,
-      "breach_pct": -11.64
+      "ticker": "MCHP",
+      "close": 58.35,
+      "date": "2026-11-06",
+      "lower": 64.485,
+      "breach_pct": -9.51
     },
     {
       "ticker": "WDC",
-      "close": 267.63,
-      "date": "2026-11-05",
-      "lower": 299.819,
-      "breach_pct": -10.74
-    },
-    {
-      "ticker": "MRVL",
-      "close": 133.55,
-      "date": "2026-11-05",
-      "lower": 149.311,
-      "breach_pct": -10.56
+      "close": 263.78,
+      "date": "2026-11-06",
+      "lower": 282.691,
+      "breach_pct": -6.69
     },
     {
       "ticker": "STX",
-      "close": 466.53,
-      "date": "2026-11-05",
-      "lower": 521.0,
-      "breach_pct": -10.45
+      "close": 460.99,
+      "date": "2026-11-06",
+      "lower": 491.466,
+      "breach_pct": -6.2
+    },
+    {
+      "ticker": "SNDK",
+      "close": 835.06,
+      "date": "2026-11-06",
+      "lower": 874.845,
+      "breach_pct": -4.55
     }
   ]
 }

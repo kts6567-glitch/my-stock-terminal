@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-05T23:11:20+00:00",
+  "updated_at_utc": "2026-11-06T23:08:44+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -12,66 +12,68 @@
     50,
     200
   ],
-  "total_matches": 11,
+  "total_matches": 42,
   "results": [
     {
-      "ticker": "CHTR",
-      "close": 125.86,
-      "date": "2026-11-05",
-      "ma": 50,
-      "ma_value": 121.539,
-      "day_change_pct": 4.67,
-      "distance_pct": 3.55,
-      "ma_periods": [
-        50
-      ]
-    },
-    {
-      "ticker": "ALB",
-      "close": 98.37,
-      "date": "2026-11-05",
+      "ticker": "ABNB",
+      "close": 189.99,
+      "date": "2026-11-06",
       "ma": 20,
-      "ma_value": 95.392,
-      "day_change_pct": 3.58,
-      "distance_pct": 3.12,
+      "ma_value": 171.465,
+      "day_change_pct": 11.67,
+      "distance_pct": 10.8,
       "ma_periods": [
-        20
-      ]
-    },
-    {
-      "ticker": "MOS",
-      "close": 22.33,
-      "date": "2026-11-05",
-      "ma": 50,
-      "ma_value": 21.714,
-      "day_change_pct": 3.28,
-      "distance_pct": 2.84,
-      "ma_periods": [
+        20,
         50
       ]
     },
     {
-      "ticker": "VMRK",
-      "close": 65.25,
-      "date": "2026-11-05",
+      "ticker": "AMD",
+      "close": 449.04,
+      "date": "2026-11-06",
       "ma": 200,
-      "ma_value": 62.863,
-      "day_change_pct": 2.4,
-      "distance_pct": 3.8,
+      "ma_value": 415.977,
+      "day_change_pct": 11.04,
+      "distance_pct": 7.95,
       "ma_periods": [
         200
       ]
     },
     {
-      "ticker": "CASY",
-      "close": 689.53,
-      "date": "2026-11-05",
+      "ticker": "HUM",
+      "close": 433.74,
+      "date": "2026-11-06",
       "ma": 20,
-      "ma_value": 677.706,
-      "day_change_pct": 2.18,
-      "distance_pct": 1.74,
+      "ma_value": 419.609,
+      "day_change_pct": 5.33,
+      "distance_pct": 3.37,
       "ma_periods": [
         20
+      ]
+    },
+    {
+      "ticker": "ECHO",
+      "close": 94.62,
+      "date": "2026-11-06",
+      "ma": 50,
+      "ma_value": 92.004,
+      "day_change_pct": 5.23,
+      "distance_pct": 2.84,
+      "ma_periods": [
+        50,
+        20
+      ]
+    },
+    {
+      "ticker": "WYNN",
+      "close": 83.11,
+      "date": "2026-11-06",
+      "ma": 50,
+      "ma_value": 80.677,
+      "day_change_pct": 4.78,
+      "distance_pct": 3.02,
+      "ma_periods": [
+        50
       ]
     }
   ]

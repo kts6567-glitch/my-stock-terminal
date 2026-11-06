@@ -1,37 +1,53 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-05T23:13:16+00:00",
+  "updated_at_utc": "2026-11-06T23:10:59+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
   "source": "Yahoo Finance 비공식 일봉",
   "price_basis": "수정 종가",
   "threshold_pct": -3,
-  "total_matches": 3,
+  "total_matches": 8,
   "results": [
     {
-      "ticker": "028300.KQ",
-      "close": 32400.0,
-      "date": "2026-11-05",
-      "lower": 34688.361,
-      "breach_pct": -6.6,
-      "company": "HLB"
+      "ticker": "010120.KS",
+      "close": 116500.0,
+      "date": "2026-11-06",
+      "lower": 128013.129,
+      "breach_pct": -8.99,
+      "company": "LS ELECTRIC"
+    },
+    {
+      "ticker": "071050.KS",
+      "close": 121600.0,
+      "date": "2026-11-06",
+      "lower": 132722.566,
+      "breach_pct": -8.38,
+      "company": "한국금융지주"
     },
     {
       "ticker": "039030.KQ",
-      "close": 307500.0,
-      "date": "2026-11-05",
-      "lower": 317643.72,
-      "breach_pct": -3.19,
+      "close": 283500.0,
+      "date": "2026-11-06",
+      "lower": 301099.216,
+      "breach_pct": -5.84,
       "company": "이오테크닉스"
     },
     {
-      "ticker": "010120.KS",
-      "close": 129800.0,
-      "date": "2026-11-05",
-      "lower": 133918.124,
-      "breach_pct": -3.08,
-      "company": "LS ELECTRIC"
+      "ticker": "028300.KQ",
+      "close": 31250.0,
+      "date": "2026-11-06",
+      "lower": 33071.999,
+      "breach_pct": -5.51,
+      "company": "HLB"
+    },
+    {
+      "ticker": "018880.KS",
+      "close": 3060.0,
+      "date": "2026-11-06",
+      "lower": 3231.442,
+      "breach_pct": -5.31,
+      "company": "한온시스템"
     }
   ]
 }
