@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-07T23:03:53+00:00",
+  "updated_at_utc": "2026-11-10T23:10:26+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -8,56 +8,68 @@
   "price_basis": "수정 종가",
   "results": [
     {
-      "ticker": "112040.KQ",
-      "close": 14130.0,
-      "date": "2026-11-06",
-      "ma": 20,
-      "ma_value": 14040.5,
-      "day_change_pct": 1.58,
-      "distance_pct": 0.64,
-      "company": "위메이드",
+      "ticker": "036930.KQ",
+      "close": 152300.0,
+      "date": "2026-11-10",
+      "ma": 200,
+      "ma_value": 141610.0,
+      "day_change_pct": 7.48,
+      "distance_pct": 7.55,
+      "company": "주성엔지니어링",
       "ma_periods": [
-        20
+        200
       ]
     },
     {
-      "ticker": "078340.KQ",
-      "close": 34750.0,
-      "date": "2026-11-06",
+      "ticker": "035420.KS",
+      "close": 193000.0,
+      "date": "2026-11-10",
       "ma": 50,
-      "ma_value": 34051.0,
-      "day_change_pct": 1.46,
-      "distance_pct": 2.05,
-      "company": "컴투스",
+      "ma_value": 192346.0,
+      "day_change_pct": 3.15,
+      "distance_pct": 0.34,
+      "company": "NAVER",
       "ma_periods": [
         50
       ]
     },
     {
-      "ticker": "128940.KS",
-      "close": 467000.0,
-      "date": "2026-11-06",
-      "ma": 50,
-      "ma_value": 459070.0,
-      "day_change_pct": 0.43,
-      "distance_pct": 1.73,
-      "company": "한미약품",
+      "ticker": "251270.KS",
+      "close": 34850.0,
+      "date": "2026-11-10",
+      "ma": 20,
+      "ma_value": 34232.5,
+      "day_change_pct": 3.11,
+      "distance_pct": 1.8,
+      "company": "넷마블",
       "ma_periods": [
-        50,
-        200
+        20
       ]
     },
     {
-      "ticker": "024110.KS",
-      "close": 19490.0,
-      "date": "2026-11-06",
+      "ticker": "175330.KS",
+      "close": 26350.0,
+      "date": "2026-11-10",
       "ma": 20,
-      "ma_value": 19479.0,
-      "day_change_pct": 0.21,
-      "distance_pct": 0.06,
-      "company": "기업은행",
+      "ma_value": 25621.93,
+      "day_change_pct": 2.8,
+      "distance_pct": 2.84,
+      "company": "JB금융지주",
       "ma_periods": [
         20
+      ]
+    },
+    {
+      "ticker": "015760.KS",
+      "close": 30600.0,
+      "date": "2026-11-10",
+      "ma": 50,
+      "ma_value": 30424.0,
+      "day_change_pct": 2.34,
+      "distance_pct": 0.58,
+      "company": "한국전력",
+      "ma_periods": [
+        50
       ]
     }
   ]
