@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-10T23:10:26+00:00",
+  "updated_at_utc": "2026-11-11T23:21:19+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -8,66 +8,67 @@
   "price_basis": "수정 종가",
   "results": [
     {
-      "ticker": "036930.KQ",
-      "close": 152300.0,
-      "date": "2026-11-10",
-      "ma": 200,
-      "ma_value": 141610.0,
-      "day_change_pct": 7.48,
-      "distance_pct": 7.55,
-      "company": "주성엔지니어링",
+      "ticker": "047810.KS",
+      "close": 109000.0,
+      "date": "2026-11-11",
+      "ma": 20,
+      "ma_value": 103855.0,
+      "day_change_pct": 7.71,
+      "distance_pct": 4.95,
+      "company": "한국항공우주",
       "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "003670.KS",
+      "close": 177600.0,
+      "date": "2026-11-11",
+      "ma": 20,
+      "ma_value": 169060.0,
+      "day_change_pct": 5.09,
+      "distance_pct": 5.05,
+      "company": "포스코퓨처엠",
+      "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "051910.KS",
+      "close": 245500.0,
+      "date": "2026-11-11",
+      "ma": 20,
+      "ma_value": 241075.0,
+      "day_change_pct": 3.15,
+      "distance_pct": 1.84,
+      "company": "LG화학",
+      "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "086790.KS",
+      "close": 120100.0,
+      "date": "2026-11-11",
+      "ma": 20,
+      "ma_value": 117788.19,
+      "day_change_pct": 1.44,
+      "distance_pct": 1.96,
+      "company": "하나금융지주",
+      "ma_periods": [
+        20,
         200
       ]
     },
     {
-      "ticker": "035420.KS",
-      "close": 193000.0,
-      "date": "2026-11-10",
+      "ticker": "138040.KS",
+      "close": 129500.0,
+      "date": "2026-11-11",
       "ma": 50,
-      "ma_value": 192346.0,
-      "day_change_pct": 3.15,
-      "distance_pct": 0.34,
-      "company": "NAVER",
-      "ma_periods": [
-        50
-      ]
-    },
-    {
-      "ticker": "251270.KS",
-      "close": 34850.0,
-      "date": "2026-11-10",
-      "ma": 20,
-      "ma_value": 34232.5,
-      "day_change_pct": 3.11,
-      "distance_pct": 1.8,
-      "company": "넷마블",
-      "ma_periods": [
-        20
-      ]
-    },
-    {
-      "ticker": "175330.KS",
-      "close": 26350.0,
-      "date": "2026-11-10",
-      "ma": 20,
-      "ma_value": 25621.93,
-      "day_change_pct": 2.8,
-      "distance_pct": 2.84,
-      "company": "JB금융지주",
-      "ma_periods": [
-        20
-      ]
-    },
-    {
-      "ticker": "015760.KS",
-      "close": 30600.0,
-      "date": "2026-11-10",
-      "ma": 50,
-      "ma_value": 30424.0,
-      "day_change_pct": 2.34,
-      "distance_pct": 0.58,
-      "company": "한국전력",
+      "ma_value": 129190.0,
+      "day_change_pct": 0.78,
+      "distance_pct": 0.24,
+      "company": "메리츠금융지주",
       "ma_periods": [
         50
       ]

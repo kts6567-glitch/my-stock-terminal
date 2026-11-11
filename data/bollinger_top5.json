@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-10T23:08:01+00:00",
+  "updated_at_utc": "2026-11-11T23:18:26+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -9,21 +9,6 @@
   "threshold_pct": -3,
   "window": 20,
   "std_multiplier": 2,
-  "total_matches": 2,
-  "results": [
-    {
-      "ticker": "NVDA",
-      "close": 168.89,
-      "date": "2026-11-10",
-      "lower": 176.142,
-      "breach_pct": -4.12
-    },
-    {
-      "ticker": "AXON",
-      "close": 302.54,
-      "date": "2026-11-10",
-      "lower": 314.933,
-      "breach_pct": -3.94
-    }
-  ]
+  "total_matches": 0,
+  "results": []
 }
