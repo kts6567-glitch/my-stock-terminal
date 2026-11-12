@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-11T23:21:19+00:00",
+  "updated_at_utc": "2026-11-12T23:13:37+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -8,69 +8,68 @@
   "price_basis": "수정 종가",
   "results": [
     {
-      "ticker": "047810.KS",
-      "close": 109000.0,
-      "date": "2026-11-11",
+      "ticker": "259960.KS",
+      "close": 200000.0,
+      "date": "2026-11-12",
       "ma": 20,
-      "ma_value": 103855.0,
-      "day_change_pct": 7.71,
-      "distance_pct": 4.95,
-      "company": "한국항공우주",
+      "ma_value": 196145.0,
+      "day_change_pct": 2.15,
+      "distance_pct": 1.97,
+      "company": "크래프톤",
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "003670.KS",
-      "close": 177600.0,
-      "date": "2026-11-11",
+      "ticker": "207940.KS",
+      "close": 1449000.0,
+      "date": "2026-11-12",
       "ma": 20,
-      "ma_value": 169060.0,
-      "day_change_pct": 5.09,
-      "distance_pct": 5.05,
-      "company": "포스코퓨처엠",
+      "ma_value": 1433650.0,
+      "day_change_pct": 1.33,
+      "distance_pct": 1.07,
+      "company": "삼성바이오로직스",
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "051910.KS",
-      "close": 245500.0,
-      "date": "2026-11-11",
-      "ma": 20,
-      "ma_value": 241075.0,
-      "day_change_pct": 3.15,
+      "ticker": "000100.KS",
+      "close": 79800.0,
+      "date": "2026-11-12",
+      "ma": 50,
+      "ma_value": 78358.0,
+      "day_change_pct": 1.01,
       "distance_pct": 1.84,
-      "company": "LG화학",
+      "company": "유한양행",
       "ma_periods": [
-        20
+        50
+      ]
+    },
+    {
+      "ticker": "015760.KS",
+      "close": 30650.0,
+      "date": "2026-11-12",
+      "ma": 50,
+      "ma_value": 30316.0,
+      "day_change_pct": 0.66,
+      "distance_pct": 1.1,
+      "company": "한국전력",
+      "ma_periods": [
+        50
       ]
     },
     {
       "ticker": "086790.KS",
-      "close": 120100.0,
-      "date": "2026-11-11",
-      "ma": 20,
-      "ma_value": 117788.19,
-      "day_change_pct": 1.44,
-      "distance_pct": 1.96,
+      "close": 120500.0,
+      "date": "2026-11-12",
+      "ma": 200,
+      "ma_value": 119397.779,
+      "day_change_pct": 0.33,
+      "distance_pct": 0.92,
       "company": "하나금융지주",
       "ma_periods": [
-        20,
         200
-      ]
-    },
-    {
-      "ticker": "138040.KS",
-      "close": 129500.0,
-      "date": "2026-11-11",
-      "ma": 50,
-      "ma_value": 129190.0,
-      "day_change_pct": 0.78,
-      "distance_pct": 0.24,
-      "company": "메리츠금융지주",
-      "ma_periods": [
-        50
       ]
     }
   ]

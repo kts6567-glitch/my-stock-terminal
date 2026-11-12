@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-11T23:18:26+00:00",
+  "updated_at_utc": "2026-11-12T23:11:17+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -12,67 +12,67 @@
     50,
     200
   ],
-  "total_matches": 82,
+  "total_matches": 39,
   "results": [
     {
-      "ticker": "DELL",
-      "close": 373.68,
-      "date": "2026-11-11",
+      "ticker": "AMD",
+      "close": 585.3,
+      "date": "2026-11-12",
+      "ma": 50,
+      "ma_value": 552.994,
+      "day_change_pct": 5.86,
+      "distance_pct": 5.84,
+      "ma_periods": [
+        50
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "close": 364.36,
+      "date": "2026-11-12",
+      "ma": 50,
+      "ma_value": 345.444,
+      "day_change_pct": 5.54,
+      "distance_pct": 5.48,
+      "ma_periods": [
+        50
+      ]
+    },
+    {
+      "ticker": "DVN",
+      "close": 46.23,
+      "date": "2026-11-12",
       "ma": 200,
-      "ma_value": 340.205,
-      "day_change_pct": 11.75,
-      "distance_pct": 9.84,
+      "ma_value": 45.858,
+      "day_change_pct": 2.85,
+      "distance_pct": 0.81,
       "ma_periods": [
         200
       ]
     },
     {
-      "ticker": "COHR",
-      "close": 234.51,
-      "date": "2026-11-11",
-      "ma": 20,
-      "ma_value": 219.292,
-      "day_change_pct": 9.25,
-      "distance_pct": 6.94,
+      "ticker": "CEG",
+      "close": 282.4,
+      "date": "2026-11-12",
+      "ma": 200,
+      "ma_value": 277.92,
+      "day_change_pct": 2.79,
+      "distance_pct": 1.61,
       "ma_periods": [
-        20
+        200
       ]
     },
     {
-      "ticker": "AMD",
-      "close": 552.9,
-      "date": "2026-11-11",
-      "ma": 20,
-      "ma_value": 517.603,
-      "day_change_pct": 7.32,
-      "distance_pct": 6.82,
+      "ticker": "LYB",
+      "close": 63.88,
+      "date": "2026-11-12",
+      "ma": 200,
+      "ma_value": 63.546,
+      "day_change_pct": 2.08,
+      "distance_pct": 0.52,
       "ma_periods": [
-        20
-      ]
-    },
-    {
-      "ticker": "SWKS",
-      "close": 87.64,
-      "date": "2026-11-11",
-      "ma": 20,
-      "ma_value": 83.575,
-      "day_change_pct": 5.96,
-      "distance_pct": 4.86,
-      "ma_periods": [
-        20,
+        200,
         50
-      ]
-    },
-    {
-      "ticker": "KLAC",
-      "close": 161.01,
-      "date": "2026-11-11",
-      "ma": 20,
-      "ma_value": 155.248,
-      "day_change_pct": 5.24,
-      "distance_pct": 3.71,
-      "ma_periods": [
-        20
       ]
     }
   ]
