@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-12T23:11:17+00:00",
+  "updated_at_utc": "2026-11-13T23:09:14+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -12,66 +12,68 @@
     50,
     200
   ],
-  "total_matches": 39,
+  "total_matches": 109,
   "results": [
     {
-      "ticker": "AMD",
-      "close": 585.3,
-      "date": "2026-11-12",
+      "ticker": "GPN",
+      "close": 91.9,
+      "date": "2026-11-13",
+      "ma": 20,
+      "ma_value": 90.841,
+      "day_change_pct": 4.21,
+      "distance_pct": 1.17,
+      "ma_periods": [
+        20,
+        50
+      ]
+    },
+    {
+      "ticker": "FOXA",
+      "close": 68.42,
+      "date": "2026-11-13",
+      "ma": 20,
+      "ma_value": 66.248,
+      "day_change_pct": 4.12,
+      "distance_pct": 3.28,
+      "ma_periods": [
+        20,
+        50
+      ]
+    },
+    {
+      "ticker": "FOX",
+      "close": 61.11,
+      "date": "2026-11-13",
+      "ma": 20,
+      "ma_value": 59.014,
+      "day_change_pct": 4.09,
+      "distance_pct": 3.55,
+      "ma_periods": [
+        20,
+        50
+      ]
+    },
+    {
+      "ticker": "HAL",
+      "close": 33.78,
+      "date": "2026-11-13",
       "ma": 50,
-      "ma_value": 552.994,
-      "day_change_pct": 5.86,
-      "distance_pct": 5.84,
+      "ma_value": 33.665,
+      "day_change_pct": 3.11,
+      "distance_pct": 0.34,
       "ma_periods": [
         50
       ]
     },
     {
-      "ticker": "AVGO",
-      "close": 364.36,
-      "date": "2026-11-12",
+      "ticker": "WDAY",
+      "close": 196.45,
+      "date": "2026-11-13",
       "ma": 50,
-      "ma_value": 345.444,
-      "day_change_pct": 5.54,
-      "distance_pct": 5.48,
+      "ma_value": 193.31,
+      "day_change_pct": 3.05,
+      "distance_pct": 1.62,
       "ma_periods": [
-        50
-      ]
-    },
-    {
-      "ticker": "DVN",
-      "close": 46.23,
-      "date": "2026-11-12",
-      "ma": 200,
-      "ma_value": 45.858,
-      "day_change_pct": 2.85,
-      "distance_pct": 0.81,
-      "ma_periods": [
-        200
-      ]
-    },
-    {
-      "ticker": "CEG",
-      "close": 282.4,
-      "date": "2026-11-12",
-      "ma": 200,
-      "ma_value": 277.92,
-      "day_change_pct": 2.79,
-      "distance_pct": 1.61,
-      "ma_periods": [
-        200
-      ]
-    },
-    {
-      "ticker": "LYB",
-      "close": 63.88,
-      "date": "2026-11-12",
-      "ma": 200,
-      "ma_value": 63.546,
-      "day_change_pct": 2.08,
-      "distance_pct": 0.52,
-      "ma_periods": [
-        200,
         50
       ]
     }

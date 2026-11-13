@@ -1,21 +1,37 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-12T23:13:37+00:00",
+  "updated_at_utc": "2026-11-13T23:12:04+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
   "source": "Yahoo Finance 비공식 일봉",
   "price_basis": "수정 종가",
   "threshold_pct": -3,
-  "total_matches": 1,
+  "total_matches": 3,
   "results": [
     {
-      "ticker": "138040.KS",
-      "close": 112600.0,
-      "date": "2026-11-12",
-      "lower": 119288.346,
-      "breach_pct": -5.61,
-      "company": "메리츠금융지주"
+      "ticker": "078340.KQ",
+      "close": 27050.0,
+      "date": "2026-11-13",
+      "lower": 28989.034,
+      "breach_pct": -6.69,
+      "company": "컴투스"
+    },
+    {
+      "ticker": "263750.KQ",
+      "close": 27400.0,
+      "date": "2026-11-13",
+      "lower": 29055.926,
+      "breach_pct": -5.7,
+      "company": "펄어비스"
+    },
+    {
+      "ticker": "036570.KS",
+      "close": 179000.0,
+      "date": "2026-11-13",
+      "lower": 184893.079,
+      "breach_pct": -3.19,
+      "company": "엔씨소프트"
     }
   ]
 }
