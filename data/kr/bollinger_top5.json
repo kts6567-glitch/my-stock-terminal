@@ -1,37 +1,21 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-14T23:04:08+00:00",
+  "updated_at_utc": "2026-11-17T23:23:26+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
   "source": "Yahoo Finance 비공식 일봉",
   "price_basis": "수정 종가",
   "threshold_pct": -3,
-  "total_matches": 3,
+  "total_matches": 1,
   "results": [
     {
-      "ticker": "078340.KQ",
-      "close": 27050.0,
-      "date": "2026-11-13",
-      "lower": 28989.034,
-      "breach_pct": -6.69,
-      "company": "컴투스"
-    },
-    {
-      "ticker": "263750.KQ",
-      "close": 27400.0,
-      "date": "2026-11-13",
-      "lower": 29055.926,
-      "breach_pct": -5.7,
-      "company": "펄어비스"
-    },
-    {
-      "ticker": "036570.KS",
-      "close": 179000.0,
-      "date": "2026-11-13",
-      "lower": 184893.079,
-      "breach_pct": -3.19,
-      "company": "엔씨소프트"
+      "ticker": "015760.KS",
+      "close": 25100.0,
+      "date": "2026-11-17",
+      "lower": 26035.73,
+      "breach_pct": -3.59,
+      "company": "한국전력"
     }
   ]
 }

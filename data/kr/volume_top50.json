@@ -1,507 +1,534 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-14T23:04:08+00:00",
+  "updated_at_utc": "2026-11-17T23:23:26+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
   "source": "Yahoo Finance 비공식 일봉",
   "price_basis": "수정 종가",
-  "as_of_date": "2026-11-13",
+  "as_of_date": "2026-11-17",
   "results": [
     {
       "ticker": "005930.KS",
-      "close": 206000.0,
-      "date": "2026-11-13",
-      "volume": 12829515,
-      "volume_1w": 83934384,
-      "volume_1m": 380315141,
+      "close": 190300.0,
+      "date": "2026-11-17",
+      "volume": 16773338,
+      "volume_1w": 81725932,
+      "volume_1m": 376725790,
       "company": "삼성전자"
     },
     {
+      "ticker": "000660.KS",
+      "close": 1098000.0,
+      "date": "2026-11-17",
+      "volume": 3736935,
+      "volume_1w": 18820913,
+      "volume_1m": 81246307,
+      "company": "SK하이닉스"
+    },
+    {
+      "ticker": "018880.KS",
+      "close": 2995.0,
+      "date": "2026-11-17",
+      "volume": 2539767,
+      "volume_1w": 18511247,
+      "volume_1m": 84843929,
+      "company": "한온시스템"
+    },
+    {
+      "ticker": "034020.KS",
+      "close": 42600.0,
+      "date": "2026-11-17",
+      "volume": 2107337,
+      "volume_1w": 12053054,
+      "volume_1m": 58594314,
+      "company": "두산에너빌리티"
+    },
+    {
       "ticker": "010140.KS",
-      "close": 16610.0,
-      "date": "2026-11-13",
-      "volume": 5754633,
-      "volume_1w": 23176232,
-      "volume_1m": 84790278,
+      "close": 16000.0,
+      "date": "2026-11-17",
+      "volume": 2098937,
+      "volume_1w": 17582263,
+      "volume_1m": 82933484,
       "company": "삼성중공업"
     },
     {
       "ticker": "015760.KS",
-      "close": 27650.0,
-      "date": "2026-11-13",
-      "volume": 5075534,
-      "volume_1w": 12297910,
-      "volume_1m": 33145671,
+      "close": 25100.0,
+      "date": "2026-11-17",
+      "volume": 2006947,
+      "volume_1w": 12905248,
+      "volume_1m": 35226617,
       "company": "한국전력"
     },
     {
-      "ticker": "018880.KS",
-      "close": 3050.0,
-      "date": "2026-11-13",
-      "volume": 4484028,
-      "volume_1w": 21165342,
-      "volume_1m": 92197841,
-      "company": "한온시스템"
-    },
-    {
-      "ticker": "000660.KS",
-      "close": 1216000.0,
-      "date": "2026-11-13",
-      "volume": 3215511,
-      "volume_1w": 18694767,
-      "volume_1m": 81618338,
-      "company": "SK하이닉스"
-    },
-    {
-      "ticker": "034020.KS",
-      "close": 46850.0,
-      "date": "2026-11-13",
-      "volume": 2235073,
-      "volume_1w": 14995554,
-      "volume_1m": 58565695,
-      "company": "두산에너빌리티"
+      "ticker": "316140.KS",
+      "close": 32600.0,
+      "date": "2026-11-17",
+      "volume": 1739578,
+      "volume_1w": 8537908,
+      "volume_1m": 39464215,
+      "company": "우리금융지주"
     },
     {
       "ticker": "036930.KQ",
-      "close": 172500.0,
-      "date": "2026-11-13",
-      "volume": 2121462,
-      "volume_1w": 9842017,
-      "volume_1m": 30689275,
+      "close": 147700.0,
+      "date": "2026-11-17",
+      "volume": 1342003,
+      "volume_1w": 9683646,
+      "volume_1m": 30414750,
       "company": "주성엔지니어링"
     },
     {
-      "ticker": "042660.KS",
-      "close": 48350.0,
-      "date": "2026-11-13",
-      "volume": 1698494,
-      "volume_1w": 5223388,
-      "volume_1m": 46743837,
-      "company": "한화오션"
+      "ticker": "001440.KS",
+      "close": 17450.0,
+      "date": "2026-11-17",
+      "volume": 1248515,
+      "volume_1w": 7036828,
+      "volume_1m": 31305949,
+      "company": "대한전선"
     },
     {
-      "ticker": "035420.KS",
-      "close": 172500.0,
-      "date": "2026-11-13",
-      "volume": 1597403,
-      "volume_1w": 6574988,
-      "volume_1m": 18160233,
-      "company": "NAVER"
+      "ticker": "055550.KS",
+      "close": 87500.0,
+      "date": "2026-11-17",
+      "volume": 1031292,
+      "volume_1w": 5180462,
+      "volume_1m": 21963708,
+      "company": "신한지주"
     },
     {
       "ticker": "035720.KS",
       "close": 31700.0,
-      "date": "2026-11-13",
-      "volume": 1557273,
-      "volume_1w": 9230688,
-      "volume_1m": 35186754,
+      "date": "2026-11-17",
+      "volume": 1000483,
+      "volume_1w": 7554513,
+      "volume_1m": 34893155,
       "company": "카카오"
     },
     {
-      "ticker": "403870.KQ",
-      "close": 40700.0,
-      "date": "2026-11-13",
-      "volume": 1551258,
-      "volume_1w": 7681257,
-      "volume_1m": 32275384,
-      "company": "HPSP"
-    },
-    {
-      "ticker": "316140.KS",
-      "close": 32500.0,
-      "date": "2026-11-13",
-      "volume": 1350195,
-      "volume_1w": 8286383,
-      "volume_1m": 39656962,
-      "company": "우리금융지주"
-    },
-    {
-      "ticker": "001440.KS",
-      "close": 18560.0,
-      "date": "2026-11-13",
-      "volume": 1301887,
-      "volume_1w": 7886403,
-      "volume_1m": 32010159,
-      "company": "대한전선"
-    },
-    {
       "ticker": "000270.KS",
-      "close": 94600.0,
-      "date": "2026-11-13",
-      "volume": 1015837,
-      "volume_1w": 4803458,
-      "volume_1m": 20185189,
+      "close": 92100.0,
+      "date": "2026-11-17",
+      "volume": 979142,
+      "volume_1w": 4571100,
+      "volume_1m": 20436138,
       "company": "기아"
     },
     {
-      "ticker": "240810.KQ",
-      "close": 77700.0,
-      "date": "2026-11-13",
-      "volume": 967141,
-      "volume_1w": 5158824,
-      "volume_1m": 15445226,
-      "company": "원익IPS"
-    },
-    {
-      "ticker": "055550.KS",
-      "close": 89800.0,
-      "date": "2026-11-13",
-      "volume": 913692,
-      "volume_1w": 5215457,
-      "volume_1m": 22305827,
-      "company": "신한지주"
-    },
-    {
-      "ticker": "009150.KS",
-      "close": 855000.0,
-      "date": "2026-11-13",
-      "volume": 798414,
-      "volume_1w": 3984625,
-      "volume_1m": 17778378,
-      "company": "삼성전기"
-    },
-    {
-      "ticker": "086520.KQ",
-      "close": 72700.0,
-      "date": "2026-11-13",
-      "volume": 797226,
-      "volume_1w": 5063301,
-      "volume_1m": 18715373,
-      "company": "에코프로"
-    },
-    {
-      "ticker": "024110.KS",
-      "close": 19120.0,
-      "date": "2026-11-13",
-      "volume": 746017,
-      "volume_1w": 3180941,
-      "volume_1m": 15798205,
-      "company": "기업은행"
-    },
-    {
-      "ticker": "000990.KS",
-      "close": 81600.0,
-      "date": "2026-11-13",
-      "volume": 722767,
-      "volume_1w": 3545429,
-      "volume_1m": 10188392,
-      "company": "DB하이텍"
-    },
-    {
-      "ticker": "263750.KQ",
-      "close": 27400.0,
-      "date": "2026-11-13",
-      "volume": 709678,
-      "volume_1w": 1810507,
-      "volume_1m": 5584013,
-      "company": "펄어비스"
-    },
-    {
-      "ticker": "139130.KS",
-      "close": 15750.0,
-      "date": "2026-11-13",
-      "volume": 677677,
-      "volume_1w": 2714126,
-      "volume_1m": 11483831,
-      "company": "DGB금융지주"
-    },
-    {
-      "ticker": "086790.KS",
-      "close": 124600.0,
-      "date": "2026-11-13",
-      "volume": 658546,
-      "volume_1w": 3128808,
-      "volume_1m": 13439210,
-      "company": "하나금융지주"
+      "ticker": "403870.KQ",
+      "close": 36000.0,
+      "date": "2026-11-17",
+      "volume": 976191,
+      "volume_1w": 7309298,
+      "volume_1m": 30137337,
+      "company": "HPSP"
     },
     {
       "ticker": "105560.KS",
-      "close": 159000.0,
-      "date": "2026-11-13",
-      "volume": 651807,
-      "volume_1w": 4494087,
-      "volume_1m": 19270071,
+      "close": 156800.0,
+      "date": "2026-11-17",
+      "volume": 917854,
+      "volume_1w": 4495349,
+      "volume_1m": 19454424,
       "company": "KB금융"
     },
     {
-      "ticker": "058470.KQ",
-      "close": 51600.0,
-      "date": "2026-11-13",
-      "volume": 644517,
-      "volume_1w": 2820477,
-      "volume_1m": 13282654,
-      "company": "리노공업"
-    },
-    {
-      "ticker": "028300.KQ",
-      "close": 28550.0,
-      "date": "2026-11-13",
-      "volume": 611796,
-      "volume_1w": 3012282,
-      "volume_1m": 13437645,
-      "company": "HLB"
+      "ticker": "009150.KS",
+      "close": 754000.0,
+      "date": "2026-11-17",
+      "volume": 708435,
+      "volume_1w": 4038485,
+      "volume_1m": 17854117,
+      "company": "삼성전기"
     },
     {
       "ticker": "272210.KS",
-      "close": 53900.0,
-      "date": "2026-11-13",
-      "volume": 568706,
-      "volume_1w": 2542830,
-      "volume_1m": 17793058,
+      "close": 49100.0,
+      "date": "2026-11-17",
+      "volume": 679344,
+      "volume_1w": 2970287,
+      "volume_1m": 16498477,
       "company": "한화시스템"
     },
     {
-      "ticker": "005380.KS",
-      "close": 269500.0,
-      "date": "2026-11-13",
-      "volume": 505173,
-      "volume_1w": 2429875,
-      "volume_1m": 11843505,
-      "company": "현대차"
+      "ticker": "042660.KS",
+      "close": 44850.0,
+      "date": "2026-11-17",
+      "volume": 646309,
+      "volume_1w": 4699696,
+      "volume_1m": 23948662,
+      "company": "한화오션"
     },
     {
-      "ticker": "042700.KS",
-      "close": 181700.0,
-      "date": "2026-11-13",
-      "volume": 503592,
-      "volume_1w": 3210613,
-      "volume_1m": 13963886,
-      "company": "한미반도체"
+      "ticker": "086790.KS",
+      "close": 125100.0,
+      "date": "2026-11-17",
+      "volume": 622873,
+      "volume_1w": 3151538,
+      "volume_1m": 13257048,
+      "company": "하나금융지주"
     },
     {
-      "ticker": "097230.KS",
-      "close": 11630.0,
-      "date": "2026-11-13",
-      "volume": 498283,
-      "volume_1w": 1474746,
-      "volume_1m": 5266100,
-      "company": "HJ중공업"
+      "ticker": "035420.KS",
+      "close": 170000.0,
+      "date": "2026-11-17",
+      "volume": 567572,
+      "volume_1w": 5802050,
+      "volume_1m": 18364960,
+      "company": "NAVER"
     },
     {
-      "ticker": "103590.KS",
-      "close": 56700.0,
-      "date": "2026-11-13",
-      "volume": 488599,
-      "volume_1w": 2550651,
-      "volume_1m": 6877819,
-      "company": "일진전기"
+      "ticker": "086520.KQ",
+      "close": 67600.0,
+      "date": "2026-11-17",
+      "volume": 564114,
+      "volume_1w": 4079641,
+      "volume_1m": 18053055,
+      "company": "에코프로"
     },
     {
       "ticker": "010120.KS",
-      "close": 123300.0,
-      "date": "2026-11-13",
-      "volume": 467845,
-      "volume_1w": 3912282,
-      "volume_1m": 15116978,
+      "close": 113600.0,
+      "date": "2026-11-17",
+      "volume": 536561,
+      "volume_1w": 3528156,
+      "volume_1m": 15101399,
       "company": "LS ELECTRIC"
     },
     {
-      "ticker": "078340.KQ",
-      "close": 27050.0,
-      "date": "2026-11-13",
-      "volume": 467347,
-      "volume_1w": 677902,
-      "volume_1m": 1338456,
-      "company": "컴투스"
+      "ticker": "240810.KQ",
+      "close": 68900.0,
+      "date": "2026-11-17",
+      "volume": 521004,
+      "volume_1w": 4525955,
+      "volume_1m": 15142437,
+      "company": "원익IPS"
     },
     {
       "ticker": "006400.KS",
-      "close": 478000.0,
-      "date": "2026-11-13",
-      "volume": 457430,
-      "volume_1w": 3817762,
-      "volume_1m": 15709145,
+      "close": 445000.0,
+      "date": "2026-11-17",
+      "volume": 501910,
+      "volume_1w": 2965870,
+      "volume_1m": 15309477,
       "company": "삼성SDI"
     },
     {
-      "ticker": "196170.KQ",
-      "close": 176200.0,
-      "date": "2026-11-13",
-      "volume": 452343,
-      "volume_1w": 4903287,
-      "volume_1m": 10029196,
-      "company": "알테오젠"
+      "ticker": "024110.KS",
+      "close": 19160.0,
+      "date": "2026-11-17",
+      "volume": 500426,
+      "volume_1w": 3553320,
+      "volume_1m": 15543504,
+      "company": "기업은행"
     },
     {
-      "ticker": "068270.KS",
-      "close": 214000.0,
-      "date": "2026-11-13",
-      "volume": 436767,
-      "volume_1w": 3247702,
-      "volume_1m": 14294570,
-      "company": "셀트리온"
+      "ticker": "042700.KS",
+      "close": 165300.0,
+      "date": "2026-11-17",
+      "volume": 488341,
+      "volume_1w": 3198796,
+      "volume_1m": 13762017,
+      "company": "한미반도체"
     },
     {
-      "ticker": "064350.KS",
-      "close": 71300.0,
-      "date": "2026-11-13",
-      "volume": 402985,
-      "volume_1w": 1531152,
-      "volume_1m": 10124891,
-      "company": "현대로템"
+      "ticker": "028300.KQ",
+      "close": 28300.0,
+      "date": "2026-11-17",
+      "volume": 468257,
+      "volume_1w": 2769216,
+      "volume_1m": 13406638,
+      "company": "HLB"
     },
     {
-      "ticker": "247540.KQ",
-      "close": 90800.0,
-      "date": "2026-11-13",
-      "volume": 379906,
-      "volume_1w": 3146987,
-      "volume_1m": 11016195,
-      "company": "에코프로비엠"
+      "ticker": "058470.KQ",
+      "close": 47650.0,
+      "date": "2026-11-17",
+      "volume": 436703,
+      "volume_1w": 2824230,
+      "volume_1m": 12896883,
+      "company": "리노공업"
     },
     {
-      "ticker": "329180.KS",
-      "close": 271000.0,
-      "date": "2026-11-13",
-      "volume": 376791,
-      "volume_1w": 1756132,
-      "volume_1m": 7613526,
-      "company": "HD현대중공업"
-    },
-    {
-      "ticker": "071050.KS",
-      "close": 126500.0,
-      "date": "2026-11-13",
-      "volume": 358130,
-      "volume_1w": 1568048,
-      "volume_1m": 4742570,
-      "company": "한국금융지주"
-    },
-    {
-      "ticker": "096770.KS",
-      "close": 109200.0,
-      "date": "2026-11-13",
-      "volume": 352344,
-      "volume_1w": 2200364,
-      "volume_1m": 14256076,
-      "company": "SK이노베이션"
-    },
-    {
-      "ticker": "175330.KS",
-      "close": 26950.0,
-      "date": "2026-11-13",
-      "volume": 306307,
-      "volume_1w": 1722266,
-      "volume_1m": 7242627,
-      "company": "JB금융지주"
-    },
-    {
-      "ticker": "138040.KS",
-      "close": 118700.0,
-      "date": "2026-11-13",
-      "volume": 296273,
-      "volume_1w": 1754318,
-      "volume_1m": 5473890,
-      "company": "메리츠금융지주"
-    },
-    {
-      "ticker": "032830.KS",
-      "close": 252000.0,
-      "date": "2026-11-13",
-      "volume": 266551,
-      "volume_1w": 1448110,
-      "volume_1m": 5954653,
-      "company": "삼성생명"
-    },
-    {
-      "ticker": "108490.KQ",
-      "close": 243000.0,
-      "date": "2026-11-13",
-      "volume": 242994,
-      "volume_1w": 1070691,
-      "volume_1m": 4655002,
-      "company": "로보티즈"
-    },
-    {
-      "ticker": "047810.KS",
-      "close": 104200.0,
-      "date": "2026-11-13",
-      "volume": 234587,
-      "volume_1w": 1451679,
-      "volume_1m": 7394948,
-      "company": "한국항공우주"
-    },
-    {
-      "ticker": "141080.KQ",
-      "close": 62200.0,
-      "date": "2026-11-13",
-      "volume": 212212,
-      "volume_1w": 1425642,
-      "volume_1m": 4780306,
-      "company": "리가켐바이오"
-    },
-    {
-      "ticker": "373220.KS",
-      "close": 324500.0,
-      "date": "2026-11-13",
-      "volume": 211354,
-      "volume_1w": 1554620,
-      "volume_1m": 9490974,
-      "company": "LG에너지솔루션"
-    },
-    {
-      "ticker": "066970.KS",
-      "close": 78900.0,
-      "date": "2026-11-13",
-      "volume": 210333,
-      "volume_1w": 1939073,
-      "volume_1m": 10379976,
-      "company": "엘앤에프"
-    },
-    {
-      "ticker": "012330.KS",
-      "close": 355500.0,
-      "date": "2026-11-13",
-      "volume": 205342,
-      "volume_1w": 1117939,
-      "volume_1m": 5037591,
-      "company": "현대모비스"
-    },
-    {
-      "ticker": "454910.KS",
-      "close": 51900.0,
-      "date": "2026-11-13",
-      "volume": 193995,
-      "volume_1w": 1241415,
-      "volume_1m": 5368754,
-      "company": "두산로보틱스"
-    },
-    {
-      "ticker": "204320.KS",
-      "close": 34300.0,
-      "date": "2026-11-13",
-      "volume": 190153,
-      "volume_1w": 1104631,
-      "volume_1m": 5863071,
-      "company": "HL만도"
-    },
-    {
-      "ticker": "003670.KS",
-      "close": 173200.0,
-      "date": "2026-11-13",
-      "volume": 187514,
-      "volume_1w": 1543473,
-      "volume_1m": 7483418,
-      "company": "포스코퓨처엠"
-    },
-    {
-      "ticker": "352820.KS",
-      "close": 155700.0,
-      "date": "2026-11-13",
-      "volume": 178232,
-      "volume_1w": 1267697,
-      "volume_1m": 6673283,
-      "company": "하이브"
+      "ticker": "103590.KS",
+      "close": 56000.0,
+      "date": "2026-11-17",
+      "volume": 397321,
+      "volume_1w": 2570491,
+      "volume_1m": 6921747,
+      "company": "일진전기"
     },
     {
       "ticker": "000100.KS",
-      "close": 80100.0,
-      "date": "2026-11-13",
-      "volume": 152128,
-      "volume_1w": 925328,
-      "volume_1m": 6493627,
+      "close": 83200.0,
+      "date": "2026-11-17",
+      "volume": 378720,
+      "volume_1w": 1142844,
+      "volume_1m": 5663464,
       "company": "유한양행"
+    },
+    {
+      "ticker": "064350.KS",
+      "close": 66600.0,
+      "date": "2026-11-17",
+      "volume": 377663,
+      "volume_1w": 1776457,
+      "volume_1m": 9766114,
+      "company": "현대로템"
+    },
+    {
+      "ticker": "000990.KS",
+      "close": 72500.0,
+      "date": "2026-11-17",
+      "volume": 367009,
+      "volume_1w": 3819696,
+      "volume_1m": 10219271,
+      "company": "DB하이텍"
+    },
+    {
+      "ticker": "068270.KS",
+      "close": 213000.0,
+      "date": "2026-11-17",
+      "volume": 350466,
+      "volume_1w": 2454765,
+      "volume_1m": 13183838,
+      "company": "셀트리온"
+    },
+    {
+      "ticker": "175330.KS",
+      "close": 27500.0,
+      "date": "2026-11-17",
+      "volume": 334819,
+      "volume_1w": 1591219,
+      "volume_1m": 7123173,
+      "company": "JB금융지주"
+    },
+    {
+      "ticker": "096770.KS",
+      "close": 103000.0,
+      "date": "2026-11-17",
+      "volume": 332091,
+      "volume_1w": 1899180,
+      "volume_1m": 13353362,
+      "company": "SK이노베이션"
+    },
+    {
+      "ticker": "108490.KQ",
+      "close": 211500.0,
+      "date": "2026-11-17",
+      "volume": 325932,
+      "volume_1w": 1261047,
+      "volume_1m": 4834205,
+      "company": "로보티즈"
+    },
+    {
+      "ticker": "247540.KQ",
+      "close": 84700.0,
+      "date": "2026-11-17",
+      "volume": 317393,
+      "volume_1w": 2618244,
+      "volume_1m": 10821194,
+      "company": "에코프로비엠"
+    },
+    {
+      "ticker": "005380.KS",
+      "close": 259000.0,
+      "date": "2026-11-17",
+      "volume": 306536,
+      "volume_1w": 2191255,
+      "volume_1m": 11103258,
+      "company": "현대차"
+    },
+    {
+      "ticker": "139130.KS",
+      "close": 15610.0,
+      "date": "2026-11-17",
+      "volume": 301180,
+      "volume_1w": 2514105,
+      "volume_1m": 10969140,
+      "company": "DGB금융지주"
+    },
+    {
+      "ticker": "196170.KQ",
+      "close": 173000.0,
+      "date": "2026-11-17",
+      "volume": 263651,
+      "volume_1w": 1915620,
+      "volume_1m": 9689984,
+      "company": "알테오젠"
+    },
+    {
+      "ticker": "373220.KS",
+      "close": 305500.0,
+      "date": "2026-11-17",
+      "volume": 247095,
+      "volume_1w": 1239838,
+      "volume_1m": 8808220,
+      "company": "LG에너지솔루션"
+    },
+    {
+      "ticker": "326030.KS",
+      "close": 89000.0,
+      "date": "2026-11-17",
+      "volume": 241032,
+      "volume_1w": 972858,
+      "volume_1m": 4697961,
+      "company": "SK바이오팜"
+    },
+    {
+      "ticker": "141080.KQ",
+      "close": 53900.0,
+      "date": "2026-11-17",
+      "volume": 227148,
+      "volume_1w": 1514203,
+      "volume_1m": 4858814,
+      "company": "리가켐바이오"
+    },
+    {
+      "ticker": "263750.KQ",
+      "close": 27500.0,
+      "date": "2026-11-17",
+      "volume": 224414,
+      "volume_1w": 1877365,
+      "volume_1m": 5702630,
+      "company": "펄어비스"
+    },
+    {
+      "ticker": "079550.KS",
+      "close": 345500.0,
+      "date": "2026-11-17",
+      "volume": 191626,
+      "volume_1w": 861844,
+      "volume_1m": 4059466,
+      "company": "LIG넥스원"
+    },
+    {
+      "ticker": "066970.KS",
+      "close": 73200.0,
+      "date": "2026-11-17",
+      "volume": 191452,
+      "volume_1w": 1470366,
+      "volume_1m": 9084080,
+      "company": "엘앤에프"
+    },
+    {
+      "ticker": "267260.KS",
+      "close": 378500.0,
+      "date": "2026-11-17",
+      "volume": 186642,
+      "volume_1w": 822615,
+      "volume_1m": 3831970,
+      "company": "HD현대일렉트릭"
+    },
+    {
+      "ticker": "267250.KS",
+      "close": 117600.0,
+      "date": "2026-11-17",
+      "volume": 186021,
+      "volume_1w": 837024,
+      "volume_1m": 3919656,
+      "company": "HD현대"
+    },
+    {
+      "ticker": "012330.KS",
+      "close": 346000.0,
+      "date": "2026-11-17",
+      "volume": 177770,
+      "volume_1w": 969109,
+      "volume_1m": 4823466,
+      "company": "현대모비스"
+    },
+    {
+      "ticker": "047810.KS",
+      "close": 102000.0,
+      "date": "2026-11-17",
+      "volume": 175797,
+      "volume_1w": 1464860,
+      "volume_1m": 6757746,
+      "company": "한국항공우주"
+    },
+    {
+      "ticker": "454910.KS",
+      "close": 48100.0,
+      "date": "2026-11-17",
+      "volume": 171726,
+      "volume_1w": 1111969,
+      "volume_1m": 5280185,
+      "company": "두산로보틱스"
+    },
+    {
+      "ticker": "138040.KS",
+      "close": 121100.0,
+      "date": "2026-11-17",
+      "volume": 167377,
+      "volume_1w": 1749249,
+      "volume_1m": 5472880,
+      "company": "메리츠금융지주"
+    },
+    {
+      "ticker": "071050.KS",
+      "close": 123700.0,
+      "date": "2026-11-17",
+      "volume": 166443,
+      "volume_1w": 1244211,
+      "volume_1m": 4584946,
+      "company": "한국금융지주"
+    },
+    {
+      "ticker": "003670.KS",
+      "close": 165700.0,
+      "date": "2026-11-17",
+      "volume": 164532,
+      "volume_1w": 1200187,
+      "volume_1m": 7041660,
+      "company": "포스코퓨처엠"
+    },
+    {
+      "ticker": "032830.KS",
+      "close": 242000.0,
+      "date": "2026-11-17",
+      "volume": 163090,
+      "volume_1w": 1307931,
+      "volume_1m": 5647742,
+      "company": "삼성생명"
+    },
+    {
+      "ticker": "329180.KS",
+      "close": 256500.0,
+      "date": "2026-11-17",
+      "volume": 162892,
+      "volume_1w": 1392366,
+      "volume_1m": 7374772,
+      "company": "HD현대중공업"
+    },
+    {
+      "ticker": "204320.KS",
+      "close": 32950.0,
+      "date": "2026-11-17",
+      "volume": 147046,
+      "volume_1w": 903609,
+      "volume_1m": 5793240,
+      "company": "HL만도"
+    },
+    {
+      "ticker": "097230.KS",
+      "close": 10870.0,
+      "date": "2026-11-17",
+      "volume": 145572,
+      "volume_1w": 1380445,
+      "volume_1m": 5216934,
+      "company": "HJ중공업"
+    },
+    {
+      "ticker": "352820.KS",
+      "close": 154800.0,
+      "date": "2026-11-17",
+      "volume": 123459,
+      "volume_1w": 1141094,
+      "volume_1m": 5939271,
+      "company": "하이브"
     }
   ]
 }

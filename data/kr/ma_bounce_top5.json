@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-14T23:04:08+00:00",
+  "updated_at_utc": "2026-11-17T23:23:26+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -8,66 +8,27 @@
   "price_basis": "수정 종가",
   "results": [
     {
-      "ticker": "277810.KQ",
-      "close": 363500.0,
-      "date": "2026-11-13",
+      "ticker": "000100.KS",
+      "close": 83200.0,
+      "date": "2026-11-17",
       "ma": 20,
-      "ma_value": 354150.0,
-      "day_change_pct": 5.21,
-      "distance_pct": 2.64,
-      "company": "레인보우로보틱스",
+      "ma_value": 79905.0,
+      "day_change_pct": 2.59,
+      "distance_pct": 4.12,
+      "company": "유한양행",
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "105560.KS",
-      "close": 159000.0,
-      "date": "2026-11-13",
-      "ma": 20,
-      "ma_value": 153422.159,
-      "day_change_pct": 4.74,
-      "distance_pct": 3.64,
-      "company": "KB금융",
-      "ma_periods": [
-        20
-      ]
-    },
-    {
-      "ticker": "103590.KS",
-      "close": 56700.0,
-      "date": "2026-11-13",
-      "ma": 20,
-      "ma_value": 54690.0,
-      "day_change_pct": 4.42,
-      "distance_pct": 3.68,
-      "company": "일진전기",
-      "ma_periods": [
-        20
-      ]
-    },
-    {
-      "ticker": "086790.KS",
-      "close": 124600.0,
-      "date": "2026-11-13",
+      "ticker": "175330.KS",
+      "close": 27500.0,
+      "date": "2026-11-17",
       "ma": 200,
-      "ma_value": 119557.818,
-      "day_change_pct": 3.4,
-      "distance_pct": 4.22,
-      "company": "하나금융지주",
-      "ma_periods": [
-        200
-      ]
-    },
-    {
-      "ticker": "316140.KS",
-      "close": 32500.0,
-      "date": "2026-11-13",
-      "ma": 200,
-      "ma_value": 32065.555,
-      "day_change_pct": 3.01,
-      "distance_pct": 1.35,
-      "company": "우리금융지주",
+      "ma_value": 27285.077,
+      "day_change_pct": 0.18,
+      "distance_pct": 0.79,
+      "company": "JB금융지주",
       "ma_periods": [
         200
       ]

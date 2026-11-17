@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-14T23:02:24+00:00",
+  "updated_at_utc": "2026-11-17T23:20:03+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -12,68 +12,67 @@
     50,
     200
   ],
-  "total_matches": 111,
+  "total_matches": 20,
   "results": [
     {
-      "ticker": "GPN",
-      "close": 91.9,
-      "date": "2026-11-13",
+      "ticker": "AVGO",
+      "close": 341.6,
+      "date": "2026-11-17",
       "ma": 20,
-      "ma_value": 90.841,
-      "day_change_pct": 4.21,
-      "distance_pct": 1.17,
+      "ma_value": 331.261,
+      "day_change_pct": 2.46,
+      "distance_pct": 3.12,
+      "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "CHRW",
+      "close": 137.95,
+      "date": "2026-11-17",
+      "ma": 20,
+      "ma_value": 133.536,
+      "day_change_pct": 2.44,
+      "distance_pct": 3.31,
+      "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "SYK",
+      "close": 317.54,
+      "date": "2026-11-17",
+      "ma": 20,
+      "ma_value": 313.203,
+      "day_change_pct": 2.19,
+      "distance_pct": 1.38,
+      "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "PWR",
+      "close": 598.53,
+      "date": "2026-11-17",
+      "ma": 20,
+      "ma_value": 589.466,
+      "day_change_pct": 2.16,
+      "distance_pct": 1.54,
+      "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "RTX",
+      "close": 198.0,
+      "date": "2026-11-17",
+      "ma": 20,
+      "ma_value": 196.929,
+      "day_change_pct": 1.6,
+      "distance_pct": 0.54,
       "ma_periods": [
         20,
-        50
-      ]
-    },
-    {
-      "ticker": "FOXA",
-      "close": 68.42,
-      "date": "2026-11-13",
-      "ma": 20,
-      "ma_value": 66.248,
-      "day_change_pct": 4.12,
-      "distance_pct": 3.28,
-      "ma_periods": [
-        20,
-        50
-      ]
-    },
-    {
-      "ticker": "FOX",
-      "close": 61.11,
-      "date": "2026-11-13",
-      "ma": 20,
-      "ma_value": 59.014,
-      "day_change_pct": 4.09,
-      "distance_pct": 3.55,
-      "ma_periods": [
-        20,
-        50
-      ]
-    },
-    {
-      "ticker": "HAL",
-      "close": 33.78,
-      "date": "2026-11-13",
-      "ma": 50,
-      "ma_value": 33.665,
-      "day_change_pct": 3.11,
-      "distance_pct": 0.34,
-      "ma_periods": [
-        50
-      ]
-    },
-    {
-      "ticker": "WDAY",
-      "close": 196.45,
-      "date": "2026-11-13",
-      "ma": 50,
-      "ma_value": 193.31,
-      "day_change_pct": 3.05,
-      "distance_pct": 1.62,
-      "ma_periods": [
+        200,
         50
       ]
     }
