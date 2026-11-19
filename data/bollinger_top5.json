@@ -1,14 +1,43 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-17T23:20:03+00:00",
+  "updated_at_utc": "2026-11-19T03:44:39+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
-  "scanned_count": 500,
+  "scanned_count": 499,
   "source": "Yahoo Finance via unofficial yfinance; data may be delayed or unavailable",
   "price_basis": "adjusted daily close",
   "threshold_pct": -3,
   "window": 20,
   "std_multiplier": 2,
-  "total_matches": 0,
-  "results": []
+  "total_matches": 4,
+  "results": [
+    {
+      "ticker": "UNH",
+      "close": 349.91,
+      "date": "2026-11-18",
+      "lower": 374.053,
+      "breach_pct": -6.45
+    },
+    {
+      "ticker": "FCX",
+      "close": 51.45,
+      "date": "2026-11-18",
+      "lower": 53.444,
+      "breach_pct": -3.73
+    },
+    {
+      "ticker": "DVA",
+      "close": 161.79,
+      "date": "2026-11-18",
+      "lower": 166.852,
+      "breach_pct": -3.03
+    },
+    {
+      "ticker": "VEEV",
+      "close": 277.2,
+      "date": "2026-11-18",
+      "lower": 285.816,
+      "breach_pct": -3.01
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-17T23:23:26+00:00",
+  "updated_at_utc": "2026-11-19T03:46:48+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -8,29 +8,69 @@
   "price_basis": "수정 종가",
   "results": [
     {
-      "ticker": "000100.KS",
-      "close": 83200.0,
-      "date": "2026-11-17",
+      "ticker": "112040.KQ",
+      "close": 14400.0,
+      "date": "2026-11-19",
       "ma": 20,
-      "ma_value": 79905.0,
-      "day_change_pct": 2.59,
-      "distance_pct": 4.12,
-      "company": "유한양행",
+      "ma_value": 13782.0,
+      "day_change_pct": 5.26,
+      "distance_pct": 4.48,
+      "company": "위메이드",
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "175330.KS",
-      "close": 27500.0,
-      "date": "2026-11-17",
-      "ma": 200,
-      "ma_value": 27285.077,
-      "day_change_pct": 0.18,
-      "distance_pct": 0.79,
-      "company": "JB금융지주",
+      "ticker": "145020.KQ",
+      "close": 206500.0,
+      "date": "2026-11-19",
+      "ma": 50,
+      "ma_value": 194990.0,
+      "day_change_pct": 4.03,
+      "distance_pct": 5.9,
+      "company": "휴젤",
       "ma_periods": [
-        200
+        50
+      ]
+    },
+    {
+      "ticker": "259960.KS",
+      "close": 199300.0,
+      "date": "2026-11-19",
+      "ma": 20,
+      "ma_value": 196510.0,
+      "day_change_pct": 1.32,
+      "distance_pct": 1.42,
+      "company": "크래프톤",
+      "ma_periods": [
+        20,
+        50
+      ]
+    },
+    {
+      "ticker": "108490.KQ",
+      "close": 242000.0,
+      "date": "2026-11-19",
+      "ma": 20,
+      "ma_value": 237550.0,
+      "day_change_pct": 1.04,
+      "distance_pct": 1.87,
+      "company": "로보티즈",
+      "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "090360.KQ",
+      "close": 56600.0,
+      "date": "2026-11-19",
+      "ma": 20,
+      "ma_value": 55940.0,
+      "day_change_pct": 0.71,
+      "distance_pct": 1.18,
+      "company": "로보스타",
+      "ma_periods": [
+        20
       ]
     }
   ]
