@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-19T03:46:48+00:00",
+  "updated_at_utc": "2026-11-20T03:41:05+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -8,39 +8,26 @@
   "price_basis": "수정 종가",
   "results": [
     {
-      "ticker": "112040.KQ",
-      "close": 14400.0,
-      "date": "2026-11-19",
+      "ticker": "128940.KS",
+      "close": 465000.0,
+      "date": "2026-11-20",
       "ma": 20,
-      "ma_value": 13782.0,
-      "day_change_pct": 5.26,
-      "distance_pct": 4.48,
-      "company": "위메이드",
+      "ma_value": 434675.0,
+      "day_change_pct": 10.19,
+      "distance_pct": 6.98,
+      "company": "한미약품",
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "145020.KQ",
-      "close": 206500.0,
-      "date": "2026-11-19",
-      "ma": 50,
-      "ma_value": 194990.0,
-      "day_change_pct": 4.03,
-      "distance_pct": 5.9,
-      "company": "휴젤",
-      "ma_periods": [
-        50
-      ]
-    },
-    {
       "ticker": "259960.KS",
-      "close": 199300.0,
-      "date": "2026-11-19",
+      "close": 204500.0,
+      "date": "2026-11-20",
       "ma": 20,
-      "ma_value": 196510.0,
-      "day_change_pct": 1.32,
-      "distance_pct": 1.42,
+      "ma_value": 197345.0,
+      "day_change_pct": 3.75,
+      "distance_pct": 3.63,
       "company": "크래프톤",
       "ma_periods": [
         20,
@@ -48,29 +35,42 @@
       ]
     },
     {
-      "ticker": "108490.KQ",
-      "close": 242000.0,
-      "date": "2026-11-19",
+      "ticker": "055550.KS",
+      "close": 87100.0,
+      "date": "2026-11-20",
       "ma": 20,
-      "ma_value": 237550.0,
-      "day_change_pct": 1.04,
-      "distance_pct": 1.87,
-      "company": "로보티즈",
+      "ma_value": 86869.46,
+      "day_change_pct": 1.75,
+      "distance_pct": 0.27,
+      "company": "신한지주",
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "090360.KQ",
-      "close": 56600.0,
-      "date": "2026-11-19",
+      "ticker": "138040.KS",
+      "close": 127200.0,
+      "date": "2026-11-20",
       "ma": 20,
-      "ma_value": 55940.0,
-      "day_change_pct": 0.71,
-      "distance_pct": 1.18,
-      "company": "로보스타",
+      "ma_value": 126605.0,
+      "day_change_pct": 1.6,
+      "distance_pct": 0.47,
+      "company": "메리츠금융지주",
       "ma_periods": [
         20
+      ]
+    },
+    {
+      "ticker": "086790.KS",
+      "close": 125500.0,
+      "date": "2026-11-20",
+      "ma": 50,
+      "ma_value": 124834.012,
+      "day_change_pct": 1.29,
+      "distance_pct": 0.53,
+      "company": "하나금융지주",
+      "ma_periods": [
+        50
       ]
     }
   ]

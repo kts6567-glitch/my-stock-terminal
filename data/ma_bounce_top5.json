@@ -1,9 +1,9 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-19T03:44:39+00:00",
+  "updated_at_utc": "2026-11-20T03:38:51+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
-  "scanned_count": 499,
+  "scanned_count": 500,
   "source": "Yahoo Finance via unofficial yfinance; data may be delayed or unavailable",
   "price_basis": "adjusted daily close",
   "rule": "previous close within -3% to +1.5% of previous MA, latest close above latest MA and up on day",
@@ -12,65 +12,64 @@
     50,
     200
   ],
-  "total_matches": 95,
+  "total_matches": 8,
   "results": [
     {
-      "ticker": "GNRC",
-      "close": 205.45,
+      "ticker": "CDW",
+      "close": 169.01,
       "date": "2026-11-18",
       "ma": 20,
-      "ma_value": 191.825,
-      "day_change_pct": 9.87,
-      "distance_pct": 7.1,
+      "ma_value": 163.495,
+      "day_change_pct": 3.64,
+      "distance_pct": 3.37,
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "LULU",
-      "close": 110.78,
-      "date": "2026-11-18",
-      "ma": 20,
-      "ma_value": 107.154,
-      "day_change_pct": 6.38,
-      "distance_pct": 3.38,
+      "ticker": "EXPD",
+      "close": 193.14,
+      "date": "2026-11-19",
+      "ma": 50,
+      "ma_value": 193.117,
+      "day_change_pct": 2.26,
+      "distance_pct": 0.01,
       "ma_periods": [
-        20
-      ]
-    },
-    {
-      "ticker": "TTWO",
-      "close": 216.61,
-      "date": "2026-11-18",
-      "ma": 20,
-      "ma_value": 208.566,
-      "day_change_pct": 6.22,
-      "distance_pct": 3.86,
-      "ma_periods": [
-        20,
         50
       ]
     },
     {
-      "ticker": "AMD",
-      "close": 530.14,
-      "date": "2026-11-18",
+      "ticker": "COHR",
+      "close": 214.94,
+      "date": "2026-11-19",
       "ma": 20,
-      "ma_value": 514.638,
-      "day_change_pct": 5.31,
-      "distance_pct": 3.01,
+      "ma_value": 214.273,
+      "day_change_pct": 0.99,
+      "distance_pct": 0.31,
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "RCL",
-      "close": 320.65,
+      "ticker": "TWLO",
+      "close": 195.93,
+      "date": "2026-11-18",
+      "ma": 200,
+      "ma_value": 194.162,
+      "day_change_pct": 0.93,
+      "distance_pct": 0.91,
+      "ma_periods": [
+        200
+      ]
+    },
+    {
+      "ticker": "OTIS",
+      "close": 77.67,
       "date": "2026-11-18",
       "ma": 20,
-      "ma_value": 313.778,
-      "day_change_pct": 4.31,
-      "distance_pct": 2.19,
+      "ma_value": 76.565,
+      "day_change_pct": 0.86,
+      "distance_pct": 1.44,
       "ma_periods": [
         20
       ]
