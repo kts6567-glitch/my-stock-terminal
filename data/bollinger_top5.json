@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-20T03:38:51+00:00",
+  "updated_at_utc": "2026-11-21T03:21:12+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -9,42 +9,42 @@
   "threshold_pct": -3,
   "window": 20,
   "std_multiplier": 2,
-  "total_matches": 8,
+  "total_matches": 18,
   "results": [
     {
-      "ticker": "UNH",
-      "close": 330.48,
-      "date": "2026-11-19",
-      "lower": 356.973,
-      "breach_pct": -7.42
+      "ticker": "INTU",
+      "close": 270.44,
+      "date": "2026-11-20",
+      "lower": 296.176,
+      "breach_pct": -8.69
     },
     {
       "ticker": "WSM",
-      "close": 220.66,
-      "date": "2026-11-19",
-      "lower": 235.473,
-      "breach_pct": -6.29
+      "close": 210.7,
+      "date": "2026-11-20",
+      "lower": 225.445,
+      "breach_pct": -6.54
     },
     {
       "ticker": "FCX",
-      "close": 49.12,
-      "date": "2026-11-19",
-      "lower": 51.199,
-      "breach_pct": -4.06
+      "close": 45.99,
+      "date": "2026-11-20",
+      "lower": 48.544,
+      "breach_pct": -5.26
     },
     {
-      "ticker": "SKYD",
-      "close": 6.34,
-      "date": "2026-11-19",
-      "lower": 6.564,
-      "breach_pct": -3.42
+      "ticker": "BE",
+      "close": 142.39,
+      "date": "2026-11-20",
+      "lower": 149.225,
+      "breach_pct": -4.58
     },
     {
-      "ticker": "DVA",
-      "close": 156.34,
-      "date": "2026-11-19",
-      "lower": 161.752,
-      "breach_pct": -3.35
+      "ticker": "GS",
+      "close": 790.69,
+      "date": "2026-11-20",
+      "lower": 828.478,
+      "breach_pct": -4.56
     }
   ]
 }

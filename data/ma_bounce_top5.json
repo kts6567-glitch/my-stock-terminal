@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-20T03:38:51+00:00",
+  "updated_at_utc": "2026-11-21T03:21:12+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -12,66 +12,66 @@
     50,
     200
   ],
-  "total_matches": 8,
+  "total_matches": 60,
   "results": [
     {
-      "ticker": "CDW",
-      "close": 169.01,
-      "date": "2026-11-18",
+      "ticker": "GIS",
+      "close": 35.74,
+      "date": "2026-11-20",
       "ma": 20,
-      "ma_value": 163.495,
-      "day_change_pct": 3.64,
-      "distance_pct": 3.37,
+      "ma_value": 34.534,
+      "day_change_pct": 3.65,
+      "distance_pct": 3.49,
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "EXPD",
-      "close": 193.14,
-      "date": "2026-11-19",
+      "ticker": "MKC",
+      "close": 47.4,
+      "date": "2026-11-20",
       "ma": 50,
-      "ma_value": 193.117,
-      "day_change_pct": 2.26,
-      "distance_pct": 0.01,
+      "ma_value": 47.032,
+      "day_change_pct": 3.43,
+      "distance_pct": 0.78,
       "ma_periods": [
         50
       ]
     },
     {
-      "ticker": "COHR",
-      "close": 214.94,
-      "date": "2026-11-19",
-      "ma": 20,
-      "ma_value": 214.273,
-      "day_change_pct": 0.99,
-      "distance_pct": 0.31,
+      "ticker": "HCA",
+      "close": 475.57,
+      "date": "2026-11-20",
+      "ma": 50,
+      "ma_value": 459.706,
+      "day_change_pct": 3.31,
+      "distance_pct": 3.45,
       "ma_periods": [
-        20
+        50
       ]
     },
     {
-      "ticker": "TWLO",
-      "close": 195.93,
-      "date": "2026-11-18",
+      "ticker": "CTSH",
+      "close": 58.06,
+      "date": "2026-11-20",
       "ma": 200,
-      "ma_value": 194.162,
-      "day_change_pct": 0.93,
-      "distance_pct": 0.91,
+      "ma_value": 56.833,
+      "day_change_pct": 3.11,
+      "distance_pct": 2.16,
       "ma_periods": [
         200
       ]
     },
     {
-      "ticker": "OTIS",
-      "close": 77.67,
-      "date": "2026-11-18",
-      "ma": 20,
-      "ma_value": 76.565,
-      "day_change_pct": 0.86,
-      "distance_pct": 1.44,
+      "ticker": "UHS",
+      "close": 179.43,
+      "date": "2026-11-20",
+      "ma": 200,
+      "ma_value": 175.68,
+      "day_change_pct": 2.54,
+      "distance_pct": 2.13,
       "ma_periods": [
-        20
+        200
       ]
     }
   ]

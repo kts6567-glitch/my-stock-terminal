@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-20T03:41:05+00:00",
+  "updated_at_utc": "2026-11-21T03:23:29+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -9,12 +9,12 @@
   "results": [
     {
       "ticker": "128940.KS",
-      "close": 465000.0,
+      "close": 449500.0,
       "date": "2026-11-20",
       "ma": 20,
-      "ma_value": 434675.0,
-      "day_change_pct": 10.19,
-      "distance_pct": 6.98,
+      "ma_value": 433900.0,
+      "day_change_pct": 6.52,
+      "distance_pct": 3.6,
       "company": "한미약품",
       "ma_periods": [
         20
@@ -22,54 +22,15 @@
     },
     {
       "ticker": "259960.KS",
-      "close": 204500.0,
+      "close": 202500.0,
       "date": "2026-11-20",
       "ma": 20,
-      "ma_value": 197345.0,
-      "day_change_pct": 3.75,
-      "distance_pct": 3.63,
+      "ma_value": 197245.0,
+      "day_change_pct": 2.74,
+      "distance_pct": 2.66,
       "company": "크래프톤",
       "ma_periods": [
         20,
-        50
-      ]
-    },
-    {
-      "ticker": "055550.KS",
-      "close": 87100.0,
-      "date": "2026-11-20",
-      "ma": 20,
-      "ma_value": 86869.46,
-      "day_change_pct": 1.75,
-      "distance_pct": 0.27,
-      "company": "신한지주",
-      "ma_periods": [
-        20
-      ]
-    },
-    {
-      "ticker": "138040.KS",
-      "close": 127200.0,
-      "date": "2026-11-20",
-      "ma": 20,
-      "ma_value": 126605.0,
-      "day_change_pct": 1.6,
-      "distance_pct": 0.47,
-      "company": "메리츠금융지주",
-      "ma_periods": [
-        20
-      ]
-    },
-    {
-      "ticker": "086790.KS",
-      "close": 125500.0,
-      "date": "2026-11-20",
-      "ma": 50,
-      "ma_value": 124834.012,
-      "day_change_pct": 1.29,
-      "distance_pct": 0.53,
-      "company": "하나금융지주",
-      "ma_periods": [
         50
       ]
     }
