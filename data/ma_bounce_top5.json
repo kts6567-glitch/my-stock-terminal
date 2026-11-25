@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-22T02:29:38+00:00",
+  "updated_at_utc": "2026-11-25T04:58:28+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -12,66 +12,68 @@
     50,
     200
   ],
-  "total_matches": 60,
+  "total_matches": 173,
   "results": [
     {
-      "ticker": "GIS",
-      "close": 35.74,
-      "date": "2026-11-20",
+      "ticker": "DLTR",
+      "close": 154.65,
+      "date": "2026-11-24",
       "ma": 20,
-      "ma_value": 34.534,
-      "day_change_pct": 3.65,
-      "distance_pct": 3.49,
+      "ma_value": 138.747,
+      "day_change_pct": 11.18,
+      "distance_pct": 11.46,
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "MKC",
-      "close": 47.4,
-      "date": "2026-11-20",
+      "ticker": "CSGP",
+      "close": 32.64,
+      "date": "2026-11-24",
+      "ma": 20,
+      "ma_value": 30.498,
+      "day_change_pct": 8.08,
+      "distance_pct": 7.03,
+      "ma_periods": [
+        20,
+        50
+      ]
+    },
+    {
+      "ticker": "MRNA",
+      "close": 227.38,
+      "date": "2026-11-24",
       "ma": 50,
-      "ma_value": 47.032,
-      "day_change_pct": 3.43,
-      "distance_pct": 0.78,
+      "ma_value": 210.868,
+      "day_change_pct": 7.21,
+      "distance_pct": 7.83,
       "ma_periods": [
         50
       ]
     },
     {
-      "ticker": "HCA",
-      "close": 475.57,
-      "date": "2026-11-20",
-      "ma": 50,
-      "ma_value": 459.706,
-      "day_change_pct": 3.31,
-      "distance_pct": 3.45,
+      "ticker": "AMGN",
+      "close": 473.94,
+      "date": "2026-11-24",
+      "ma": 20,
+      "ma_value": 457.616,
+      "day_change_pct": 5.55,
+      "distance_pct": 3.57,
       "ma_periods": [
+        20
+      ]
+    },
+    {
+      "ticker": "INCY",
+      "close": 123.61,
+      "date": "2026-11-24",
+      "ma": 20,
+      "ma_value": 119.397,
+      "day_change_pct": 5.33,
+      "distance_pct": 3.53,
+      "ma_periods": [
+        20,
         50
-      ]
-    },
-    {
-      "ticker": "CTSH",
-      "close": 58.06,
-      "date": "2026-11-20",
-      "ma": 200,
-      "ma_value": 56.833,
-      "day_change_pct": 3.11,
-      "distance_pct": 2.16,
-      "ma_periods": [
-        200
-      ]
-    },
-    {
-      "ticker": "UHS",
-      "close": 179.43,
-      "date": "2026-11-20",
-      "ma": 200,
-      "ma_value": 175.68,
-      "day_change_pct": 2.54,
-      "distance_pct": 2.13,
-      "ma_periods": [
-        200
       ]
     }
   ]

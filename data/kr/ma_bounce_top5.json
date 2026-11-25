@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-22T02:31:52+00:00",
+  "updated_at_utc": "2026-11-25T05:00:34+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -8,30 +8,70 @@
   "price_basis": "수정 종가",
   "results": [
     {
-      "ticker": "128940.KS",
-      "close": 449500.0,
-      "date": "2026-11-20",
+      "ticker": "302440.KS",
+      "close": 39850.0,
+      "date": "2026-11-25",
       "ma": 20,
-      "ma_value": 433900.0,
-      "day_change_pct": 6.52,
-      "distance_pct": 3.6,
-      "company": "한미약품",
+      "ma_value": 37372.5,
+      "day_change_pct": 7.99,
+      "distance_pct": 6.63,
+      "company": "SK바이오사이언스",
+      "ma_periods": [
+        20,
+        50
+      ]
+    },
+    {
+      "ticker": "000100.KS",
+      "close": 83300.0,
+      "date": "2026-11-25",
+      "ma": 20,
+      "ma_value": 79110.0,
+      "day_change_pct": 7.76,
+      "distance_pct": 5.3,
+      "company": "유한양행",
+      "ma_periods": [
+        20,
+        50
+      ]
+    },
+    {
+      "ticker": "326030.KS",
+      "close": 88700.0,
+      "date": "2026-11-25",
+      "ma": 20,
+      "ma_value": 84995.0,
+      "day_change_pct": 5.47,
+      "distance_pct": 4.36,
+      "company": "SK바이오팜",
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "259960.KS",
-      "close": 202500.0,
-      "date": "2026-11-20",
+      "ticker": "079550.KS",
+      "close": 384500.0,
+      "date": "2026-11-25",
       "ma": 20,
-      "ma_value": 197245.0,
-      "day_change_pct": 2.74,
-      "distance_pct": 2.66,
-      "company": "크래프톤",
+      "ma_value": 368425.0,
+      "day_change_pct": 5.05,
+      "distance_pct": 4.36,
+      "company": "LIG넥스원",
       "ma_periods": [
-        20,
-        50
+        20
+      ]
+    },
+    {
+      "ticker": "112040.KQ",
+      "close": 14370.0,
+      "date": "2026-11-25",
+      "ma": 20,
+      "ma_value": 13892.0,
+      "day_change_pct": 4.13,
+      "distance_pct": 3.44,
+      "company": "위메이드",
+      "ma_periods": [
+        20
       ]
     }
   ]

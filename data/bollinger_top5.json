@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-22T02:29:38+00:00",
+  "updated_at_utc": "2026-11-25T04:58:28+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -9,42 +9,21 @@
   "threshold_pct": -3,
   "window": 20,
   "std_multiplier": 2,
-  "total_matches": 18,
+  "total_matches": 2,
   "results": [
     {
-      "ticker": "INTU",
-      "close": 270.44,
-      "date": "2026-11-20",
-      "lower": 296.176,
-      "breach_pct": -8.69
+      "ticker": "ADI",
+      "close": 312.95,
+      "date": "2026-11-24",
+      "lower": 333.195,
+      "breach_pct": -6.08
     },
     {
-      "ticker": "WSM",
-      "close": 210.7,
-      "date": "2026-11-20",
-      "lower": 225.445,
-      "breach_pct": -6.54
-    },
-    {
-      "ticker": "FCX",
-      "close": 45.99,
-      "date": "2026-11-20",
-      "lower": 48.544,
-      "breach_pct": -5.26
-    },
-    {
-      "ticker": "BE",
-      "close": 142.39,
-      "date": "2026-11-20",
-      "lower": 149.225,
-      "breach_pct": -4.58
-    },
-    {
-      "ticker": "GS",
-      "close": 790.69,
-      "date": "2026-11-20",
-      "lower": 828.478,
-      "breach_pct": -4.56
+      "ticker": "BG",
+      "close": 84.06,
+      "date": "2026-11-24",
+      "lower": 87.729,
+      "breach_pct": -4.18
     }
   ]
 }
