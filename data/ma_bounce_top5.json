@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-25T04:58:28+00:00",
+  "updated_at_utc": "2026-11-26T04:16:09+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -12,68 +12,67 @@
     50,
     200
   ],
-  "total_matches": 173,
+  "total_matches": 150,
   "results": [
     {
-      "ticker": "DLTR",
-      "close": 154.65,
-      "date": "2026-11-24",
+      "ticker": "CDW",
+      "close": 174.97,
+      "date": "2026-11-25",
       "ma": 20,
-      "ma_value": 138.747,
-      "day_change_pct": 11.18,
-      "distance_pct": 11.46,
+      "ma_value": 163.928,
+      "day_change_pct": 7.03,
+      "distance_pct": 6.74,
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "CSGP",
-      "close": 32.64,
-      "date": "2026-11-24",
+      "ticker": "TXN",
+      "close": 270.19,
+      "date": "2026-11-25",
+      "ma": 200,
+      "ma_value": 264.925,
+      "day_change_pct": 4.55,
+      "distance_pct": 1.99,
+      "ma_periods": [
+        200
+      ]
+    },
+    {
+      "ticker": "DE",
+      "close": 641.02,
+      "date": "2026-11-25",
+      "ma": 200,
+      "ma_value": 613.383,
+      "day_change_pct": 4.44,
+      "distance_pct": 4.51,
+      "ma_periods": [
+        200
+      ]
+    },
+    {
+      "ticker": "UHS",
+      "close": 190.57,
+      "date": "2026-11-25",
       "ma": 20,
-      "ma_value": 30.498,
-      "day_change_pct": 8.08,
-      "distance_pct": 7.03,
+      "ma_value": 188.28,
+      "day_change_pct": 4.02,
+      "distance_pct": 1.22,
       "ma_periods": [
         20,
         50
       ]
     },
     {
-      "ticker": "MRNA",
-      "close": 227.38,
-      "date": "2026-11-24",
-      "ma": 50,
-      "ma_value": 210.868,
-      "day_change_pct": 7.21,
-      "distance_pct": 7.83,
-      "ma_periods": [
-        50
-      ]
-    },
-    {
-      "ticker": "AMGN",
-      "close": 473.94,
-      "date": "2026-11-24",
+      "ticker": "CRH",
+      "close": 97.3,
+      "date": "2026-11-25",
       "ma": 20,
-      "ma_value": 457.616,
-      "day_change_pct": 5.55,
-      "distance_pct": 3.57,
+      "ma_value": 93.579,
+      "day_change_pct": 3.89,
+      "distance_pct": 3.98,
       "ma_periods": [
         20
-      ]
-    },
-    {
-      "ticker": "INCY",
-      "close": 123.61,
-      "date": "2026-11-24",
-      "ma": 20,
-      "ma_value": 119.397,
-      "day_change_pct": 5.33,
-      "distance_pct": 3.53,
-      "ma_periods": [
-        20,
-        50
       ]
     }
   ]

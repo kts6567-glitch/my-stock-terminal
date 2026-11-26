@@ -1,469 +1,445 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-25T04:58:28+00:00",
+  "updated_at_utc": "2026-11-26T04:16:09+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
   "source": "Yahoo Finance via unofficial yfinance; data may be delayed or unavailable",
   "price_basis": "adjusted daily close",
-  "as_of_date": "2026-11-24",
+  "as_of_date": "2026-11-25",
   "ranking": "daily share volume, not realtime",
   "results": [
     {
       "ticker": "NVDA",
-      "close": 155.38,
-      "date": "2026-11-24",
-      "volume": 383594200,
-      "volume_1w": 2472337400,
-      "volume_1m": 6828229500
+      "close": 149.3,
+      "date": "2026-11-25",
+      "volume": 363377300,
+      "volume_1w": 2488552700,
+      "volume_1m": 7109436500
     },
     {
       "ticker": "INTC",
-      "close": 54.8,
-      "date": "2026-11-24",
-      "volume": 132167700,
-      "volume_1w": 721459500,
-      "volume_1m": 3273328700
-    },
-    {
-      "ticker": "F",
-      "close": 11.95,
-      "date": "2026-11-24",
-      "volume": 61574700,
-      "volume_1w": 260390000,
-      "volume_1m": 978262100
-    },
-    {
-      "ticker": "HPE",
-      "close": 40.19,
-      "date": "2026-11-24",
-      "volume": 46688900,
-      "volume_1w": 137001700,
-      "volume_1m": 375471500
-    },
-    {
-      "ticker": "AMD",
-      "close": 413.27,
-      "date": "2026-11-24",
-      "volume": 46075500,
-      "volume_1w": 276046300,
-      "volume_1m": 929946000
-    },
-    {
-      "ticker": "T",
-      "close": 22.88,
-      "date": "2026-11-24",
-      "volume": 42533300,
-      "volume_1w": 223998800,
-      "volume_1m": 944578200
-    },
-    {
-      "ticker": "AAPL",
-      "close": 354.07,
-      "date": "2026-11-24",
-      "volume": 41214200,
-      "volume_1w": 255612200,
-      "volume_1m": 1052237600
-    },
-    {
-      "ticker": "SMCI",
-      "close": 22.62,
-      "date": "2026-11-24",
-      "volume": 39031700,
-      "volume_1w": 213466400,
-      "volume_1m": 1008743200
-    },
-    {
-      "ticker": "MU",
-      "close": 629.79,
-      "date": "2026-11-24",
-      "volume": 38858600,
-      "volume_1w": 211172700,
-      "volume_1m": 741691000
-    },
-    {
-      "ticker": "BAC",
-      "close": 48.56,
-      "date": "2026-11-24",
-      "volume": 36898900,
-      "volume_1w": 196586800,
-      "volume_1m": 745042600
-    },
-    {
-      "ticker": "NFLX",
-      "close": 58.87,
-      "date": "2026-11-24",
-      "volume": 36014400,
-      "volume_1w": 220547500,
-      "volume_1m": 853740200
+      "close": 54.47,
+      "date": "2026-11-25",
+      "volume": 128605100,
+      "volume_1w": 769203900,
+      "volume_1m": 3311910700
     },
     {
       "ticker": "AMZN",
-      "close": 252.29,
-      "date": "2026-11-24",
-      "volume": 33845600,
-      "volume_1w": 255893000,
-      "volume_1m": 1113972000
+      "close": 244.43,
+      "date": "2026-11-25",
+      "volume": 62276400,
+      "volume_1w": 276955000,
+      "volume_1m": 1141845700
+    },
+    {
+      "ticker": "AAPL",
+      "close": 355.58,
+      "date": "2026-11-25",
+      "volume": 54240100,
+      "volume_1w": 275698600,
+      "volume_1m": 1066549500
+    },
+    {
+      "ticker": "MU",
+      "close": 601.25,
+      "date": "2026-11-25",
+      "volume": 52470000,
+      "volume_1w": 236409900,
+      "volume_1m": 771248900
+    },
+    {
+      "ticker": "AMD",
+      "close": 406.03,
+      "date": "2026-11-25",
+      "volume": 51340800,
+      "volume_1w": 293513400,
+      "volume_1m": 960841800
+    },
+    {
+      "ticker": "F",
+      "close": 12.17,
+      "date": "2026-11-25",
+      "volume": 49080300,
+      "volume_1w": 271904500,
+      "volume_1m": 984186600
+    },
+    {
+      "ticker": "NFLX",
+      "close": 59.41,
+      "date": "2026-11-25",
+      "volume": 45693600,
+      "volume_1w": 239342100,
+      "volume_1m": 850657600
+    },
+    {
+      "ticker": "SMCI",
+      "close": 23.31,
+      "date": "2026-11-25",
+      "volume": 43194700,
+      "volume_1w": 229787700,
+      "volume_1m": 1020837900
     },
     {
       "ticker": "GOOGL",
-      "close": 279.05,
-      "date": "2026-11-24",
-      "volume": 33820500,
-      "volume_1w": 213647000,
-      "volume_1m": 959884900
+      "close": 273.1,
+      "date": "2026-11-25",
+      "volume": 41164500,
+      "volume_1w": 227513400,
+      "volume_1m": 972520000
+    },
+    {
+      "ticker": "T",
+      "close": 22.97,
+      "date": "2026-11-25",
+      "volume": 40325800,
+      "volume_1w": 227487200,
+      "volume_1m": 939221600
+    },
+    {
+      "ticker": "HPQ",
+      "close": 31.15,
+      "date": "2026-11-25",
+      "volume": 39069000,
+      "volume_1w": 108363000,
+      "volume_1m": 326787400
+    },
+    {
+      "ticker": "ORCL",
+      "close": 103.88,
+      "date": "2026-11-25",
+      "volume": 38324600,
+      "volume_1w": 175517200,
+      "volume_1m": 893776900
+    },
+    {
+      "ticker": "BAC",
+      "close": 48.54,
+      "date": "2026-11-25",
+      "volume": 38275100,
+      "volume_1w": 194825600,
+      "volume_1m": 758737600
+    },
+    {
+      "ticker": "TSLA",
+      "close": 380.14,
+      "date": "2026-11-25",
+      "volume": 34789900,
+      "volume_1w": 183465900,
+      "volume_1m": 746875900
     },
     {
       "ticker": "AVGO",
-      "close": 301.08,
-      "date": "2026-11-24",
-      "volume": 31199400,
-      "volume_1w": 184605800,
-      "volume_1m": 661615800
+      "close": 300.86,
+      "date": "2026-11-25",
+      "volume": 34256900,
+      "volume_1w": 192819900,
+      "volume_1m": 670376000
+    },
+    {
+      "ticker": "MRVL",
+      "close": 130.93,
+      "date": "2026-11-25",
+      "volume": 28539800,
+      "volume_1w": 164159000,
+      "volume_1m": 721158700
+    },
+    {
+      "ticker": "NKE",
+      "close": 36.66,
+      "date": "2026-11-25",
+      "volume": 27945300,
+      "volume_1w": 151364600,
+      "volume_1m": 538540500
+    },
+    {
+      "ticker": "GOOG",
+      "close": 270.98,
+      "date": "2026-11-25",
+      "volume": 27832500,
+      "volume_1w": 151090700,
+      "volume_1m": 636625200
+    },
+    {
+      "ticker": "HPE",
+      "close": 40.82,
+      "date": "2026-11-25",
+      "volume": 27559200,
+      "volume_1w": 153495300,
+      "volume_1m": 391412600
     },
     {
       "ticker": "PFE",
       "close": 28.46,
-      "date": "2026-11-24",
-      "volume": 31067700,
-      "volume_1w": 171422800,
-      "volume_1m": 789983200
-    },
-    {
-      "ticker": "NKE",
-      "close": 35.75,
-      "date": "2026-11-24",
-      "volume": 30750300,
-      "volume_1w": 148811700,
-      "volume_1m": 525265200
-    },
-    {
-      "ticker": "TSLA",
-      "close": 384.68,
-      "date": "2026-11-24",
-      "volume": 28697600,
-      "volume_1w": 175473600,
-      "volume_1m": 757323900
-    },
-    {
-      "ticker": "MRVL",
-      "close": 131.57,
-      "date": "2026-11-24",
-      "volume": 28020900,
-      "volume_1w": 154984700,
-      "volume_1m": 707910900
-    },
-    {
-      "ticker": "HPQ",
-      "close": 27.94,
-      "date": "2026-11-24",
-      "volume": 26813900,
-      "volume_1w": 79225200,
-      "volume_1m": 298822900
-    },
-    {
-      "ticker": "CMCSA",
-      "close": 25.38,
-      "date": "2026-11-24",
-      "volume": 26752400,
-      "volume_1w": 139926800,
-      "volume_1m": 599362700
-    },
-    {
-      "ticker": "GOOG",
-      "close": 276.58,
-      "date": "2026-11-24",
-      "volume": 23974400,
-      "volume_1w": 144983000,
-      "volume_1m": 626461400
-    },
-    {
-      "ticker": "WMT",
-      "close": 132.31,
-      "date": "2026-11-24",
-      "volume": 23628800,
-      "volume_1w": 151649900,
-      "volume_1m": 506471900
+      "date": "2026-11-25",
+      "volume": 27106200,
+      "volume_1w": 160885400,
+      "volume_1m": 791515200
     },
     {
       "ticker": "MSFT",
-      "close": 496.13,
-      "date": "2026-11-24",
-      "volume": 23086900,
-      "volume_1w": 152092000,
-      "volume_1m": 634629000
-    },
-    {
-      "ticker": "CSCO",
-      "close": 93.99,
-      "date": "2026-11-24",
-      "volume": 22790500,
-      "volume_1w": 122225300,
-      "volume_1m": 475182200
-    },
-    {
-      "ticker": "KO",
-      "close": 97.62,
-      "date": "2026-11-24",
-      "volume": 21622400,
-      "volume_1w": 117386100,
-      "volume_1m": 416709900
-    },
-    {
-      "ticker": "PCG",
-      "close": 14.22,
-      "date": "2026-11-24",
-      "volume": 21532900,
-      "volume_1w": 127188900,
-      "volume_1m": 536482600
-    },
-    {
-      "ticker": "ORCL",
-      "close": 109.5,
-      "date": "2026-11-24",
-      "volume": 21024200,
-      "volume_1w": 152537200,
-      "volume_1m": 881428900
-    },
-    {
-      "ticker": "PLTR",
-      "close": 161.18,
-      "date": "2026-11-24",
-      "volume": 20659100,
-      "volume_1w": 125666000,
-      "volume_1m": 535783500
+      "close": 489.93,
+      "date": "2026-11-25",
+      "volume": 26733600,
+      "volume_1w": 156793100,
+      "volume_1m": 641847900
     },
     {
       "ticker": "DELL",
-      "close": 295.28,
-      "date": "2026-11-24",
-      "volume": 20630000,
-      "volume_1w": 63158200,
-      "volume_1m": 189416800
+      "close": 297.06,
+      "date": "2026-11-25",
+      "volume": 26489800,
+      "volume_1w": 84051500,
+      "volume_1m": 210444300
     },
     {
-      "ticker": "MDT",
-      "close": 96.13,
-      "date": "2026-11-24",
-      "volume": 20048700,
-      "volume_1w": 51238500,
-      "volume_1m": 169268200
+      "ticker": "KO",
+      "close": 97.59,
+      "date": "2026-11-25",
+      "volume": 24884900,
+      "volume_1w": 125717000,
+      "volume_1m": 423925800
     },
     {
-      "ticker": "MCHP",
-      "close": 56.36,
-      "date": "2026-11-24",
-      "volume": 19597600,
-      "volume_1w": 101634500,
-      "volume_1m": 386674700
+      "ticker": "CMCSA",
+      "close": 25.73,
+      "date": "2026-11-25",
+      "volume": 23643200,
+      "volume_1w": 144474600,
+      "volume_1m": 601029100
     },
     {
-      "ticker": "FCX",
-      "close": 47.73,
-      "date": "2026-11-24",
-      "volume": 19280000,
-      "volume_1w": 127693600,
-      "volume_1m": 340775200
-    },
-    {
-      "ticker": "VZ",
-      "close": 47.16,
-      "date": "2026-11-24",
-      "volume": 17917600,
-      "volume_1w": 103844200,
-      "volume_1m": 467465500
-    },
-    {
-      "ticker": "BSX",
-      "close": 44.14,
-      "date": "2026-11-24",
-      "volume": 17879900,
-      "volume_1w": 75749000,
-      "volume_1m": 424196600
-    },
-    {
-      "ticker": "CRWD",
-      "close": 210.86,
-      "date": "2026-11-24",
-      "volume": 17605800,
-      "volume_1w": 96609100,
-      "volume_1m": 235894000
-    },
-    {
-      "ticker": "HBAN",
-      "close": 14.78,
-      "date": "2026-11-24",
-      "volume": 16710200,
-      "volume_1w": 111658500,
-      "volume_1m": 400178500
-    },
-    {
-      "ticker": "APH",
-      "close": 73.47,
-      "date": "2026-11-24",
-      "volume": 16461600,
-      "volume_1w": 83760700,
-      "volume_1m": 347263100
-    },
-    {
-      "ticker": "UBER",
-      "close": 64.7,
-      "date": "2026-11-24",
-      "volume": 16237000,
-      "volume_1w": 107031600,
-      "volume_1m": 413874500
-    },
-    {
-      "ticker": "ON",
-      "close": 61.49,
-      "date": "2026-11-24",
-      "volume": 16184200,
-      "volume_1w": 60294800,
-      "volume_1m": 246930600
-    },
-    {
-      "ticker": "KLAC",
-      "close": 133.65,
-      "date": "2026-11-24",
-      "volume": 15802400,
-      "volume_1w": 76195200,
-      "volume_1m": 321742200
-    },
-    {
-      "ticker": "MRK",
-      "close": 141.57,
-      "date": "2026-11-24",
-      "volume": 14671000,
-      "volume_1w": 63029400,
-      "volume_1m": 202004200
-    },
-    {
-      "ticker": "HOOD",
-      "close": 65.65,
-      "date": "2026-11-24",
-      "volume": 14573200,
-      "volume_1w": 104905000,
-      "volume_1m": 446224100
-    },
-    {
-      "ticker": "KHC",
-      "close": 25.57,
-      "date": "2026-11-24",
-      "volume": 14258400,
-      "volume_1w": 86289800,
-      "volume_1m": 315920300
-    },
-    {
-      "ticker": "KEY",
-      "close": 19.97,
-      "date": "2026-11-24",
-      "volume": 14221000,
-      "volume_1w": 81300800,
-      "volume_1m": 299678700
-    },
-    {
-      "ticker": "KDP",
-      "close": 35.8,
-      "date": "2026-11-24",
-      "volume": 13996700,
-      "volume_1w": 84842800,
-      "volume_1m": 495342300
-    },
-    {
-      "ticker": "LRCX",
-      "close": 196.16,
-      "date": "2026-11-24",
-      "volume": 13973300,
-      "volume_1w": 75741200,
-      "volume_1m": 293366800
-    },
-    {
-      "ticker": "TXN",
-      "close": 258.44,
-      "date": "2026-11-24",
-      "volume": 13679200,
-      "volume_1w": 53958400,
-      "volume_1m": 196951000
-    },
-    {
-      "ticker": "QCOM",
-      "close": 164.96,
-      "date": "2026-11-24",
-      "volume": 13618000,
-      "volume_1w": 78782500,
-      "volume_1m": 320058900
-    },
-    {
-      "ticker": "BE",
-      "close": 156.41,
-      "date": "2026-11-24",
-      "volume": 13603400,
-      "volume_1w": 93064600,
-      "volume_1m": 370967600
-    },
-    {
-      "ticker": "NCLH",
-      "close": 17.1,
-      "date": "2026-11-24",
-      "volume": 13522800,
-      "volume_1w": 84830600,
-      "volume_1m": 450269300
-    },
-    {
-      "ticker": "SKYD",
-      "close": 6.5,
-      "date": "2026-11-24",
-      "volume": 13180700,
-      "volume_1w": 78655000,
-      "volume_1m": 340389800
-    },
-    {
-      "ticker": "CMG",
-      "close": 37.05,
-      "date": "2026-11-24",
-      "volume": 13047300,
-      "volume_1w": 72564300,
-      "volume_1m": 381738700
-    },
-    {
-      "ticker": "NOW",
-      "close": 91.74,
-      "date": "2026-11-24",
-      "volume": 12682700,
-      "volume_1w": 89037900,
-      "volume_1m": 445083400
-    },
-    {
-      "ticker": "META",
-      "close": 589.82,
-      "date": "2026-11-24",
-      "volume": 12149700,
-      "volume_1w": 82731000,
-      "volume_1m": 433713200
-    },
-    {
-      "ticker": "CCL",
-      "close": 28.4,
-      "date": "2026-11-24",
-      "volume": 11974100,
-      "volume_1w": 73706500,
-      "volume_1m": 374252300
+      "ticker": "WMT",
+      "close": 131.94,
+      "date": "2026-11-25",
+      "volume": 23603400,
+      "volume_1w": 147305200,
+      "volume_1m": 514387000
     },
     {
       "ticker": "XOM",
-      "close": 158.23,
-      "date": "2026-11-24",
-      "volume": 11770600,
-      "volume_1w": 75516700,
-      "volume_1m": 315541900
+      "close": 158.08,
+      "date": "2026-11-25",
+      "volume": 21532400,
+      "volume_1w": 78927100,
+      "volume_1m": 322917800
+    },
+    {
+      "ticker": "LRCX",
+      "close": 185.01,
+      "date": "2026-11-25",
+      "volume": 21472400,
+      "volume_1w": 89570100,
+      "volume_1m": 304985000
+    },
+    {
+      "ticker": "PLTR",
+      "close": 163.59,
+      "date": "2026-11-25",
+      "volume": 21407000,
+      "volume_1w": 132194800,
+      "volume_1m": 537327400
+    },
+    {
+      "ticker": "HOOD",
+      "close": 65.78,
+      "date": "2026-11-25",
+      "volume": 20069500,
+      "volume_1w": 108779100,
+      "volume_1m": 438059500
+    },
+    {
+      "ticker": "UBER",
+      "close": 66.35,
+      "date": "2026-11-25",
+      "volume": 19832100,
+      "volume_1w": 114609500,
+      "volume_1m": 412974800
+    },
+    {
+      "ticker": "VZ",
+      "close": 47.28,
+      "date": "2026-11-25",
+      "volume": 19331700,
+      "volume_1w": 105818900,
+      "volume_1m": 458607100
+    },
+    {
+      "ticker": "KEY",
+      "close": 20.22,
+      "date": "2026-11-25",
+      "volume": 19200300,
+      "volume_1w": 89368100,
+      "volume_1m": 302242000
+    },
+    {
+      "ticker": "PCG",
+      "close": 14.26,
+      "date": "2026-11-25",
+      "volume": 18903600,
+      "volume_1w": 123160900,
+      "volume_1m": 517821100
+    },
+    {
+      "ticker": "META",
+      "close": 609.89,
+      "date": "2026-11-25",
+      "volume": 18599400,
+      "volume_1w": 90933600,
+      "volume_1m": 401010400
+    },
+    {
+      "ticker": "CSCO",
+      "close": 94.2,
+      "date": "2026-11-25",
+      "volume": 18532700,
+      "volume_1w": 119608000,
+      "volume_1m": 479561500
+    },
+    {
+      "ticker": "BE",
+      "close": 152.89,
+      "date": "2026-11-25",
+      "volume": 18487300,
+      "volume_1w": 100113500,
+      "volume_1m": 373806500
+    },
+    {
+      "ticker": "KHC",
+      "close": 26.51,
+      "date": "2026-11-25",
+      "volume": 17662300,
+      "volume_1w": 88746500,
+      "volume_1m": 323747400
+    },
+    {
+      "ticker": "FCX",
+      "close": 48.55,
+      "date": "2026-11-25",
+      "volume": 17412600,
+      "volume_1w": 116628900,
+      "volume_1m": 346331900
+    },
+    {
+      "ticker": "APH",
+      "close": 73.08,
+      "date": "2026-11-25",
+      "volume": 16370000,
+      "volume_1w": 88150300,
+      "volume_1m": 346234600
+    },
+    {
+      "ticker": "DIS",
+      "close": 125.6,
+      "date": "2026-11-25",
+      "volume": 16344400,
+      "volume_1w": 65010500,
+      "volume_1m": 221396100
+    },
+    {
+      "ticker": "NOW",
+      "close": 92.16,
+      "date": "2026-11-25",
+      "volume": 15479100,
+      "volume_1w": 84606700,
+      "volume_1m": 447094600
+    },
+    {
+      "ticker": "HBAN",
+      "close": 14.88,
+      "date": "2026-11-25",
+      "volume": 15041400,
+      "volume_1w": 99635100,
+      "volume_1m": 393453700
+    },
+    {
+      "ticker": "MCHP",
+      "close": 57.66,
+      "date": "2026-11-25",
+      "volume": 14835600,
+      "volume_1w": 107277600,
+      "volume_1m": 389650900
+    },
+    {
+      "ticker": "CRWD",
+      "close": 209.3,
+      "date": "2026-11-25",
+      "volume": 14517100,
+      "volume_1w": 99089100,
+      "volume_1m": 243119300
+    },
+    {
+      "ticker": "CCL",
+      "close": 28.0,
+      "date": "2026-11-25",
+      "volume": 14318000,
+      "volume_1w": 75143600,
+      "volume_1m": 366374300
+    },
+    {
+      "ticker": "KLAC",
+      "close": 134.2,
+      "date": "2026-11-25",
+      "volume": 14187300,
+      "volume_1w": 81099500,
+      "volume_1m": 325641600
+    },
+    {
+      "ticker": "BSX",
+      "close": 45.12,
+      "date": "2026-11-25",
+      "volume": 14156800,
+      "volume_1w": 76695100,
+      "volume_1m": 423213700
+    },
+    {
+      "ticker": "QCOM",
+      "close": 168.66,
+      "date": "2026-11-25",
+      "volume": 14029400,
+      "volume_1w": 83628500,
+      "volume_1m": 321800700
+    },
+    {
+      "ticker": "CMG",
+      "close": 37.4,
+      "date": "2026-11-25",
+      "volume": 13372500,
+      "volume_1w": 72446100,
+      "volume_1m": 376907600
+    },
+    {
+      "ticker": "KDP",
+      "close": 35.63,
+      "date": "2026-11-25",
+      "volume": 12647300,
+      "volume_1w": 79035800,
+      "volume_1m": 497770400
+    },
+    {
+      "ticker": "SKYD",
+      "close": 6.53,
+      "date": "2026-11-25",
+      "volume": 12371100,
+      "volume_1w": 76028200,
+      "volume_1m": 336348000
+    },
+    {
+      "ticker": "NCLH",
+      "close": 17.0,
+      "date": "2026-11-25",
+      "volume": 11884300,
+      "volume_1w": 81530100,
+      "volume_1m": 440423700
     },
     {
       "ticker": "AES",
       "close": 15.02,
-      "date": "2026-11-24",
-      "volume": 11710800,
-      "volume_1w": 177000400,
-      "volume_1m": 320902600
+      "date": "2026-11-25",
+      "volume": 7390800,
+      "volume_1w": 86771800,
+      "volume_1m": 318139900
     }
   ]
 }

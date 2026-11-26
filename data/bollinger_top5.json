@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-25T04:58:28+00:00",
+  "updated_at_utc": "2026-11-26T04:16:09+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -9,21 +9,6 @@
   "threshold_pct": -3,
   "window": 20,
   "std_multiplier": 2,
-  "total_matches": 2,
-  "results": [
-    {
-      "ticker": "ADI",
-      "close": 312.95,
-      "date": "2026-11-24",
-      "lower": 333.195,
-      "breach_pct": -6.08
-    },
-    {
-      "ticker": "BG",
-      "close": 84.06,
-      "date": "2026-11-24",
-      "lower": 87.729,
-      "breach_pct": -4.18
-    }
-  ]
+  "total_matches": 0,
+  "results": []
 }
