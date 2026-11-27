@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-26T04:18:20+00:00",
+  "updated_at_utc": "2026-11-27T04:27:35+00:00",
   "universe": "한국 대표종목 표본 (코스피·코스닥 전수 아님)",
   "universe_count": 78,
   "scanned_count": 77,
@@ -8,65 +8,65 @@
   "price_basis": "수정 종가",
   "results": [
     {
-      "ticker": "454910.KS",
-      "close": 52600.0,
-      "date": "2026-11-26",
+      "ticker": "141080.KQ",
+      "close": 67500.0,
+      "date": "2026-11-27",
       "ma": 20,
-      "ma_value": 51207.5,
-      "day_change_pct": 4.99,
-      "distance_pct": 2.72,
-      "company": "두산로보틱스",
+      "ma_value": 58150.0,
+      "day_change_pct": 19.05,
+      "distance_pct": 16.08,
+      "company": "리가켐바이오",
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "128940.KS",
-      "close": 474000.0,
-      "date": "2026-11-26",
-      "ma": 200,
-      "ma_value": 463834.158,
-      "day_change_pct": 1.61,
-      "distance_pct": 2.19,
-      "company": "한미약품",
+      "ticker": "071050.KS",
+      "close": 142500.0,
+      "date": "2026-11-27",
+      "ma": 20,
+      "ma_value": 129280.0,
+      "day_change_pct": 13.1,
+      "distance_pct": 10.23,
+      "company": "한국금융지주",
       "ma_periods": [
-        200
+        20
       ]
     },
     {
       "ticker": "326030.KS",
-      "close": 90900.0,
-      "date": "2026-11-26",
+      "close": 97900.0,
+      "date": "2026-11-27",
       "ma": 200,
-      "ma_value": 90113.5,
-      "day_change_pct": 1.56,
-      "distance_pct": 0.87,
+      "ma_value": 90043.5,
+      "day_change_pct": 8.18,
+      "distance_pct": 8.73,
       "company": "SK바이오팜",
       "ma_periods": [
         200
       ]
     },
     {
-      "ticker": "316140.KS",
-      "close": 31550.0,
-      "date": "2026-11-26",
-      "ma": 20,
-      "ma_value": 31355.174,
-      "day_change_pct": 0.48,
-      "distance_pct": 0.62,
-      "company": "우리금융지주",
+      "ticker": "112040.KQ",
+      "close": 15130.0,
+      "date": "2026-11-27",
+      "ma": 50,
+      "ma_value": 14469.6,
+      "day_change_pct": 7.0,
+      "distance_pct": 4.56,
+      "company": "위메이드",
       "ma_periods": [
-        20
+        50
       ]
     },
     {
       "ticker": "204320.KS",
-      "close": 33900.0,
-      "date": "2026-11-26",
+      "close": 35400.0,
+      "date": "2026-11-27",
       "ma": 20,
-      "ma_value": 33640.0,
-      "day_change_pct": 0.44,
-      "distance_pct": 0.77,
+      "ma_value": 33532.5,
+      "day_change_pct": 5.99,
+      "distance_pct": 5.57,
       "company": "HL만도",
       "ma_periods": [
         20
