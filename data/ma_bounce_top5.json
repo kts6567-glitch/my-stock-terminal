@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updated_at_utc": "2026-11-27T04:25:51+00:00",
+  "updated_at_utc": "2026-11-28T04:05:33+00:00",
   "universe": "S&P 500",
   "universe_count": 503,
   "scanned_count": 500,
@@ -15,62 +15,63 @@
   "total_matches": 150,
   "results": [
     {
-      "ticker": "CDW",
-      "close": 174.97,
-      "date": "2026-11-25",
+      "ticker": "ANET",
+      "close": 174.73,
+      "date": "2026-11-27",
+      "ma": 200,
+      "ma_value": 169.188,
+      "day_change_pct": 6.55,
+      "distance_pct": 3.28,
+      "ma_periods": [
+        200
+      ]
+    },
+    {
+      "ticker": "QCOM",
+      "close": 179.27,
+      "date": "2026-11-27",
+      "ma": 200,
+      "ma_value": 170.228,
+      "day_change_pct": 6.29,
+      "distance_pct": 5.31,
+      "ma_periods": [
+        200,
+        20
+      ]
+    },
+    {
+      "ticker": "AXON",
+      "close": 363.48,
+      "date": "2026-11-27",
       "ma": 20,
-      "ma_value": 163.928,
-      "day_change_pct": 7.03,
-      "distance_pct": 6.74,
+      "ma_value": 338.524,
+      "day_change_pct": 5.96,
+      "distance_pct": 7.37,
       "ma_periods": [
         20
       ]
     },
     {
-      "ticker": "TXN",
-      "close": 270.19,
-      "date": "2026-11-25",
-      "ma": 200,
-      "ma_value": 264.925,
-      "day_change_pct": 4.55,
-      "distance_pct": 1.99,
+      "ticker": "SWKS",
+      "close": 86.66,
+      "date": "2026-11-27",
+      "ma": 50,
+      "ma_value": 83.728,
+      "day_change_pct": 5.67,
+      "distance_pct": 3.5,
       "ma_periods": [
-        200
+        50,
+        20
       ]
     },
     {
-      "ticker": "DE",
-      "close": 641.02,
-      "date": "2026-11-25",
-      "ma": 200,
-      "ma_value": 613.383,
-      "day_change_pct": 4.44,
-      "distance_pct": 4.51,
-      "ma_periods": [
-        200
-      ]
-    },
-    {
-      "ticker": "UHS",
-      "close": 190.57,
-      "date": "2026-11-25",
+      "ticker": "PLTR",
+      "close": 172.17,
+      "date": "2026-11-27",
       "ma": 20,
-      "ma_value": 188.28,
-      "day_change_pct": 4.02,
-      "distance_pct": 1.22,
-      "ma_periods": [
-        20,
-        50
-      ]
-    },
-    {
-      "ticker": "CRH",
-      "close": 97.3,
-      "date": "2026-11-25",
-      "ma": 20,
-      "ma_value": 93.579,
-      "day_change_pct": 3.89,
-      "distance_pct": 3.98,
+      "ma_value": 165.1,
+      "day_change_pct": 5.24,
+      "distance_pct": 4.28,
       "ma_periods": [
         20
       ]
